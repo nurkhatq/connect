@@ -1,0 +1,450 @@
+{
+  "use_of_english": [
+    {
+      "type": "fill_in_the_blank",
+      "context": "Conversation between Maria and Rosa making plans",
+      "questions": [
+        {
+          "text": "What ______ (you/do) this evening?",
+          "options": [
+            "are you doing",
+            "will you do",
+            "do you do",
+            "would you do"
+          ],
+          "correctAnswer": "are you doing",
+          "explanation": "Present continuous is used to ask about plans for a specific time in the near future"
+        },
+        {
+          "text": "______ (we/go out)?",
+          "options": [
+            "Shall we go out",
+            "Will we go out",
+            "Are we going out",
+            "Would we go out"
+          ],
+          "correctAnswer": "Shall we go out",
+          "explanation": "'Shall' is used to make suggestions for joint future actions"
+        },
+        {
+          "text": "I ______ (work) on a project until late.",
+          "options": [
+            "am working",
+            "will work",
+            "work",
+            "would work"
+          ],
+          "correctAnswer": "am working",
+          "explanation": "Present continuous for fixed future plans with specific time reference"
+        },
+        {
+          "text": "when do you think you ______ (be) free for a drink?",
+          "options": [
+            "will be",
+            "are going to be",
+            "are being",
+            "would be"
+          ],
+          "correctAnswer": "will be",
+          "explanation": "'Will' for future predictions about availability"
+        },
+        {
+          "text": "______ (you/do) anything?",
+          "options": [
+            "Are you doing",
+            "Will you do",
+            "Do you do",
+            "Would you do"
+          ],
+          "correctAnswer": "Are you doing",
+          "explanation": "Present continuous for asking about specific future plans"
+        },
+        {
+          "text": "I ______ (see) my dentist tomorrow.",
+          "options": [
+            "am seeing",
+            "will see",
+            "see",
+            "would see"
+          ],
+          "correctAnswer": "am seeing",
+          "explanation": "Present continuous for fixed future appointments"
+        },
+        {
+          "text": "What time ______ (we/meet)?",
+          "options": [
+            "shall we meet",
+            "will we meet",
+            "are we meeting",
+            "would we meet"
+          ],
+          "correctAnswer": "shall we meet",
+          "explanation": "'Shall' for suggesting/arranging meeting times"
+        },
+        {
+          "text": "I ______ (meet) a friend at 6.",
+          "options": [
+            "am meeting",
+            "will meet",
+            "meet",
+            "would meet"
+          ],
+          "correctAnswer": "am meeting",
+          "explanation": "Present continuous for fixed future arrangements"
+        },
+        {
+          "text": "I ______ (take) mine.",
+          "options": [
+            "will take",
+            "am going to take",
+            "take",
+            "would take"
+          ],
+          "correctAnswer": "will take",
+          "explanation": "'Will' for spontaneous offers/decisions made in the moment"
+        },
+        {
+          "text": "______ (I/pick you up) at 7 then?",
+          "options": [
+            "Shall I pick you up",
+            "Will I pick you up",
+            "Am I picking you up",
+            "Would I pick you up"
+          ],
+          "correctAnswer": "Shall I pick you up",
+          "explanation": "'Shall' for making offers about future actions"
+        },
+        {
+          "text": "______ (you/visit) your family this weekend?",
+          "options": [
+            "Are you visiting",
+            "Will you visit",
+            "Do you visit",
+            "Would you visit"
+          ],
+          "correctAnswer": "Are you visiting",
+          "explanation": "Present continuous for asking about specific future plans"
+        },
+        {
+          "text": "I ______ (have) dinner with my parents tomorrow.",
+          "options": [
+            "am having",
+            "will have",
+            "have",
+            "would have"
+          ],
+          "correctAnswer": "am having",
+          "explanation": "Present continuous for fixed future arrangements"
+        },
+        {
+          "text": "______ (we/watch) a movie tonight?",
+          "options": [
+            "Shall we watch",
+            "Will we watch",
+            "Are we watching",
+            "Would we watch"
+          ],
+          "correctAnswer": "Shall we watch",
+          "explanation": "'Shall' for making suggestions about joint activities"
+        },
+        {
+          "text": "I think I ______ (call) you later to confirm.",
+          "options": [
+            "will call",
+            "am calling",
+            "call",
+            "would call"
+          ],
+          "correctAnswer": "will call",
+          "explanation": "'Will' for spontaneous decisions about future actions"
+        },
+        {
+          "text": "______ (you/bring) something to eat?",
+          "options": [
+            "Are you bringing",
+            "Will you bring",
+            "Do you bring",
+            "Would you bring"
+          ],
+          "correctAnswer": "Will you bring",
+          "explanation": "'Will' for requesting or asking about willingness to do something in the future"
+        },
+        {
+          "text": "I ______ (go) to the gym after work.",
+          "options": [
+            "am going",
+            "will go",
+            "go",
+            "would go"
+          ],
+          "correctAnswer": "am going",
+          "explanation": "Present continuous for fixed future plans"
+        },
+        {
+          "text": "______ (I/book) a table for us?",
+          "options": [
+            "Shall I book",
+            "Will I book",
+            "Am I booking",
+            "Would I book"
+          ],
+          "correctAnswer": "Shall I book",
+          "explanation": "'Shall' for offering to perform a future action"
+        },
+        {
+          "text": "What ______ (you/wear) to the party?",
+          "options": [
+            "are you wearing",
+            "will you wear",
+            "do you wear",
+            "would you wear"
+          ],
+          "correctAnswer": "are you wearing",
+          "explanation": "Present continuous for asking about specific future plans or arrangements"
+        },
+        {
+          "text": "I ______ (check) the train times tonight.",
+          "options": [
+            "will check",
+            "am checking",
+            "check",
+            "would check"
+          ],
+          "correctAnswer": "am checking",
+          "explanation": "Present continuous for fixed future plans"
+        },
+        {
+          "text": "______ (we/invite) anyone else to join us?",
+          "options": [
+            "Shall we invite",
+            "Will we invite",
+            "Are we inviting",
+            "Would we invite"
+          ],
+          "correctAnswer": "Shall we invite",
+          "explanation": "'Shall' for suggesting joint future actions"
+        },
+        {
+          "text": "I ______ (attend) a concert on Saturday.",
+          "options": [
+            "am attending",
+            "will attend",
+            "attend",
+            "would attend"
+          ],
+          "correctAnswer": "am attending",
+          "explanation": "Present continuous for fixed future plans or events"
+        },
+        {
+          "text": "______ (you/join) us for lunch tomorrow?",
+          "options": [
+            "Are you joining",
+            "Will you join",
+            "Do you join",
+            "Would you join"
+          ],
+          "correctAnswer": "Are you joining",
+          "explanation": "Present continuous for asking about specific future plans"
+        },
+        {
+          "text": "I ______ (buy) the tickets online tonight.",
+          "options": [
+            "will buy",
+            "am buying",
+            "buy",
+            "would buy"
+          ],
+          "correctAnswer": "am buying",
+          "explanation": "Present continuous for planned future actions"
+        },
+        {
+          "text": "______ (we/try) that new restaurant downtown?",
+          "options": [
+            "Shall we try",
+            "Will we try",
+            "Are we trying",
+            "Would we try"
+          ],
+          "correctAnswer": "Shall we try",
+          "explanation": "'Shall' for suggesting joint future activities"
+        },
+        {
+          "text": "I ______ (finish) my work by 5 p.m. tomorrow.",
+          "options": [
+            "will finish",
+            "am finishing",
+            "finish",
+            "would finish"
+          ],
+          "correctAnswer": "will finish",
+          "explanation": "'Will' for predicting completion of a future task"
+        },
+        {
+          "text": "______ (I/call) the restaurant to confirm?",
+          "options": [
+            "Shall I call",
+            "Will I call",
+            "Am I calling",
+            "Would I call"
+          ],
+          "correctAnswer": "Shall I call",
+          "explanation": "'Shall' for offering to perform a future action"
+        },
+        {
+          "text": "What ______ (you/cook) for the dinner party?",
+          "options": [
+            "are you cooking",
+            "will you cook",
+            "do you cook",
+            "would you cook"
+          ],
+          "correctAnswer": "are you cooking",
+          "explanation": "Present continuous for asking about specific future plans"
+        },
+        {
+          "text": "I ______ (bring) some dessert for us.",
+          "options": [
+            "will bring",
+            "am bringing",
+            "bring",
+            "would bring"
+          ],
+          "correctAnswer": "am bringing",
+          "explanation": "Present continuous for fixed future arrangements"
+        },
+        {
+          "text": "______ (we/walk) to the venue or take a cab?",
+          "options": [
+            "Shall we walk",
+            "Will we walk",
+            "Are we walking",
+            "Would we walk"
+          ],
+          "correctAnswer": "Shall we walk",
+          "explanation": "'Shall' for suggesting options for a joint future action"
+        },
+        {
+          "text": "I ______ (check) the weather forecast before we go.",
+          "options": [
+            "will check",
+            "am checking",
+            "check",
+            "would check"
+          ],
+          "correctAnswer": "will check",
+          "explanation": "'Will' for a spontaneous decision about a future action"
+        },
+        {
+          "text": "______ (you/stay) overnight at my place?",
+          "options": [
+            "Are you staying",
+            "Will you stay",
+            "Do you stay",
+            "Would you stay"
+          ],
+          "correctAnswer": "Are you staying",
+          "explanation": "Present continuous for asking about specific future plans"
+        },
+        {
+          "text": "I ______ (reserve) a spot for the workshop next week.",
+          "options": [
+            "am reserving",
+            "will reserve",
+            "reserve",
+            "would reserve"
+          ],
+          "correctAnswer": "am reserving",
+          "explanation": "Present continuous for fixed future bookings"
+        },
+        {
+          "text": "______ (I/bring) my camera for the event?",
+          "options": [
+            "Shall I bring",
+            "Will I bring",
+            "Am I bringing",
+            "Would I bring"
+          ],
+          "correctAnswer": "Shall I bring",
+          "explanation": "'Shall' for offering to perform a future action"
+        },
+        {
+          "text": "What time ______ (you/arrive) at the station?",
+          "options": [
+            "are you arriving",
+            "will you arrive",
+            "do you arrive",
+            "would you arrive"
+          ],
+          "correctAnswer": "are you arriving",
+          "explanation": "Present continuous for asking about fixed future plans"
+        },
+        {
+          "text": "I ______ (meet) my boss for a review tomorrow.",
+          "options": [
+            "am meeting",
+            "will meet",
+            "meet",
+            "would meet"
+          ],
+          "correctAnswer": "am meeting",
+          "explanation": "Present continuous for fixed future appointments"
+        },
+        {
+          "text": "______ (we/book) the tickets in advance?",
+          "options": [
+            "Shall we book",
+            "Will we book",
+            "Are we booking",
+            "Would we book"
+          ],
+          "correctAnswer": "Shall we book",
+          "explanation": "'Shall' for suggesting a joint future action"
+        },
+        {
+          "text": "I ______ (text) you the address later.",
+          "options": [
+            "will text",
+            "am texting",
+            "text",
+            "would text"
+          ],
+          "correctAnswer": "will text",
+          "explanation": "'Will' for a spontaneous decision about a future action"
+        },
+        {
+          "text": "______ (you/need) a ride to the party?",
+          "options": [
+            "Will you need",
+            "Are you needing",
+            "Do you need",
+            "Would you need"
+          ],
+          "correctAnswer": "Will you need",
+          "explanation": "'Will' for asking about future needs or requirements"
+        },
+        {
+          "text": "I ______ (prepare) some snacks for the evening.",
+          "options": [
+            "am preparing",
+            "will prepare",
+            "prepare",
+            "would prepare"
+          ],
+          "correctAnswer": "am preparing",
+          "explanation": "Present continuous for fixed future plans"
+        },
+        {
+          "text": "______ (we/meet) at the usual café?",
+          "options": [
+            "Shall we meet",
+            "Will we meet",
+            "Are we meeting",
+            "Would we meet"
+          ],
+          "correctAnswer": "Shall we meet",
+          "explanation": "'Shall' for suggesting a joint meeting location"
+        }
+      ]
+    }
+  ]
+}

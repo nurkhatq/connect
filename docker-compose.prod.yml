@@ -1,0 +1,267 @@
+
+services:
+
+  frontend:
+
+    build: 
+
+      context: ./frontend
+
+      dockerfile: Dockerfile
+
+      target: runner
+
+    container_name: aitu_frontend_prod
+
+    environment:
+
+      - NODE_ENV=production
+
+      - NEXT_PUBLIC_API_URL=https://connect-aitu.me/api
+
+      - NEXT_PUBLIC_TELEGRAM_BOT_USERNAME=${TELEGRAM_BOT_USERNAME}
+
+    depends_on:
+
+      - backend
+
+    networks:
+
+      - aitu-network
+
+    restart: unless-stopped
+
+  backend:
+
+    build: ./backend
+
+    container_name: aitu_backend_prod
+
+    environment:
+
+      - DATABASE_URL=${DATABASE_URL}
+
+      - REDIS_URL=redis://:${REDIS_PASSWORD}@redis:6379
+
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY}
+
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+
+      - TELEGRAM_BOT_USERNAME=${TELEGRAM_BOT_USERNAME}
+
+      - APP_NAME=${APP_NAME}
+
+      - DEBUG=${DEBUG}
+
+      - ENVIRONMENT=${ENVIRONMENT}
+
+      - DOMAIN=${DOMAIN}
+
+      - UPLOAD_DIR=${UPLOAD_DIR}
+
+      - MAX_FILE_SIZE=${MAX_FILE_SIZE}
+
+    depends_on:
+
+      db:
+
+        condition: service_healthy
+
+      redis:
+
+        condition: service_healthy
+
+    volumes:
+
+      - ./backend/uploads:/app/uploads
+
+      - ./backend/data:/app/data
+
+      - ./backups:/app/backups
+
+    networks:
+
+      - aitu-network
+
+    restart: unless-stopped
+
+    healthcheck:
+
+      test: ["CMD", "python", "-c", "import urllib.request; response = urllib.request.urlopen('http://localhost:8000/ping'); exit(0 if response.getcode() == 200 else 1)"]
+
+      interval: 30s
+
+      timeout: 10s
+
+      retries: 3
+
+      start_period: 40s
+
+  db:
+
+    image: postgres:15-alpine
+
+    container_name: aitu_postgres_prod
+
+    environment:
+
+      - POSTGRES_USER=${POSTGRES_USER}
+
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+
+      - POSTGRES_DB=${POSTGRES_DB}
+
+      - POSTGRES_INITDB_ARGS=--encoding=UTF8 --locale=C
+
+    volumes:
+
+      - postgres_data:/var/lib/postgresql/data
+
+      - ./backups:/backups
+
+    networks:
+
+      - aitu-network
+
+    restart: unless-stopped
+
+    healthcheck:
+
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+
+      interval: 10s
+
+      timeout: 5s
+
+      retries: 5
+
+      start_period: 30s
+
+  redis:
+
+    image: redis:7-alpine
+
+    container_name: aitu_redis_prod
+
+    command: redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}
+
+    environment:
+
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
+
+    volumes:
+
+      - redis_data:/data
+
+    networks:
+
+      - aitu-network
+
+    restart: unless-stopped
+
+    healthcheck:
+
+      test: ["CMD", "redis-cli", "--no-auth-warning", "-a", "${REDIS_PASSWORD}", "ping"]
+
+      interval: 10s
+
+      timeout: 5s
+
+      retries: 3
+
+  nginx:
+
+    image: nginx:alpine
+
+    container_name: aitu_nginx_prod
+
+    ports:
+
+      - "80:80"
+
+      - "443:443"
+
+    volumes:
+
+      - ./nginx/nginx.prod.conf:/etc/nginx/nginx.conf:ro
+
+      - ./nginx/logs:/var/log/nginx
+
+      - certbot-certs:/etc/letsencrypt
+
+      - certbot-web:/var/www/certbot
+
+    depends_on:
+
+      - frontend
+
+      - backend
+
+    networks:
+
+      - aitu-network
+
+    restart: unless-stopped
+
+  celery:
+
+    build: ./backend
+
+    container_name: aitu_celery_prod
+
+    command: celery -A main.celery worker --loglevel=info --concurrency=4
+
+    environment:
+
+      - DATABASE_URL=${DATABASE_URL}
+
+      - REDIS_URL=redis://:${REDIS_PASSWORD}@redis:6379
+
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY}
+
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+
+      - TELEGRAM_BOT_USERNAME=${TELEGRAM_BOT_USERNAME}
+
+      - ENVIRONMENT=${ENVIRONMENT}
+
+    depends_on:
+
+      backend:
+
+        condition: service_healthy
+
+    volumes:
+
+      - ./backend:/app
+
+    networks:
+
+      - aitu-network
+
+    restart: unless-stopped
+
+volumes:
+
+  postgres_data:
+
+    driver: local
+
+  redis_data:
+
+    driver: local
+
+  certbot-certs:
+
+    driver: local
+
+  certbot-web:
+
+    driver: local
+
+networks:
+
+  aitu-network:
+
+    driver: bridge
+

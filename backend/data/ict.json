@@ -1,0 +1,440 @@
+[
+  {
+    "question": "What is the primary function of a computer?",
+    "options": ["To store clothes", "To cook food", "To process data", "To wash dishes"],
+    "answer": "To process data",
+    "explanation": "A computer is an electronic device that processes data and performs tasks according to instructions."
+  },
+  {
+    "question": "Which of the following is NOT a hardware component?",
+    "options": ["CPU", "Monitor", "Keyboard", "Microsoft Word"],
+    "answer": "Microsoft Word",
+    "explanation": "Microsoft Word is software, while CPU, monitor, and keyboard are hardware."
+  },
+  {
+    "question": "What device is used to move the pointer on the screen?",
+    "options": ["Monitor", "Printer", "Mouse", "Keyboard"],
+    "answer": "Mouse",
+    "explanation": "The mouse is a pointing device used to interact with elements on the screen."
+  },
+  {
+    "question": "Which key is used to remove characters to the left of the cursor?",
+    "options": ["Enter", "Shift", "Backspace", "Tab"],
+    "answer": "Backspace",
+    "explanation": "The Backspace key deletes the character to the left of the cursor."
+  },
+  {
+    "question": "What does CPU stand for?",
+    "options": ["Central Processing Unit", "Computer Power Unit", "Central Program Utility", "Control Processing Unit"],
+    "answer": "Central Processing Unit",
+    "explanation": "The CPU is the brain of the computer, handling instructions and operations."
+  },
+  {
+    "question": "Which of the following is considered an input device?",
+    "options": ["Monitor", "Speaker", "Mouse", "Printer"],
+    "answer": "Mouse",
+    "explanation": "The mouse is used to input data and commands into the computer."
+  },
+  {
+    "question": "Which software helps protect your computer from viruses?",
+    "options": ["Word Processor", "Antivirus", "Spreadsheet", "Browser"],
+    "answer": "Antivirus",
+    "explanation": "Antivirus software detects and removes malicious programs."
+  },
+  {
+    "question": "What is the main purpose of an operating system?",
+    "options": ["To play games", "To manage hardware and software", "To print documents", "To connect to the internet"],
+    "answer": "To manage hardware and software",
+    "explanation": "The operating system manages all computer resources and enables software to run."
+  },
+  {
+    "question": "Which operating system is open-source?",
+    "options": ["Windows", "Linux", "macOS", "ChromeOS"],
+    "answer": "Linux",
+    "explanation": "Linux is a free and open-source operating system."
+  },
+  {
+    "question": "What is a file?",
+    "options": ["A type of hardware", "A physical document", "A collection of data stored on a computer", "A programming language"],
+    "answer": "A collection of data stored on a computer",
+    "explanation": "A file is a digital container for storing data on a computer."
+  },
+  {
+    "question": "Which of the following is NOT an output device?",
+    "options": ["Monitor", "Speaker", "Scanner", "Printer"],
+    "answer": "Scanner",
+    "explanation": "A scanner is an input device, not output."
+  },
+  {
+    "question": "Which key combination is commonly used to copy text?",
+    "options": ["Ctrl + V", "Ctrl + C", "Ctrl + X", "Ctrl + P"],
+    "answer": "Ctrl + C",
+    "explanation": "Ctrl + C is used to copy selected text or items."
+  },
+  {
+    "question": "What is the desktop in a computer interface?",
+    "options": ["A physical desk", "A background area of the screen with icons", "The inside of a CPU", "A printer tray"],
+    "answer": "A background area of the screen with icons",
+    "explanation": "The desktop is the main screen area used for navigation and launching applications."
+  },
+  {
+    "question": "What is a window in computing terms?",
+    "options": ["A glass panel", "An antivirus", "A separate viewing area for programs", "A document"],
+    "answer": "A separate viewing area for programs",
+    "explanation": "A window displays the interface of a running application."
+  },
+  {
+    "question": "What is the purpose of RAM?",
+    "options": ["Store data permanently", "Increase internet speed", "Store data temporarily for quick access", "Display images"],
+    "answer": "Store data temporarily for quick access",
+    "explanation": "RAM holds data temporarily for programs currently in use."
+  },
+  {
+    "question": "What should you do regularly to keep your computer secure?",
+    "options": ["Install games", "Ignore updates", "Update software", "Share passwords"],
+    "answer": "Update software",
+    "explanation": "Regular updates fix security vulnerabilities and improve performance."
+  },
+  {
+    "question": "What is a shortcut icon?",
+    "options": ["A virus", "A program", "A link to a program or file", "A photo editor"],
+    "answer": "A link to a program or file",
+    "explanation": "A shortcut provides quick access to a program or file."
+  },
+  {
+    "question": "What does a firewall do?",
+    "options": ["Plays music", "Prevents unauthorized access", "Edits images", "Increases speed"],
+    "answer": "Prevents unauthorized access",
+    "explanation": "A firewall helps protect your computer from unauthorized network access."
+  },
+  {
+    "question": "Which of these is used to access websites?",
+    "options": ["Word Processor", "Spreadsheet", "Web Browser", "File Manager"],
+    "answer": "Web Browser",
+    "explanation": "A web browser allows users to navigate the internet."
+  },
+  {
+    "question": "Which of the following is a storage device?",
+    "options": ["Keyboard", "Hard Drive", "Monitor", "Router"],
+    "answer": "Hard Drive",
+    "explanation": "A hard drive is used to store digital data permanently."
+  },
+  {
+    "question": "What does the term 'software' refer to?",
+    "options": ["Physical parts of a computer", "Electricity supply", "Programs and applications", "Computer fans"],
+    "answer": "Programs and applications",
+    "explanation": "Software refers to the programs and instructions that run on a computer."
+  },
+  {
+    "question": "Which of the following is an example of an operating system?",
+    "options": ["Excel", "Windows", "Google", "Chrome"],
+    "answer": "Windows",
+    "explanation": "Windows is a popular operating system developed by Microsoft."
+  },
+  {
+    "question": "What does 'double-clicking' usually do?",
+    "options": ["Shut down the computer", "Open a file or program", "Delete a file", "Refresh the screen"],
+    "answer": "Open a file or program",
+    "explanation": "Double-clicking with the mouse typically opens a selected item."
+  },
+  {
+    "question": "Which storage device is most commonly used for backing up data externally?",
+    "options": ["Monitor", "RAM", "External Hard Drive", "Keyboard"],
+    "answer": "External Hard Drive",
+    "explanation": "External hard drives are often used for backing up large amounts of data."
+  },
+  {
+    "question": "Which application is best for writing documents?",
+    "options": ["Excel", "Photoshop", "Word Processor", "Paint"],
+    "answer": "Word Processor",
+    "explanation": "A word processor is designed for writing and editing text documents."
+  },
+  {
+    "question": "What does 'drag and drop' refer to?",
+    "options": ["Changing screen brightness", "Moving files or items using a mouse", "Opening a new browser tab", "Typing in capital letters"],
+    "answer": "Moving files or items using a mouse",
+    "explanation": "Dragging and dropping is a way to move objects on the screen using the mouse."
+  },
+  {
+    "question": "What is a spreadsheet program commonly used for?",
+    "options": ["Browsing websites", "Managing finances and calculations", "Typing essays", "Editing photos"],
+    "answer": "Managing finances and calculations",
+    "explanation": "Spreadsheet programs are used for organizing data and performing calculations."
+  },
+  {
+    "question": "Which part of a computer displays images and videos?",
+    "options": ["Keyboard", "Mouse", "Monitor", "CPU"],
+    "answer": "Monitor",
+    "explanation": "The monitor is an output device that displays visual content."
+  },
+  {
+    "question": "What is phishing?",
+    "options": ["A type of software update", "A form of online scam", "A password protection tool", "A photo editing technique"],
+    "answer": "A form of online scam",
+    "explanation": "Phishing is a fraudulent attempt to obtain sensitive information via email or websites."
+  },
+  {
+    "question": "Which key is used to start a new line in most text editors?",
+    "options": ["Tab", "Shift", "Enter", "Ctrl"],
+    "answer": "Enter",
+    "explanation": "Pressing Enter moves the cursor to a new line."
+  },
+  {
+    "question": "What does the recycle bin or trash do on a computer?",
+    "options": ["Saves files permanently", "Stores deleted files temporarily", "Installs new software", "Updates the system"],
+    "answer": "Stores deleted files temporarily",
+    "explanation": "Deleted files are stored in the recycle bin before permanent removal."
+  },
+  {
+    "question": "Which of the following helps improve computer performance?",
+    "options": ["Installing more RAM", "Unplugging the mouse", "Turning off Wi-Fi", "Reducing screen brightness"],
+    "answer": "Installing more RAM",
+    "explanation": "Adding RAM allows the computer to handle more tasks simultaneously."
+  },
+  {
+    "question": "What is cloud storage?",
+    "options": ["Storing data on the moon", "Saving data in the RAM", "Using internet-based services to store data", "A backup on CDs"],
+    "answer": "Using internet-based services to store data",
+    "explanation": "Cloud storage allows data to be saved on remote servers accessed via the internet."
+  },
+  {
+    "question": "Which application is best for browsing the internet?",
+    "options": ["Calculator", "Media Player", "Web Browser", "Notepad"],
+    "answer": "Web Browser",
+    "explanation": "Web browsers like Chrome or Firefox are used to navigate the internet."
+  },
+  {
+    "question": "What is the function of a password?",
+    "options": ["To delete files", "To speed up the system", "To protect accounts and data", "To print documents"],
+    "answer": "To protect accounts and data",
+    "explanation": "Passwords help keep your digital information secure."
+  },
+  {
+    "question": "What should you do before turning off your computer?",
+    "options": ["Unplug all cables", "Log out and shut down properly", "Delete system files", "Open all applications"],
+    "answer": "Log out and shut down properly",
+    "explanation": "Properly shutting down ensures files are saved and the system is safe."
+  },
+  {
+    "question": "Which of these is an example of an application program?",
+    "options": ["Windows", "Linux", "Word Processor", "BIOS"],
+    "answer": "Word Processor",
+    "explanation": "Application programs help users perform specific tasks like writing or editing."
+  },
+  {
+    "question": "What should you do if your computer freezes?",
+    "options": ["Throw it away", "Turn off the monitor only", "Restart it safely", "Ignore it for a day"],
+    "answer": "Restart it safely",
+    "explanation": "A frozen computer can often be resolved with a safe restart."
+  },
+  {
+    "question": "Which of these is used to listen to audio on a computer?",
+    "options": ["Mouse", "Keyboard", "Monitor", "Speakers"],
+    "answer": "Speakers",
+    "explanation": "Speakers output sound from the computer."
+  },
+  {
+    "question": "What is a shortcut key?",
+    "options": ["A physical key", "A combination of keys that performs a task quickly", "A backup drive", "An antivirus program"],
+    "answer": "A combination of keys that performs a task quickly",
+    "explanation": "Shortcut keys help users perform tasks more efficiently using key combinations."
+  },
+   {
+    "question": "What is the main purpose of an antivirus program?",
+    "options": ["Speed up the computer", "Protect against malware", "Install software", "Manage files"],
+    "answer": "Protect against malware",
+    "explanation": "Antivirus software is designed to detect, prevent, and remove malicious software."
+  },
+  {
+    "question": "What is the function of a keyboard?",
+    "options": ["Display images", "Input text and commands", "Play sound", "Store files"],
+    "answer": "Input text and commands",
+    "explanation": "The keyboard is a primary input device used to type and give commands."
+  },
+  {
+    "question": "Which device is used to control the cursor on the screen?",
+    "options": ["Monitor", "CPU", "Mouse", "Printer"],
+    "answer": "Mouse",
+    "explanation": "The mouse allows users to move the pointer and interact with objects on the screen."
+  },
+  {
+    "question": "What does 'copy and paste' allow a user to do?",
+    "options": ["Create new files", "Move data permanently", "Duplicate and insert data", "Delete files"],
+    "answer": "Duplicate and insert data",
+    "explanation": "Copy and paste functions help duplicate and relocate data in different areas."
+  },
+  {
+    "question": "What is an example of an input device?",
+    "options": ["Monitor", "Printer", "Mouse", "Speaker"],
+    "answer": "Mouse",
+    "explanation": "An input device is used to send information into the computer. A mouse is one such device."
+  },
+  {
+    "question": "Which button on the mouse is typically used to select items?",
+    "options": ["Right button", "Scroll wheel", "Left button", "Power button"],
+    "answer": "Left button",
+    "explanation": "The left button is used for selecting and clicking on items in most systems."
+  },
+  {
+    "question": "What does RAM stand for?",
+    "options": ["Random Access Memory", "Read After Memory", "Run Active Mode", "Ready Access Mode"],
+    "answer": "Random Access Memory",
+    "explanation": "RAM is the short-term memory where data is stored temporarily while in use."
+  },
+  {
+    "question": "What does a firewall help protect your computer from?",
+    "options": ["Dust", "Power outages", "Unauthorized access", "System updates"],
+    "answer": "Unauthorized access",
+    "explanation": "Firewalls monitor and control incoming and outgoing network traffic to block threats."
+  },
+  {
+    "question": "Which component is considered the brain of the computer?",
+    "options": ["Monitor", "Hard Drive", "CPU", "Keyboard"],
+    "answer": "CPU",
+    "explanation": "The CPU (Central Processing Unit) is responsible for processing instructions."
+  },
+  {
+    "question": "What is the desktop in a computer's interface?",
+    "options": ["A hardware platform", "A virtual workspace for icons and programs", "A folder name", "A storage device"],
+    "answer": "A virtual workspace for icons and programs",
+    "explanation": "The desktop is the main screen where files, folders, and application shortcuts appear."
+  },
+  {
+    "question": "What happens when you empty the Recycle Bin?",
+    "options": ["Files are saved in the cloud", "Files are permanently deleted", "Files are hidden", "Files are renamed"],
+    "answer": "Files are permanently deleted",
+    "explanation": "Emptying the Recycle Bin permanently removes deleted files from the system."
+  },
+  {
+    "question": "Which of these devices outputs a hard copy of documents?",
+    "options": ["Monitor", "Keyboard", "Printer", "Modem"],
+    "answer": "Printer",
+    "explanation": "Printers provide a physical version (hard copy) of digital documents."
+  },
+  {
+    "question": "Which type of program is used to view websites?",
+    "options": ["Word processor", "Spreadsheet", "Web browser", "Antivirus"],
+    "answer": "Web browser",
+    "explanation": "Web browsers like Chrome, Edge, and Firefox allow access to websites."
+  },
+  {
+    "question": "Why is it important to install system updates?",
+    "options": ["They reduce screen brightness", "They improve security and performance", "They remove files", "They slow down the computer"],
+    "answer": "They improve security and performance",
+    "explanation": "System updates patch security vulnerabilities and add new features or improvements."
+  },
+  {
+    "question": "What does it mean to 'save' a file?",
+    "options": ["Move it to the internet", "Print the file", "Store it on disk or cloud", "Delete the file"],
+    "answer": "Store it on disk or cloud",
+    "explanation": "Saving a file writes it to storage so it can be accessed later."
+  },
+  {
+    "question": "What is a cursor?",
+    "options": ["An antivirus program", "The blinking symbol showing where text will appear", "A desktop icon", "A file type"],
+    "answer": "The blinking symbol showing where text will appear",
+    "explanation": "The cursor shows your position in a text field or document."
+  },
+  {
+    "question": "What is the purpose of the 'undo' function?",
+    "options": ["Remove a program", "Reverse the last action", "Restart the system", "Open a new file"],
+    "answer": "Reverse the last action",
+    "explanation": "The 'undo' function allows users to reverse their most recent action."
+  },
+  {
+    "question": "Where are files typically stored on a computer?",
+    "options": ["CPU", "RAM", "Hard Drive", "Monitor"],
+    "answer": "Hard Drive",
+    "explanation": "The hard drive is the main storage component where files and data are saved."
+  },
+  {
+    "question": "What does 'Wi-Fi' enable a computer to do?",
+    "options": ["Print faster", "Connect to the internet wirelessly", "Charge the battery", "Update software"],
+    "answer": "Connect to the internet wirelessly",
+    "explanation": "Wi-Fi allows computers to connect to networks without physical cables."
+  },
+  {
+    "question": "What is the function of a taskbar?",
+    "options": ["Protect against viruses", "Shows open programs and system status", "Enlarge text", "Scan documents"],
+    "answer": "Shows open programs and system status",
+    "explanation": "The taskbar provides access to open programs and displays system icons and time."
+  },
+  {
+    "question": "What is a URL?",
+    "options": ["A type of software", "A web address", "A file format", "A computer virus"],
+    "answer": "A web address",
+    "explanation": "URL stands for Uniform Resource Locator, which is the address used to access websites."
+  },
+  {
+    "question": "What does 'formatting' a disk do?",
+    "options": ["Deletes all data and prepares it for use", "Increases speed", "Changes the color of files", "Creates a backup"],
+    "answer": "Deletes all data and prepares it for use",
+    "explanation": "Formatting a disk erases all existing data and sets up a file system for new data."
+  },
+  {
+    "question": "What is the purpose of a modem?",
+    "options": ["To print documents", "To connect to the internet", "To store files", "To display images"],
+    "answer": "To connect to the internet",
+    "explanation": "A modem modulates and demodulates signals for internet connectivity."
+  },
+  {
+    "question": "What is a computer virus?",
+    "options": ["A type of software update", "A harmful program that can damage files", "A hardware component", "A web browser"],
+    "answer": "A harmful program that can damage files",
+    "explanation": "A computer virus is malicious software designed to disrupt, damage, or gain unauthorized access to systems."
+  },
+  {
+    "question": "What does 'cloud computing' refer to?",
+    "options": ["Storing data on physical drives", "Using internet-based services for storage and processing", "Playing games online", "Downloading music"],
+    "answer": "Using internet-based services for storage and processing",
+    "explanation": "Cloud computing allows users to access and store data and applications over the internet."
+  },
+{
+        "question": "What is the purpose of a backup?",
+        "options": ["To delete files", "To create a copy of data for safety", "To speed up the computer", "To install new software"],
+        "answer": "To create a copy of data for safety",
+        "explanation": "Backups protect important data by creating copies that can be restored if needed."
+    },
+    {
+        "question": "What is the function of a search engine?",
+        "options": ["To edit photos", "To find information on the internet", "To play videos", "To manage files"],
+        "answer": "To find information on the internet",
+        "explanation": "Search engines like Google help users locate websites and information online."
+    },
+    {
+        "question": "What is the purpose of a web browser's address bar?",
+        "options": ["To display the time", "To enter website URLs", "To show system settings", "To manage files"],
+        "answer": "To enter website URLs",
+        "explanation": "The address bar allows users to type in and navigate to specific web addresses."
+    },
+    {
+        "question": "What is the function of a USB flash drive?",
+        "options": ["To connect to Wi-Fi", "To store and transfer data", "To print documents", "To display images"],
+        "answer": "To store and transfer data",
+        "explanation": "USB flash drives are portable storage devices used for saving and moving files."
+    },
+    {
+        "question": "What does 'defragmenting' a hard drive do?",
+        "options": ["Deletes files", "Organizes fragmented data for better performance", "Increases internet speed", "Changes file formats"],
+        "answer": "Organizes fragmented data for better performance",
+        "explanation": "Defragmentation rearranges fragmented data to improve access speed and efficiency."
+    },
+    {
+        "question": "What is the purpose of a computer's BIOS?",
+        "options": ["To manage hardware settings", "To edit documents", "To browse the internet", "To play games"],
+        "answer": "To manage hardware settings",
+        "explanation": "BIOS (Basic Input/Output System) initializes and tests hardware components during startup."
+    },
+    {
+        "question": "What is a hyperlink?",
+        "options": ["A type of software", "A clickable link to another webpage or resource", "A computer virus", "A file format"],
+        "answer": "A clickable link to another webpage or resource",
+        "explanation": "Hyperlinks allow users to navigate between different web pages or resources with a click."
+    },
+    {
+        "question": "What does 'streaming' refer to in computing?",
+        "options": ["Downloading files", "Watching videos or listening to audio in real-time over the internet", "Storing data on a hard drive", "Editing photos"],
+        "answer": "Watching videos or listening to audio in real-time over the internet",
+        "explanation": "'Streaming' allows users to consume media content without downloading it first."
+    }
+]

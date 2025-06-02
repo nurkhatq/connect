@@ -1,0 +1,259 @@
+declare global {
+  interface Window {
+    Telegram?: {
+      WebApp: {
+        initData: string;
+        initDataUnsafe: any;
+        version: string;
+        platform: string;
+        colorScheme: 'light' | 'dark';
+        themeParams: any;
+        isExpanded: boolean;
+        viewportHeight: number;
+        viewportStableHeight: number;
+        isClosingConfirmationEnabled: boolean;
+        headerColor: string;
+        backgroundColor: string;
+        BackButton: {
+          isVisible: boolean;
+          onClick(callback: () => void): void;
+          show(): void;
+          hide(): void;
+        };
+        MainButton: {
+          text: string;
+          color: string;
+          textColor: string;
+          isVisible: boolean;
+          isProgressVisible: boolean;
+          isActive: boolean;
+          setText(text: string): void;
+          onClick(callback: () => void): void;
+          show(): void;
+          hide(): void;
+          enable(): void;
+          disable(): void;
+          showProgress(leaveActive?: boolean): void;
+          hideProgress(): void;
+        };
+        HapticFeedback: {
+          impactOccurred(style: 'light' | 'medium' | 'heavy' | 'rigid' | 'soft'): void;
+          notificationOccurred(type: 'error' | 'success' | 'warning'): void;
+          selectionChanged(): void;
+        };
+        ready(): void;
+        expand(): void;
+        close(): void;
+        sendData(data: string): void;
+      };
+    };
+  }
+}
+
+export class TelegramWebApp {
+  private static instance: TelegramWebApp;
+  private webApp: any;
+  private isReady: boolean = false;
+  private readyPromise: Promise<void>;
+  private resolveReady: () => void = () => {};
+
+  private constructor() {
+    this.readyPromise = new Promise((resolve) => {
+      this.resolveReady = resolve;
+    });
+    
+    if (typeof window !== 'undefined') {
+      this.initializeWebApp();
+    }
+  }
+
+  private initializeWebApp() {
+    // Проверяем, уже ли загружен Telegram WebApp
+    if (window.Telegram?.WebApp) {
+      this.setupWebApp();
+      return;
+    }
+
+    // Слушаем событие загрузки SDK
+    const handleSDKLoad = () => {
+      if (window.Telegram?.WebApp) {
+        this.setupWebApp();
+      }
+    };
+
+    // Добавляем слушатель события
+    window.addEventListener('telegram-web-app-loaded', handleSDKLoad);
+
+    // Также проверяем периодически (fallback)
+    const checkInterval = setInterval(() => {
+      if (window.Telegram?.WebApp) {
+        this.setupWebApp();
+        clearInterval(checkInterval);
+        window.removeEventListener('telegram-web-app-loaded', handleSDKLoad);
+      }
+    }, 100);
+
+    // Очищаем интервал через 10 секунд
+    setTimeout(() => {
+      clearInterval(checkInterval);
+      window.removeEventListener('telegram-web-app-loaded', handleSDKLoad);
+      
+      if (!this.isReady) {
+        console.warn('⚠️ Telegram WebApp SDK not loaded after 10 seconds');
+        this.createFallbackWebApp();
+      }
+    }, 10000);
+  }
+
+  private setupWebApp() {
+    if (this.isReady) return;
+
+    try {
+      this.webApp = window.Telegram!.WebApp;
+      this.webApp.ready();
+      this.webApp.expand();
+      this.isReady = true;
+      this.resolveReady();
+      
+      console.log('✅ Telegram WebApp initialized successfully');
+      console.log('📱 Platform:', this.webApp.platform);
+      console.log('📊 Init data length:', this.webApp.initData?.length || 0);
+      console.log('👤 User:', this.webApp.initDataUnsafe?.user);
+      console.log('🎨 Theme:', this.webApp.colorScheme);
+      
+    } catch (error) {
+      console.error('❌ Error initializing Telegram WebApp:', error);
+      this.createFallbackWebApp();
+    }
+  }
+
+  private createFallbackWebApp() {
+    console.log('🔧 Creating fallback WebApp (development mode)');
+    
+    this.webApp = {
+      initData: '',
+      initDataUnsafe: {
+        user: null
+      },
+      colorScheme: 'light',
+      platform: 'unknown',
+      version: '6.0',
+      ready: () => {},
+      expand: () => {},
+      HapticFeedback: {
+        impactOccurred: () => {},
+        notificationOccurred: () => {},
+        selectionChanged: () => {}
+      },
+      MainButton: {
+        setText: () => {},
+        onClick: () => {},
+        show: () => {},
+        hide: () => {},
+        enable: () => {},
+        disable: () => {}
+      },
+      BackButton: {
+        onClick: () => {},
+        show: () => {},
+        hide: () => {}
+      },
+      close: () => {}
+    };
+    
+    this.isReady = true;
+    this.resolveReady();
+  }
+
+  public static getInstance(): TelegramWebApp {
+    if (!TelegramWebApp.instance) {
+      TelegramWebApp.instance = new TelegramWebApp();
+    }
+    return TelegramWebApp.instance;
+  }
+
+  public async waitForReady(): Promise<void> {
+    return this.readyPromise;
+  }
+
+  public isSDKReady(): boolean {
+    return this.isReady;
+  }
+
+  public getInitData(): string {
+    if (!this.isReady) {
+      console.warn('⚠️ Telegram WebApp not ready yet');
+      return '';
+    }
+    return this.webApp?.initData || '';
+  }
+
+  public getUser(): any {
+    if (!this.isReady) {
+      console.warn('⚠️ Telegram WebApp not ready yet');
+      return null;
+    }
+    return this.webApp?.initDataUnsafe?.user || null;
+  }
+
+  public getTheme(): 'light' | 'dark' {
+    return this.webApp?.colorScheme || 'light';
+  }
+
+  public getPlatform(): string {
+    return this.webApp?.platform || 'unknown';
+  }
+
+  public getVersion(): string {
+    return this.webApp?.version || '6.0';
+  }
+
+  public hapticFeedback(type: 'impact' | 'notification' | 'selection', style?: string): void {
+    if (!this.webApp?.HapticFeedback) return;
+
+    try {
+      switch (type) {
+        case 'impact':
+          this.webApp.HapticFeedback.impactOccurred(style || 'medium');
+          break;
+        case 'notification':
+          this.webApp.HapticFeedback.notificationOccurred(style || 'success');
+          break;
+        case 'selection':
+          this.webApp.HapticFeedback.selectionChanged();
+          break;
+      }
+    } catch (error) {
+      console.warn('Haptic feedback error:', error);
+    }
+  }
+
+  public setMainButton(text: string, callback: () => void): void {
+    if (!this.webApp?.MainButton) return;
+    
+    this.webApp.MainButton.setText(text);
+    this.webApp.MainButton.onClick(callback);
+    this.webApp.MainButton.show();
+  }
+
+  public hideMainButton(): void {
+    this.webApp?.MainButton?.hide();
+  }
+
+  public setBackButton(callback: () => void): void {
+    if (!this.webApp?.BackButton) return;
+    
+    this.webApp.BackButton.onClick(callback);
+    this.webApp.BackButton.show();
+  }
+
+  public hideBackButton(): void {
+    this.webApp?.BackButton?.hide();
+  }
+
+  public close(): void {
+    this.webApp?.close();
+  }
+}
+
+export const telegram = TelegramWebApp.getInstance();

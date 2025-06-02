@@ -1,0 +1,2586 @@
+{
+    "grammar": [
+        {
+            "topic": "Future Simple",
+            "questions": [
+                {
+                    "text": "What time ______ work on Monday?",
+                    "options": [
+                        "do you finish",
+                        "will you finish",
+                        "are you going to finish"
+                    ],
+                    "correctAnswer": "do you finish",
+                    "explanation": "The present simple ('do you finish') is used for scheduled events or routines, such as work hours, especially with a specific day like 'Monday.' This implies asking about the regular time the person finishes work. 'Will you finish' suggests a spontaneous decision, and 'are you going to finish' implies a planned action, both of which are less natural for a fixed schedule."
+                },
+                {
+                    "text": "______ this weekend?",
+                    "options": [
+                        "Do you go out",
+                        "Will you go out",
+                        "Are you going out"
+                    ],
+                    "correctAnswer": "Are you going out",
+                    "explanation": "The present continuous ('Are you going out') is used for fixed plans or arrangements in the near future, such as for the upcoming weekend. This suggests the speaker is asking about the person’s current plans. 'Do you go out' is present simple, used for habits, which doesn’t fit the specific time frame. 'Will you go out' implies a spontaneous decision, which is less likely for weekend plans."
+                },
+                {
+                    "text": "I'm sorry I made you so angry. I ______ it again.",
+                    "options": [
+                        "won't do",
+                        "'m not going to do",
+                        "'m not doing"
+                    ],
+                    "correctAnswer": "won't do",
+                    "explanation": "'Will' with a negative ('won't do') is used to make a promise or firm decision about the future, often in response to an apology or request. The speaker is promising not to repeat the action, making 'won't do' appropriate. '’m not going to do' suggests a prior intention, and '’m not doing' is present continuous, implying a current action, neither of which fits the promise context."
+                },
+                {
+                    "text": "It's really hot. ______ the window, please?",
+                    "options": [
+                        "Are you going to open",
+                        "Will you open",
+                        "Do you open"
+                    ],
+                    "correctAnswer": "Will you open",
+                    "explanation": "'Will' ('Will you open') is used for requests or spontaneous offers, especially in immediate situations like the current heat. The speaker is asking for an action now, making 'Will you open' polite and natural. 'Are you going to open' suggests a prior plan, and 'Do you open' is present simple, used for habits, neither of which fits the request."
+                },
+                {
+                    "text": "I don't think I ______ come tomorrow.",
+                    "options": [
+                        "'m being able to",
+                        "am able to",
+                        "will be able to"
+                    ],
+                    "correctAnswer": "will be able to",
+                    "explanation": "'Will be able to' is used to express future possibility or ability, fitting the context of predicting whether the speaker can come tomorrow. 'Am able to' is present tense, inappropriate for a future event, and '’m being able to' is grammatically incorrect as 'be able to' is not typically used in the continuous form."
+                },
+                {
+                    "text": "A: Where are you going? B: I ______ something for dinner.",
+                    "options": [
+                        "'m going to buy",
+                        "'ll buy",
+                        "'m buying"
+                    ],
+                    "correctAnswer": "'m going to buy",
+                    "explanation": "The present continuous with 'going to' ('’m going to buy') is used for intentions or plans decided before the moment of speaking, often evident from the context (e.g., going somewhere to buy). The response explains the purpose of leaving, making '’m going to buy' suitable. '’ll buy' suggests a spontaneous decision, less likely here, and '’m buying' implies an action already in progress, which doesn’t fit the intent."
+                },
+                {
+                    "text": "You can insist all you want; I ______ you.",
+                    "options": [
+                        "'m not helping",
+                        "don't help",
+                        "won't help"
+                    ],
+                    "correctAnswer": "won't help",
+                    "explanation": "'Won’t' ('won’t help') is used for a firm refusal or decision about the future, often in response to pressure or insistence. The speaker is rejecting help as a future action, making 'won’t help' correct. '’m not helping' is present continuous, implying a current action, and 'don’t help' is present simple for habits, neither fitting the refusal context."
+                },
+                {
+                    "text": "_______ doing that, please? I'm trying to concentrate.",
+                    "options": [
+                        "Are you going to stop",
+                        "Will you stop",
+                        "Do you stop"
+                    ],
+                    "correctAnswer": "Will you stop",
+                    "explanation": "'Will' ('Will you stop') is used for requests, especially in immediate situations where the speaker needs action now (e.g., to concentrate). This makes 'Will you stop' polite and appropriate. 'Are you going to stop' suggests a future plan, and 'Do you stop' is present simple for habits, neither fitting the urgent request."
+                },
+                {
+                    "text": "______ tonight? There's a new restaurant that looks promising.",
+                    "options": [
+                        "Shall we eat out",
+                        "Will we eat out",
+                        "Are we going to eat out"
+                    ],
+                    "correctAnswer": "Shall we eat out",
+                    "explanation": "'Shall' ('Shall we eat out') is used to make suggestions or proposals for joint future actions, especially in informal contexts. The mention of a new restaurant suggests a suggestion, making 'Shall we eat out' natural. 'Will we eat out' asks for a prediction, and 'Are we going to eat out' implies a prior plan, neither fitting the suggestion context."
+                },
+                {
+                    "text": "I'm sure the baby ______ blue eyes, like her mother.",
+                    "options": [
+                        "is going to have",
+                        "will have",
+                        "is having"
+                    ],
+                    "correctAnswer": "will have",
+                    "explanation": "'Will' ('will have') is used for predictions about the future based on personal certainty or belief, as indicated by 'I’m sure.' The speaker predicts the baby’s eye color, making 'will have' correct. 'Is going to have' is used for predictions with evidence, but 'I’m sure' suggests belief, not evidence. 'Is having' is present continuous, inappropriate for a future trait."
+                },
+                {
+                    "text": "Look! That car over there ______!",
+                    "options": [
+                        "is crashing",
+                        "will crash",
+                        "is going to crash"
+                    ],
+                    "correctAnswer": "is going to crash",
+                    "explanation": "'Going to' ('is going to crash') is used for predictions based on present evidence, especially when something is about to happen imminently. The exclamation 'Look!' suggests the speaker sees evidence (e.g., the car is out of control), making 'is going to crash' appropriate. 'Is crashing' would mean the crash is happening now, which is less likely with 'Look!' indicating a warning. 'Will crash' is a general prediction, less fitting without immediate evidence."
+                },
+                {
+                    "text": "______ the music down, please?",
+                    "options": [
+                        "Are you turning",
+                        "Are you going to turn",
+                        "Will you turn"
+                    ],
+                    "correctAnswer": "Will you turn",
+                    "explanation": "'Will' ('Will you turn') is used for requests, especially in immediate situations where the speaker is politely asking for an action now. 'Are you turning' is present continuous, asking about a current action, not a request. 'Are you going to turn' suggests a prior plan, which is less natural for a spontaneous request."
+                },
+                {
+                    "text": "The film ______ at 5 p.m.",
+                    "options": [
+                        "starts",
+                        "is going to start",
+                        "is starting"
+                    ],
+                    "correctAnswer": "starts",
+                    "explanation": "The present simple ('starts') is used for scheduled events, such as film showtimes, which follow a fixed timetable. 'At 5 p.m.' indicates a scheduled time, making 'starts' correct. 'Is going to start' is for predictions or intentions, and 'is starting' is present continuous, used for fixed plans or ongoing actions, neither of which fits a fixed schedule as naturally."
+                },
+                {
+                    "text": "I'm sure you ______ the lottery one day.",
+                    "options": [
+                        "will win",
+                        "are going to win",
+                        "are winning"
+                    ],
+                    "correctAnswer": "will win",
+                    "explanation": "'Will' ('will win') is used for predictions based on personal belief or certainty, as indicated by 'I’m sure.' The speaker is expressing a general future prediction, making 'will win' appropriate. 'Are going to win' is for predictions with evidence, not belief, and 'are winning' is present continuous, implying a current action, which doesn’t fit a future event."
+                },
+                {
+                    "text": "Don't you have any money on you? Don't worry, I ______ for the taxi.",
+                    "options": [
+                        "'m going to pay",
+                        "'m paying",
+                        "'ll pay"
+                    ],
+                    "correctAnswer": "'ll pay",
+                    "explanation": "'Will' ('’ll pay' = 'will pay') is used for spontaneous decisions made at the moment of speaking, often as an offer or promise. The speaker is offering to pay on the spot, making '’ll pay' suitable. '’m going to pay' suggests a prior intention, and '’m paying' is present continuous, implying an action already in progress, neither fitting the spontaneous offer."
+                },
+                {
+                    "text": "According to my diary, we ______ the buyers at 7 p.m. tomorrow.",
+                    "options": [
+                        "will meet",
+                        "meet",
+                        "are meeting"
+                    ],
+                    "correctAnswer": "are meeting",
+                    "explanation": "The present continuous ('are meeting') is used for fixed plans or arrangements in the future, especially with a specific time like 'at 7 p.m. tomorrow' and a reference to a diary, indicating a scheduled event. 'Meet' is present simple, used for general schedules, less fitting for a personal plan. 'Will meet' is a prediction or spontaneous decision, not suitable for a pre-arranged meeting."
+                },
+                {
+                    "text": "It's cold. ______ the heating on?",
+                    "options": [
+                        "Shall I turn",
+                        "Do I turn",
+                        "Am I going to turn"
+                    ],
+                    "correctAnswer": "Shall I turn",
+                    "explanation": "'Shall' ('Shall I turn') is used to make suggestions or offers, especially in informal contexts where the speaker is proposing an action. 'It’s cold' prompts a suggestion to turn on the heating, making 'Shall I turn' natural. 'Do I turn' is present simple, asking about a habit, and 'Am I going to turn' implies a prior plan, neither fitting the suggestion context."
+                },
+                {
+                    "text": "I can't see you tomorrow. I ______ football with my university friends.",
+                    "options": [
+                        "'m playing",
+                        "play",
+                        "will play"
+                    ],
+                    "correctAnswer": "'m playing",
+                    "explanation": "The present continuous ('’m playing' = 'am playing') is used for fixed plans in the near future, especially with a specific time like 'tomorrow.' The speaker has a planned activity, making '’m playing' correct. 'Play' is present simple, for habits, and 'will play' is for spontaneous decisions or predictions, neither fitting a pre-arranged plan."
+                },
+                {
+                    "text": "A: Maria phoned you. B: OK. I ______ her back.",
+                    "options": [
+                        "am going to call",
+                        "am calling",
+                        "will call"
+                    ],
+                    "correctAnswer": "will call",
+                    "explanation": "'Will' ('will call') is used for spontaneous decisions made at the moment of speaking, often in response to new information. Maria’s call prompts an immediate decision to call her back, making 'will call' suitable. 'Am going to call' suggests a prior intention, and 'am calling' implies the action is happening now, neither fitting the spontaneous response."
+                },
+                {
+                    "text": "Thanks for the money. I ______ you back on Friday.",
+                    "options": [
+                        "'m paying",
+                        "'m going to pay",
+                        "will pay"
+                    ],
+                    "correctAnswer": "'m going to pay",
+                    "explanation": "The present continuous with 'going to' ('’m going to pay') is used for intentions or plans decided before the moment of speaking, often with a specific time like 'on Friday.' The speaker has a planned intention to repay, making '’m going to pay' correct. '’m paying' is present continuous, implying an action now, and 'will pay' is for spontaneous decisions, less fitting for a planned repayment."
+                },
+                {
+                    "text": "I ______ the doctor tomorrow morning.",
+                    "options": [
+                        "will visit",
+                        "am visiting",
+                        "visit"
+                    ],
+                    "correctAnswer": "am visiting",
+                    "explanation": "The present continuous ('am visiting') is used for fixed plans or arrangements in the near future, especially with a specific time like 'tomorrow morning.' This suggests a pre-arranged appointment. 'Will visit' is for spontaneous decisions or predictions, and 'visit' is present simple for habits or schedules, neither fitting a personal plan."
+                },
+                {
+                    "text": "______ to the party tonight?",
+                    "options": [
+                        "Will you come",
+                        "Are you coming",
+                        "Do you come"
+                    ],
+                    "correctAnswer": "Are you coming",
+                    "explanation": "The present continuous ('Are you coming') is used for fixed plans or arrangements in the near future, such as attending a party tonight. This implies asking about a pre-arranged plan. 'Will you come' suggests a spontaneous decision, and 'Do you come' is present simple for habits, neither fitting the context of a specific event."
+                },
+                {
+                    "text": "I promise I ______ late again.",
+                    "options": [
+                        "won't be",
+                        "'m not going to be",
+                        "'m not being"
+                    ],
+                    "correctAnswer": "won't be",
+                    "explanation": "'Will' with a negative ('won't be') is used to make a promise or firm decision about the future. The speaker is promising not to be late, making 'won't be' appropriate. '’m not going to be' suggests a prior intention, and '’m not being' is present continuous, implying a current state, neither fitting the promise context."
+                },
+                {
+                    "text": "It’s getting dark. ______ the light, please?",
+                    "options": [
+                        "Will you turn on",
+                        "Are you going to turn on",
+                        "Do you turn on"
+                    ],
+                    "correctAnswer": "Will you turn on",
+                    "explanation": "'Will' ('Will you turn on') is used for requests, especially in immediate situations like the room getting dark. The speaker is politely asking for an action now, making 'Will you turn on' natural. 'Are you going to turn on' suggests a prior plan, and 'Do you turn on' is present simple for habits, neither fitting the request."
+                },
+                {
+                    "text": "I don’t think they ______ the exam.",
+                    "options": [
+                        "will pass",
+                        "are passing",
+                        "pass"
+                    ],
+                    "correctAnswer": "will pass",
+                    "explanation": "'Will' ('will pass') is used for predictions about the future based on opinion or belief, as indicated by 'I don’t think.' The speaker is predicting the outcome, making 'will pass' correct. 'Are passing' is present continuous for current actions, and 'pass' is present simple for habits, neither suitable for a future prediction."
+                },
+                {
+                    "text": "A: I’m thirsty. B: I ______ some water for you.",
+                    "options": [
+                        "'ll get",
+                        "'m going to get",
+                        "'m getting"
+                    ],
+                    "correctAnswer": "'ll get",
+                    "explanation": "'Will' ('’ll get' = 'will get') is used for spontaneous decisions made at the moment of speaking, often as an offer. The speaker offers to get water upon hearing about thirst, making '’ll get' suitable. '’m going to get' suggests a prior intention, and '’m getting' implies an action already in progress, neither fitting the spontaneous offer."
+                },
+                {
+                    "text": "______ we go to the beach this weekend?",
+                    "options": [
+                        "Shall",
+                        "Will",
+                        "Are we going to"
+                    ],
+                    "correctAnswer": "Shall",
+                    "explanation": "'Shall' ('Shall we go') is used to make suggestions or proposals for joint future actions. The speaker is suggesting a weekend activity, making 'Shall' natural. 'Will' asks for a prediction, and 'Are we going to' implies a prior plan, neither fitting the suggestion context."
+                },
+                {
+                    "text": "The train ______ at 8 p.m. tonight.",
+                    "options": [
+                        "leaves",
+                        "will leave",
+                        "is leaving"
+                    ],
+                    "correctAnswer": "leaves",
+                    "explanation": "The present simple ('leaves') is used for scheduled events, such as train departures, which follow a fixed timetable. 'At 8 p.m.' indicates a scheduled time, making 'leaves' correct. 'Will leave' is for predictions or spontaneous decisions, and 'is leaving' is present continuous for personal plans, neither as natural for a timetable."
+                },
+                {
+                    "text": "I’m sure it ______ tomorrow.",
+                    "options": [
+                        "will rain",
+                        "is going to rain",
+                        "rains"
+                    ],
+                    "correctAnswer": "will rain",
+                    "explanation": "'Will' ('will rain') is used for predictions based on personal belief or certainty, as indicated by 'I’m sure.' The speaker is expressing a general future prediction, making 'will rain' appropriate. 'Is going to rain' is for predictions with evidence, and 'rains' is present simple for habits, neither fitting a belief-based prediction."
+                },
+                {
+                    "text": "Look at that ladder! It ______!",
+                    "options": [
+                        "is going to fall",
+                        "will fall",
+                        "is falling"
+                    ],
+                    "correctAnswer": "is going to fall",
+                    "explanation": "'Going to' ('is going to fall') is used for predictions based on present evidence, especially when something is imminent. The exclamation 'Look!' suggests visible evidence (e.g., the ladder wobbling), making 'is going to fall' appropriate. 'Is falling' implies the action is happening now, and 'will fall' is a general prediction, less fitting without immediate evidence."
+                },
+                {
+                    "text": "______ the door, please? It’s drafty.",
+                    "options": [
+                        "Will you close",
+                        "Are you going to close",
+                        "Do you close"
+                    ],
+                    "correctAnswer": "Will you close",
+                    "explanation": "'Will' ('Will you close') is used for requests, especially in immediate situations like a drafty room. The speaker is politely asking for an action now, making 'Will you close' natural. 'Are you going to close' suggests a prior plan, and 'Do you close' is present simple for habits, neither fitting the request."
+                },
+                {
+                    "text": "I ______ to the gym after work tomorrow.",
+                    "options": [
+                        "'m going",
+                        "'ll go",
+                        "go"
+                    ],
+                    "correctAnswer": "'m going",
+                    "explanation": "The present continuous ('’m going' = 'am going') is used for fixed plans in the near future, especially with a specific time like 'tomorrow.' The speaker has a planned activity, making '’m going' correct. '’ll go' is for spontaneous decisions, and 'go' is present simple for habits, neither fitting a pre-arranged plan."
+                },
+                {
+                    "text": "He ______ the project by next week.",
+                    "options": [
+                        "will finish",
+                        "is going to finish",
+                        "finishes"
+                    ],
+                    "correctAnswer": "will finish",
+                    "explanation": "'Will' ('will finish') is used for predictions about the future, often based on opinion. The speaker is predicting completion, making 'will finish' appropriate. 'Is going to finish' is for predictions with evidence, and 'finishes' is present simple for habits or schedules, neither fitting a general prediction."
+                },
+                {
+                    "text": "______ I call you later?",
+                    "options": [
+                        "Shall",
+                        "Will",
+                        "Am I going to"
+                    ],
+                    "correctAnswer": "Shall",
+                    "explanation": "'Shall' ('Shall I call') is used to make suggestions or offers, especially in polite contexts. The speaker is offering to call later, making 'Shall' natural. 'Will' asks for a prediction, and 'Am I going to' implies a prior plan, neither fitting the offer context."
+                },
+                {
+                    "text": "I forgot my wallet! Don’t worry, I ______ for dinner.",
+                    "options": [
+                        "'ll pay",
+                        "'m going to pay",
+                        "'m paying"
+                    ],
+                    "correctAnswer": "'ll pay",
+                    "explanation": "'Will' ('’ll pay' = 'will pay') is used for spontaneous decisions made at the moment of speaking, often as an offer. The speaker offers to pay upon realizing the situation, making '’ll pay' suitable. '’m going to pay' suggests a prior intention, and '’m paying' implies an action already in progress, neither fitting the spontaneous offer."
+                },
+                {
+                    "text": "The concert ______ at 7:30 p.m. tomorrow.",
+                    "options": [
+                        "starts",
+                        "is starting",
+                        "will start"
+                    ],
+                    "correctAnswer": "starts",
+                    "explanation": "The present simple ('starts') is used for scheduled events, such as concert times, which follow a fixed timetable. 'At 7:30 p.m.' indicates a scheduled time, making 'starts' correct. 'Is starting' is present continuous for personal plans, and 'will start' is for predictions or spontaneous decisions, neither as natural for a timetable."
+                },
+                {
+                    "text": "I’m sure she ______ the competition.",
+                    "options": [
+                        "will win",
+                        "is going to win",
+                        "wins"
+                    ],
+                    "correctAnswer": "will win",
+                    "explanation": "'Will' ('will win') is used for predictions based on personal belief or certainty, as indicated by 'I’m sure.' The speaker is expressing a general future prediction, making 'will win' appropriate. 'Is going to win' is for predictions with evidence, and 'wins' is present simple for habits, neither fitting a belief-based prediction."
+                },
+                {
+                    "text": "A: I need help with this box. B: I ______ it for you.",
+                    "options": [
+                        "'ll carry",
+                        "'m going to carry",
+                        "'m carrying"
+                    ],
+                    "correctAnswer": "'ll carry",
+                    "explanation": "'Will' ('’ll carry' = 'will carry') is used for spontaneous decisions made at the moment of speaking, often as an offer. The speaker offers to carry the box upon hearing the request, making '’ll carry' suitable. '’m going to carry' suggests a prior intention, and '’m carrying' implies an action already in progress, neither fitting the spontaneous offer."
+                },
+                {
+                    "text": "______ shouting? I’m trying to sleep.",
+                    "options": [
+                        "Will you stop",
+                        "Are you going to stop",
+                        "Do you stop"
+                    ],
+                    "correctAnswer": "Will you stop",
+                    "explanation": "'Will' ('Will you stop') is used for requests, especially in immediate situations where the speaker needs action now (e.g., to sleep). This makes 'Will you stop' polite and appropriate. 'Are you going to stop' suggests a future plan, and 'Do you stop' is present simple for habits, neither fitting the urgent request."
+                },
+                {
+                    "text": "I ______ my homework before dinner.",
+                    "options": [
+                        "'m going to finish",
+                        "'ll finish",
+                        "finish"
+                    ],
+                    "correctAnswer": "'m going to finish",
+                    "explanation": "The present continuous with 'going to' ('’m going to finish') is used for intentions or plans decided before the moment of speaking, often with a specific time like 'before dinner.' The speaker has a planned intention, making '’m going to finish' correct. '’ll finish' is for spontaneous decisions, and 'finish' is present simple for habits, neither fitting a planned action."
+                }
+            ]
+        },
+        {
+            "topic": "Present Simple or Present Continuous",
+            "questions": [
+                {
+                    "text": "In Johannesburg most people ______ at least five languages.",
+                    "options": [
+                        "are speaking",
+                        "speak"
+                    ],
+                    "correctAnswer": "speak",
+                    "explanation": "The present simple tense ('speak') is used for general facts, habits, or situations that are generally true. The sentence describes a characteristic of people in Johannesburg, indicating a habitual or general ability, so 'speak' is appropriate. The present continuous ('are speaking') would imply a specific action happening right now, which doesn’t fit the general context of the sentence."
+                },
+                {
+                    "text": "Languages ______ very fast. Half of world's languages will disappear by 2100.",
+                    "options": [
+                        "disappear",
+                        "are disappearing"
+                    ],
+                    "correctAnswer": "are disappearing",
+                    "explanation": "The present continuous tense ('are disappearing') is used to describe ongoing processes or trends, especially those happening over a period of time. The sentence suggests that languages are currently in the process of disappearing, which aligns with the continuous tense. The present simple ('disappear') could imply a general fact, but the context of a trend leading to a future outcome (by 2100) makes the continuous tense more suitable."
+                },
+                {
+                    "text": "You can't see Tim now; he ______ a bath.",
+                    "options": [
+                        "'s having",
+                        "has"
+                    ],
+                    "correctAnswer": "'s having",
+                    "explanation": "The present continuous tense ('’s having' = 'is having') is used for actions happening at the moment of speaking. The sentence indicates that Tim is currently in the process of taking a bath, which is why he can’t be seen now. The present simple ('has') would be incorrect, as it does not convey an ongoing action and is typically used for possession or general states."
+                },
+                {
+                    "text": "Please keep quiet, I ______ to the radio. You know I ______ to the news in the mornings.",
+                    "options": [
+                        "listen / listen",
+                        "'m listening / listen",
+                        "listen / 'm listening",
+                        "'m listening / 'm listening"
+                    ],
+                    "correctAnswer": "'m listening / listen",
+                    "explanation": "First gap: The present continuous ('’m listening' = 'am listening') is used because the speaker is currently engaged in the action of listening to the radio at the moment of speaking, as indicated by the request to keep quiet. Second gap: The present simple ('listen') is used for habits or routines. The phrase 'in the mornings' indicates a regular activity, so 'listen' is appropriate to describe the speaker’s habitual behavior of listening to the news every morning."
+                },
+                {
+                    "text": "What time ______ the first train leave?",
+                    "options": [
+                        "does the first train leave",
+                        "is the first train leaving"
+                    ],
+                    "correctAnswer": "does the first train leave",
+                    "explanation": "The present simple tense ('does... leave') is used for scheduled events, such as train departures, which follow a fixed timetable. The question asks about the usual or scheduled time of the first train, making the present simple appropriate. The present continuous ('is... leaving') would suggest a specific, ongoing action, which is less common for fixed schedules unless emphasizing a particular instance."
+                },
+                {
+                    "text": "I ______ a scarf, but today I ______ one because it's unusually cold.",
+                    "options": [
+                        "'m never wearing / 'm wearing",
+                        "never wear / 'm wearing",
+                        "'m never wearing / wear",
+                        "never wear / wear"
+                    ],
+                    "correctAnswer": "never wear / 'm wearing",
+                    "explanation": "First gap: The present simple ('never wear') is used for habits or general statements about what the speaker typically does. 'Never wear' indicates a habitual behavior of not wearing a scarf. The present continuous ('’m never wearing') is incorrect because 'never' with the continuous tense is grammatically awkward and not used for general habits. Second gap: The present continuous ('’m wearing' = 'am wearing') is used for an action happening now or temporarily. The phrase 'today... because it’s unusually cold' indicates a specific, current action, making '’m wearing' the correct choice."
+                },
+                {
+                    "text": "I finished watching the series you recommended. Now I ______ another one.",
+                    "options": [
+                        "'m watching",
+                        "watch"
+                    ],
+                    "correctAnswer": "'m watching",
+                    "explanation": "The present continuous tense ('’m watching' = 'am watching') is used for actions happening at the current moment or in the current period. The word 'now' indicates that the speaker is currently watching another series, making the continuous tense appropriate. The present simple ('watch') would imply a general habit, which doesn’t fit the specific time frame indicated by 'now.'"
+                },
+                {
+                    "text": "What ______ tonight? Would you like to come and watch the game?",
+                    "options": [
+                        "are you doing",
+                        "do you do"
+                    ],
+                    "correctAnswer": "are you doing",
+                    "explanation": "The present continuous tense ('are you doing') is used to ask about plans or activities for a specific time in the near future, such as 'tonight.' The question is inquiring about the person’s plans for this evening, making the continuous tense appropriate. The present simple ('do you do') would ask about general habits or routines, which doesn’t match the specific time frame of 'tonight.'"
+                },
+                {
+                    "text": "Nobody ______ they will win the match.",
+                    "options": [
+                        "thinks",
+                        "is thinking"
+                    ],
+                    "correctAnswer": "thinks",
+                    "explanation": "The present simple tense ('thinks') is used for opinions, beliefs, or states that are generally true. The sentence expresses a general belief held by 'nobody' about the match’s outcome, making 'thinks' appropriate. The present continuous ('is thinking') would imply a temporary or specific act of thinking at this moment, which is less suitable for a general statement about beliefs."
+                },
+                {
+                    "text": "You look worried. What ______?",
+                    "options": [
+                        "are you thinking",
+                        "do you think"
+                    ],
+                    "correctAnswer": "are you thinking",
+                    "explanation": "The present continuous tense ('are you thinking') is used when asking about what someone is thinking about at the moment, especially in response to an observed emotion or state, such as looking worried. The context suggests the question is about the current thoughts causing worry, making 'are you thinking' correct. The present simple ('do you think') would ask for a general opinion, which is less fitting given the immediate, emotional context."
+                },
+                {
+                    "text": "A: We ______ to the cinema tonight. B: ______ to the cinema?",
+                    "options": [
+                        "are going / Do you often go",
+                        "go / Do you often go",
+                        "are going / Are you often going"
+                    ],
+                    "correctAnswer": "are going / Do you often go",
+                    "explanation": "First gap: The present continuous ('are going') is used for fixed plans in the near future, especially with a specific time like 'tonight.' The speaker is describing a planned activity, making 'are going' correct. The present simple ('go') would imply a general habit, not a specific plan for tonight. Second gap: The present simple ('Do you often go') is used to ask about general habits or routines. The question is inquiring about the listener’s regular behavior regarding cinema visits, so 'Do you often go' is appropriate. The present continuous ('Are you often going') is incorrect because it suggests an ongoing action, which doesn’t fit with 'often' for habitual actions."
+                },
+                {
+                    "text": "A: What time ______ this afternoon? B: I don't know. We ______ tomorrow.",
+                    "options": [
+                        "does the train leave / leave",
+                        "does the train leave / are leaving",
+                        "is the train leaving / leave"
+                    ],
+                    "correctAnswer": "does the train leave / are leaving",
+                    "explanation": "First gap: The present simple ('does the train leave') is used for scheduled events, such as train departures, which follow a fixed timetable. The question asks about the usual time of the train’s departure this afternoon, making 'does the train leave' correct. The present continuous ('is the train leaving') would be used for a specific, imminent action, which is less likely here without additional context. Second gap: The present continuous ('are leaving') is used for fixed plans in the near future, as in 'We are leaving tomorrow,' indicating a specific plan. The present simple ('leave') would imply a general habit, which doesn’t fit the specific time frame of 'tomorrow.'"
+                },
+                {
+                    "text": "A: ______ ? B: Yes, but I ______ to quit.",
+                    "options": [
+                        "Are you smoking / try",
+                        "Do you smoke / try",
+                        "Do you smoke / 'm trying"
+                    ],
+                    "correctAnswer": "Do you smoke / 'm trying",
+                    "explanation": "First gap: The present simple ('Do you smoke') is used to ask about general habits or behaviors. The question is about whether the person smokes regularly, making 'Do you smoke' correct. The present continuous ('Are you smoking') would ask about smoking at this moment, which is less likely without context suggesting current action. Second gap: The present continuous ('’m trying' = 'am trying') is used for ongoing efforts or actions happening now or around the present time. The speaker is currently attempting to quit, so '’m trying' is appropriate. The present simple ('try') would imply a general habit, which doesn’t convey the ongoing effort."
+                },
+                {
+                    "text": "A: I ______ on holiday two or three times a year. B: That's great! And where ______ this year?",
+                    "options": [
+                        "go / do you go",
+                        "'m going / do you go",
+                        "go / are you going"
+                    ],
+                    "correctAnswer": "go / are you going",
+                    "explanation": "First gap: The present simple ('go') is used for habits or regular activities. The speaker describes a recurring habit of going on holiday two or three times a year, making 'go' correct. The present continuous ('’m going') would suggest a current or specific action, which doesn’t fit the general frequency. Second gap: The present continuous ('are you going') is used for fixed plans in the near future. The question asks about the specific destination for a planned holiday this year, making 'are you going' appropriate. The present simple ('do you go') would ask about general habits, not a specific plan."
+                },
+                {
+                    "text": "I think it's better to stay. It ______ and we ______ an umbrella.",
+                    "options": [
+                        "'s raining / don't have",
+                        "rains / don't have",
+                        "'s raining / aren't having"
+                    ],
+                    "correctAnswer": "'s raining / don't have",
+                    "explanation": "First gap: The present continuous ('’s raining' = 'is raining') is used for actions happening at the moment of speaking. The sentence suggests it is currently raining, justifying staying, so '’s raining' is correct. The present simple ('rains') would describe a general weather pattern, not the current situation. Second gap: The present simple ('don’t have') is used for general states or possession. The speaker states they do not possess an umbrella as a general fact, making 'don’t have' correct. The present continuous ('aren’t having') is incorrect because 'have' in the sense of possession is a stative verb and not typically used in the continuous form."
+                },
+                {
+                    "text": "A: Children ______ more and more dependent to mobile phones. B: Yes, they ______ their imagination anymore.",
+                    "options": [
+                        "become / aren't using",
+                        "are becoming / don't use",
+                        "become / don't use"
+                    ],
+                    "correctAnswer": "are becoming / don't use",
+                    "explanation": "First gap: The present continuous ('are becoming') is used for ongoing trends or changes happening over time. The sentence describes a current trend of children becoming more dependent, making 'are becoming' correct. The present simple ('become') would imply a general fact, which is less suitable for an ongoing process. Second gap: The present simple ('don’t use') is used for general states or habits. The response suggests that children generally do not use their imagination anymore, likely as a result of the trend, making 'don’t use' appropriate. The present continuous ('aren’t using') would imply a specific, temporary action, which is less fitting for a general statement."
+                },
+                {
+                    "text": "I ______ an article about the myth that says that we ______ 10% of our brains.",
+                    "options": [
+                        "'m writing / are only using",
+                        "write / are only using",
+                        "'m writing / only use"
+                    ],
+                    "correctAnswer": "'m writing / only use",
+                    "explanation": "First gap: The present continuous ('’m writing' = 'am writing') is used for actions happening now or around the present time. The speaker is currently engaged in writing an article, making '’m writing' correct. The present simple ('write') would imply a general habit, not a specific current action. Second gap: The present simple ('only use') is used for general facts or beliefs. The myth states a general claim about brain usage ('we only use 10%'), making 'only use' appropriate. The present continuous ('are only using') would suggest a temporary action, which doesn’t fit the context of a general myth."
+                },
+                {
+                    "text": "I ______ of quitting my job. ______ it is a good idea?",
+                    "options": [
+                        "'m thinking / Do you think",
+                        "think / Do you think",
+                        "'m thinking / Are you thinking"
+                    ],
+                    "correctAnswer": "'m thinking / Do you think",
+                    "explanation": "First gap: The present continuous ('’m thinking' = 'am thinking') is used with 'think' when referring to current thoughts or considerations, especially temporary ones. The speaker is currently considering quitting, making '’m thinking' correct. The present simple ('think') would imply a general opinion, not a specific current thought. Second gap: The present simple ('Do you think') is used to ask for someone’s opinion or belief. The question asks for the listener’s general opinion about the idea, making 'Do you think' appropriate. The present continuous ('Are you thinking') would ask about current thoughts, which is less natural in this context."
+                },
+                {
+                    "text": "Who is that man? Why ______ at us? What ______?",
+                    "options": [
+                        "is he looking / is he wanting",
+                        "is he looking / does he want",
+                        "does he look / he wants"
+                    ],
+                    "correctAnswer": "is he looking / does he want",
+                    "explanation": "First gap: The present continuous ('is he looking') is used for actions happening at the moment of speaking. The question implies the man is currently looking at the speaker, making 'is he looking' correct. The present simple ('does he look') would imply a general appearance or habit, which doesn’t fit the context. Second gap: The present simple ('does he want') is used for desires or intentions, as 'want' is a stative verb that is rarely used in the continuous form. The question asks about the man’s general intention, making 'does he want' correct. The present continuous ('is he wanting') is incorrect because 'want' is not typically used in the continuous tense."
+                },
+                {
+                    "text": "A: Tomorrow I ______ my doctor in the morning. B: Isn't your doctor that woman I ______ over there?",
+                    "options": [
+                        "see / 'm seeing",
+                        "see / see",
+                        "'m seeing / see"
+                    ],
+                    "correctAnswer": "'m seeing / see",
+                    "explanation": "First gap: The present continuous ('’m seeing' = 'am seeing') is used for fixed plans in the near future, especially with a specific time like 'tomorrow... in the morning.' The speaker has a scheduled appointment, making '’m seeing' correct. The present simple ('see') would imply a general habit, not a specific plan. Second gap: The present simple ('see') is used for perception verbs in the context of observing something at the moment of speaking. The question 'Isn’t your doctor that woman I see over there?' refers to the speaker currently seeing a woman, making 'see' appropriate. The present continuous ('’m seeing') could be used for seeing someone romantically or for a future plan, neither of which fits this context."
+                },
+                {
+                    "text": "She ______ to work by bus every day.",
+                    "options": [
+                        "goes",
+                        "is going"
+                    ],
+                    "correctAnswer": "goes",
+                    "explanation": "The present simple tense ('goes') is used for habits or routines. The phrase 'every day' indicates a regular action, making 'goes' appropriate. The present continuous ('is going') would imply a specific action happening now or a temporary action, which doesn’t fit the context of a daily habit."
+                },
+                {
+                    "text": "Look! The kids ______ in the garden right now.",
+                    "options": [
+                        "play",
+                        "are playing"
+                    ],
+                    "correctAnswer": "are playing",
+                    "explanation": "The present continuous tense ('are playing') is used for actions happening at the moment of speaking. The word 'right now' and the exclamation 'Look!' suggest the kids are currently playing, making 'are playing' correct. The present simple ('play') would describe a general habit, not a specific current action."
+                },
+                {
+                    "text": "He ______ coffee, but today he ______ tea because he’s feeling ill.",
+                    "options": [
+                        "doesn’t drink / drinks",
+                        "doesn’t drink / is drinking",
+                        "isn’t drinking / drinks"
+                    ],
+                    "correctAnswer": "doesn’t drink / is drinking",
+                    "explanation": "First gap: The present simple ('doesn’t drink') is used for general habits or preferences. The statement indicates he generally avoids coffee, making 'doesn’t drink' correct. Second gap: The present continuous ('is drinking') is used for a specific, temporary action. The phrase 'today... because he’s feeling ill' suggests a current, unusual action, making 'is drinking' appropriate."
+                },
+                {
+                    "text": "What time ______ the shop open on Sundays?",
+                    "options": [
+                        "does the shop open",
+                        "is the shop opening"
+                    ],
+                    "correctAnswer": "does the shop open",
+                    "explanation": "The present simple tense ('does... open') is used for scheduled events or regular routines, such as shop opening hours. The phrase 'on Sundays' indicates a regular schedule, making 'does the shop open' correct. The present continuous ('is... opening') would suggest a specific, ongoing action, which is less common for fixed schedules."
+                },
+                {
+                    "text": "I ______ to music every evening, but tonight I ______ a book.",
+                    "options": [
+                        "listen / read",
+                        "listen / am reading",
+                        "'m listening / read",
+                        "'m listening / am reading"
+                    ],
+                    "correctAnswer": "listen / am reading",
+                    "explanation": "First gap: The present simple ('listen') is used for habits or routines. The phrase 'every evening' indicates a regular activity, making 'listen' correct. Second gap: The present continuous ('am reading') is used for actions happening now or in the current period. The word 'tonight' suggests a specific, current action, making 'am reading' appropriate."
+                },
+                {
+                    "text": "Why ______ so sad today?",
+                    "options": [
+                        "are you looking",
+                        "do you look"
+                    ],
+                    "correctAnswer": "are you looking",
+                    "explanation": "The present continuous tense ('are you looking') is used for actions or states observed at the moment of speaking, especially with verbs like 'look' when describing appearance or behavior. The word 'today' and the question about sadness suggest a current state, making 'are you looking' correct. The present simple ('do you look') would imply a general appearance or habit, which doesn’t fit the specific context."
+                },
+                {
+                    "text": "Most people ______ their phones at least once an hour.",
+                    "options": [
+                        "check",
+                        "are checking"
+                    ],
+                    "correctAnswer": "check",
+                    "explanation": "The present simple tense ('check') is used for general habits or behaviors. The phrase 'at least once an hour' indicates a regular action for most people, making 'check' appropriate. The present continuous ('are checking') would imply a specific action happening now, which doesn’t fit the general context."
+                },
+                {
+                    "text": "Be quiet! The baby ______ right now.",
+                    "options": [
+                        "sleeps",
+                        "is sleeping"
+                    ],
+                    "correctAnswer": "is sleeping",
+                    "explanation": "The present continuous tense ('is sleeping') is used for actions happening at the moment of speaking. The phrase 'right now' and the request to be quiet suggest the baby is currently sleeping, making 'is sleeping' correct. The present simple ('sleeps') would describe a general habit, not a specific current action."
+                },
+                {
+                    "text": "She ______ her homework before dinner every day.",
+                    "options": [
+                        "does",
+                        "is doing"
+                    ],
+                    "correctAnswer": "does",
+                    "explanation": "The present simple tense ('does') is used for habits or routines. The phrase 'every day' indicates a regular activity, making 'does' appropriate. The present continuous ('is doing') would suggest a specific action happening now, which doesn’t fit the context of a daily routine."
+                },
+                {
+                    "text": "What ______ about? You seem distracted.",
+                    "options": [
+                        "do you think",
+                        "are you thinking"
+                    ],
+                    "correctAnswer": "are you thinking",
+                    "explanation": "The present continuous tense ('are you thinking') is used when asking about current thoughts or considerations, especially when someone appears distracted. The context suggests the question is about the person’s current thoughts, making 'are you thinking' correct. The present simple ('do you think') would ask for a general opinion, which is less fitting given the immediate context."
+                },
+                {
+                    "text": "A: I ______ yoga every morning. B: Oh, really? ______ it this week?",
+                    "options": [
+                        "do / Are you doing",
+                        "do / Do you do",
+                        "'m doing / Are you doing"
+                    ],
+                    "correctAnswer": "do / Are you doing",
+                    "explanation": "First gap: The present simple ('do') is used for habits or routines. The phrase 'every morning' indicates a regular activity, making 'do' correct. Second gap: The present continuous ('Are you doing') is used to ask about specific plans or actions in the near future or current period, such as 'this week.' This makes 'Are you doing' appropriate for asking about a specific timeframe."
+                },
+                {
+                    "text": "A: What time ______ the museum close? B: It ______ at 6 p.m.",
+                    "options": [
+                        "does the museum close / closes",
+                        "is the museum closing / closes",
+                        "does the museum close / is closing"
+                    ],
+                    "correctAnswer": "does the museum close / closes",
+                    "explanation": "First gap: The present simple ('does the museum close') is used for scheduled events or regular routines, such as museum hours. The question asks about the usual closing time, making 'does the museum close' correct. Second gap: The present simple ('closes') is used for scheduled events. The phrase 'at 6 p.m.' indicates a fixed schedule, making 'closes' appropriate. The present continuous ('is closing') would suggest a specific, imminent action, which is less common for fixed schedules."
+                },
+                {
+                    "text": "A: ______ to parties often? B: No, but I ______ to one tonight.",
+                    "options": [
+                        "Do you go / go",
+                        "Do you go / 'm going",
+                        "Are you going / 'm going"
+                    ],
+                    "correctAnswer": "Do you go / 'm going",
+                    "explanation": "First gap: The present simple ('Do you go') is used to ask about general habits or routines. The word 'often' suggests a question about regular behavior, making 'Do you go' correct. Second gap: The present continuous ('’m going' = 'am going') is used for fixed plans in the near future. The phrase 'tonight' indicates a specific plan, making '’m going' appropriate."
+                },
+                {
+                    "text": "The weather ______ warmer every year.",
+                    "options": [
+                        "gets",
+                        "is getting"
+                    ],
+                    "correctAnswer": "is getting",
+                    "explanation": "The present continuous tense ('is getting') is used for ongoing trends or changes over time. The phrase 'every year' suggests a gradual, ongoing process of the weather becoming warmer, making 'is getting' correct. The present simple ('gets') would imply a general fact, which is less suitable for describing an ongoing trend."
+                },
+                {
+                    "text": "I ______ my keys. Can you help me find them?",
+                    "options": [
+                        "lose",
+                        "'m losing"
+                    ],
+                    "correctAnswer": "'m losing",
+                    "explanation": "The present continuous tense ('’m losing' = 'am losing') is used for actions happening now or around the present time, especially in specific situations. The request for help suggests the speaker is currently unable to find their keys, making '’m losing' correct. The present simple ('lose') would imply a general habit, which doesn’t fit the immediate context."
+                },
+                {
+                    "text": "He ______ to the gym, but this month he ______ at home.",
+                    "options": [
+                        "goes / exercises",
+                        "goes / is exercising",
+                        "'s going / exercises"
+                    ],
+                    "correctAnswer": "goes / is exercising",
+                    "explanation": "First gap: The present simple ('goes') is used for habits or routines. The statement indicates a regular activity of going to the gym, making 'goes' correct. Second gap: The present continuous ('is exercising') is used for temporary actions or actions in the current period. The phrase 'this month' suggests a temporary change, making 'is exercising' appropriate."
+                },
+                {
+                    "text": "A: Why ______ so loud? B: Because I ______ to my friend in Australia.",
+                    "options": [
+                        "are you speaking / speak",
+                        "do you speak / 'm speaking",
+                        "are you speaking / 'm speaking"
+                    ],
+                    "correctAnswer": "are you speaking / 'm speaking",
+                    "explanation": "First gap: The present continuous ('are you speaking') is used for actions happening at the moment of speaking. The question about speaking 'so loud' suggests a current action, making 'are you speaking' correct. Second gap: The present continuous ('’m speaking' = 'am speaking') is used for actions happening now. The speaker is currently talking to a friend, making '’m speaking' appropriate."
+                },
+                {
+                    "text": "This book ______ very interesting, but I ______ it right now.",
+                    "options": [
+                        "is / don’t read",
+                        "is / ’m not reading",
+                        "seems / don’t read"
+                    ],
+                    "correctAnswer": "is / ’m not reading",
+                    "explanation": "First gap: The present simple ('is') is used for general states or facts. The statement describes the book’s general quality, making 'is' correct. Second gap: The present continuous ('’m not reading' = 'am not reading') is used for actions (or lack thereof) at the moment of speaking. The phrase 'right now' indicates the speaker is not currently reading, making '’m not reading' appropriate."
+                },
+                {
+                    "text": "A: ______ the new teacher? B: Yes, she ______ very kind.",
+                    "options": [
+                        "Do you like / seems",
+                        "Are you liking / seems",
+                        "Do you like / is seeming"
+                    ],
+                    "correctAnswer": "Do you like / seems",
+                    "explanation": "First gap: The present simple ('Do you like') is used for general opinions or preferences. The question asks about the person’s general feelings about the teacher, making 'Do you like' correct. The present continuous ('Are you liking') is incorrect because 'like' is a stative verb not typically used in the continuous form. Second gap: The present simple ('seems') is used for general impressions or states. The response describes the teacher’s general quality, making 'seems' appropriate."
+                },
+                {
+                    "text": "A: What ______ for dinner tonight? B: I ______ pizza.",
+                    "options": [
+                        "are you cooking / make",
+                        "do you cook / make",
+                        "are you cooking / ’m making"
+                    ],
+                    "correctAnswer": "are you cooking / ’m making",
+                    "explanation": "First gap: The present continuous ('are you cooking') is used to ask about specific plans for the near future, such as 'tonight.' The question is about dinner plans, making 'are you cooking' correct. Second gap: The present continuous ('’m making' = 'am making') is used for fixed plans in the near future. The speaker has a specific plan to make pizza, making '’m making' appropriate."
+                }
+            ]
+        },
+        {
+            "topic": "Present Perfect Simple or Present Perfect Continuous",
+            "questions": [
+                {
+                    "text": "I ______ the book you lent me and it's great. I'll give it back to you when I finish it.",
+                    "options": [
+                        "'ve read",
+                        "was read",
+                        "'ve been reading"
+                    ],
+                    "correctAnswer": "'ve read",
+                    "explanation": "The present perfect simple ('’ve read' = 'have read') is used to indicate a completed action with present relevance, such as having read the book and forming an opinion ('it’s great'). The future intent to return it ('I’ll give it back') suggests the reading is finished, making 'have read' appropriate. 'Have been reading' is present perfect continuous, implying ongoing reading, which doesn’t fit the completion implied. 'Was read' is past simple passive, incorrect for a first-person active statement."
+                },
+                {
+                    "text": "Bruce ______ tennis since he was a child. He ______ many trophies.",
+                    "options": [
+                        "has been playing / has won",
+                        "is playing / has won",
+                        "has played / has been winning"
+                    ],
+                    "correctAnswer": "has been playing / has won",
+                    "explanation": "First gap: The present perfect continuous ('has been playing') emphasizes the ongoing nature of an activity starting in the past ('since he was a child') and continuing to the present (May 25, 2025), making it suitable. 'Has played' is present perfect simple, which could work but focuses less on duration. 'Is playing' is present continuous, implying a current action, not a lifelong habit. Second gap: The present perfect simple ('has won') indicates completed actions (winning trophies) with present relevance, fitting the result of his playing. 'Has been winning' is present perfect continuous, suggesting an ongoing process, less natural for a tally of trophies."
+                },
+                {
+                    "text": "You ______ too much time playing that stupid game! Choose TWO correct answers",
+                    "options": [
+                        "'ve spent",
+                        "'ve spending",
+                        "'ve been spending"
+                    ],
+                    "correctAnswer": "'ve spent / 've been spending",
+                    "explanation": "'ve spent: The present perfect simple ('have spent') is used for a completed amount of time with present relevance, suggesting the total time spent is excessive and noticeable now. 've been spending: The present perfect continuous ('have been spending') emphasizes the ongoing nature of the activity, with a current effect (e.g., frustration), also fitting the complaint. 've spending: This is grammatically incorrect, as 'spending' cannot stand alone without 'have been' in this context."
+                },
+                {
+                    "text": "You ______ tennis since 10 o'clock. How many sets ______?",
+                    "options": [
+                        "have played / have you been playing",
+                        "have been playing / have you played",
+                        "are playing / have you played"
+                    ],
+                    "correctAnswer": "have been playing / have you played",
+                    "explanation": "First gap: The present perfect continuous ('have been playing') emphasizes the ongoing duration of an activity ('since 10 o'clock,' likely earlier today, May 24, 2025, given the current time of 01:07 AM on May 25), making it appropriate. 'Have played' focuses on completion, less fitting for duration. 'Are playing' is present continuous, implying a current action without past context. Second gap: The present perfect simple ('have you played') asks about the total number of completed sets, a specific result, making it suitable. 'Have you been playing' focuses on the process, not the count."
+                },
+                {
+                    "text": "He ______ to me since we met last summer. He _______ over 100 emails.",
+                    "options": [
+                        "'s been writing / 's sent",
+                        "'s written / 's been sending",
+                        "is writing / 's sent"
+                    ],
+                    "correctAnswer": "'s been writing / 's sent",
+                    "explanation": "First gap: The present perfect continuous ('’s been writing' = 'has been writing') emphasizes the ongoing action of writing since last summer (e.g., June 2024 to May 25, 2025), making it appropriate. 'Has written' is present perfect simple, which could work but focuses less on duration. 'Is writing' is present continuous, implying a current action without past context. Second gap: The present perfect simple ('’s sent' = 'has sent') indicates a completed number of emails (over 100) as a result, making it suitable. 'Has been sending' focuses on the process, less natural for a specific total."
+                },
+                {
+                    "text": "He ______ since he was a little boy. Choose TWO correct options",
+                    "options": [
+                        "is fishing",
+                        "has fished",
+                        "has been fishing"
+                    ],
+                    "correctAnswer": "has fished / has been fishing",
+                    "explanation": "has fished: The present perfect simple ('has fished') indicates a series of completed actions or experiences from childhood to now (May 25, 2025), fitting a lifelong activity. has been fishing: The present perfect continuous ('has been fishing') emphasizes the ongoing nature of the activity, suggesting he still fishes, also appropriate. is fishing: The present continuous ('is fishing') implies a current action, less fitting without additional context about the present moment."
+                },
+                {
+                    "text": "______ any fish today?",
+                    "options": [
+                        "Have you caught",
+                        "Have you been catching",
+                        "Have you catching"
+                    ],
+                    "correctAnswer": "Have you caught",
+                    "explanation": "The present perfect simple ('Have you caught') is used to ask about the result or total of a completed action up to now (today, May 24, 2025, up to 01:07 AM on May 25), making it suitable for counting fish. 'Have you been catching' focuses on the process, less natural for a total. 'Have you catching' is grammatically incorrect."
+                },
+                {
+                    "text": "A: He ______ hundreds of job applications, but he's got no answers yet. B: How long ______ for a job?",
+                    "options": [
+                        "'s been sending / has he been looking",
+                        "'s sent / has he looked",
+                        "'s sent / has he been looking"
+                    ],
+                    "correctAnswer": "'s been sending / has he been looking",
+                    "explanation": "First gap: The present perfect continuous ('’s been sending' = 'has been sending') emphasizes the ongoing effort of sending applications, with 'yet' suggesting continued relevance, making it appropriate. 'Has sent' is present perfect simple, focusing on completion, less fitting for an ongoing process. Second gap: The present perfect continuous ('has he been looking') asks about the duration of an ongoing activity (job searching), making it suitable. 'Has he looked' is present perfect simple, implying a completed action, less natural for duration."
+                },
+                {
+                    "text": "Now that I ______ tidying the house, I'm going to clean it.",
+                    "options": [
+                        "have finished",
+                        "have been finishing",
+                        "am finishing"
+                    ],
+                    "correctAnswer": "have finished",
+                    "explanation": "The present perfect simple ('have finished') indicates a completed action that leads to a new action (cleaning), making it appropriate. 'Now that' suggests the tidying is done. 'Have been finishing' is present perfect continuous, implying an ongoing process, less fitting for completion. 'Am finishing' is present continuous, suggesting it’s still happening, not complete."
+                },
+                {
+                    "text": "We ______ this TV for ages. I think it's time to buy a new one.",
+                    "options": [
+                        "have",
+                        "'ve had",
+                        "'ve been having"
+                    ],
+                    "correctAnswer": "'ve had",
+                    "explanation": "The present perfect simple ('’ve had' = 'have had') is used to indicate a state that started in the past and continues to the present ('for ages,' up to May 25, 2025), with relevance to the decision to replace it. 'Have' is present simple, incomplete without 'had.' 'Have been having' is present perfect continuous, less natural for a possession state."
+                },
+                {
+                    "text": "I ______ and my legs are really tired now.",
+                    "options": [
+                        "'ve been cycling",
+                        "'ve cycled"
+                    ],
+                    "correctAnswer": "'ve been cycling",
+                    "explanation": "The present perfect continuous ('’ve been cycling' = 'have been cycling') is used to emphasize the ongoing nature of an action and its current result, such as tiredness from cycling. The phrase 'my legs are really tired now' indicates a recent, ongoing activity with a visible effect, making 'have been cycling' appropriate. 'Have cycled' is present perfect simple, which focuses on the completion of the action, less suitable for emphasizing the current state."
+                },
+                {
+                    "text": "I'm sorry I'm late, ______ for a long time?",
+                    "options": [
+                        "have you been waiting",
+                        "have you waited"
+                    ],
+                    "correctAnswer": "have you been waiting",
+                    "explanation": "The present perfect continuous ('have you been waiting') is used to ask about the duration of an ongoing action with relevance to the present, especially with 'for a long time,' suggesting the speaker is concerned about the extent of the wait. The apology for lateness implies the waiting is still relevant, making 'have you been waiting' suitable. 'Have you waited' is present perfect simple, which focuses on the fact of waiting without emphasizing duration."
+                },
+                {
+                    "text": "How long ______ Peter?",
+                    "options": [
+                        "have you known",
+                        "have you been knowing"
+                    ],
+                    "correctAnswer": "have you known",
+                    "explanation": "The present perfect simple ('have you known') is used to ask about the duration of a state or relationship that started in the past and continues to the present, such as knowing a person. 'How long' typically pairs with present perfect simple for states (e.g., knowing, being). 'Have you been knowing' is grammatically incorrect because 'know' is a stative verb and not used in the continuous form."
+                },
+                {
+                    "text": "Somebody ______ my cookies. There are none left.",
+                    "options": [
+                        "has been eating",
+                        "has eaten"
+                    ],
+                    "correctAnswer": "has eaten",
+                    "explanation": "The present perfect simple ('has eaten') is used to indicate a completed action with a present result, such as the absence of cookies ('there are none left'). The focus is on the outcome, not the process, making 'has eaten' appropriate. 'Has been eating' is present perfect continuous, which emphasizes an ongoing action, less suitable when the result is total consumption."
+                },
+                {
+                    "text": "Somebody ______ my cookies. There are very few left.",
+                    "options": [
+                        "has eaten",
+                        "has been eating"
+                    ],
+                    "correctAnswer": "has been eating",
+                    "explanation": "The present perfect continuous ('has been eating') is used to emphasize an ongoing action with a current result, such as the partial depletion of cookies ('there are very few left'). This suggests the eating is a recent, ongoing process, making 'has been eating' suitable. 'Has eaten' is present perfect simple, which implies completion, less fitting when some cookies remain."
+                },
+                {
+                    "text": "How many books ______?",
+                    "options": [
+                        "has she written",
+                        "has she been writing"
+                    ],
+                    "correctAnswer": "has she written",
+                    "explanation": "The present perfect simple ('has she written') is used to ask about the total number of completed actions up to the present, such as the number of books written. 'How many' typically pairs with present perfect simple for countable outcomes. 'Has she been writing' is present perfect continuous, which focuses on the process, not the completed total."
+                },
+                {
+                    "text": "She must be tired. She ______ all afternoon.",
+                    "options": [
+                        "has written",
+                        "has been writing"
+                    ],
+                    "correctAnswer": "has been writing",
+                    "explanation": "The present perfect continuous ('has been writing') is used to emphasize the duration of an ongoing action and its current effect, such as tiredness from writing 'all afternoon' (up to 01:07 AM on May 25, 2025). This focuses on the process and its impact, making 'has been writing' appropriate. 'Has written' is present perfect simple, which focuses on completion, less suitable for emphasizing fatigue."
+                },
+                {
+                    "text": "I ______ all afternoon. I ______ 5 chapters.",
+                    "options": [
+                        "'ve been reading / 've been reading",
+                        "'ve read / 've read",
+                        "'ve been reading / 've read"
+                    ],
+                    "correctAnswer": "'ve been reading / 've read",
+                    "explanation": "First gap: The present perfect continuous ('’ve been reading' = 'have been reading') emphasizes the ongoing activity and its duration ('all afternoon'), with a possible effect (e.g., tiredness), making it suitable. 'Have read' focuses on completion, less fitting for duration. Second gap: The present perfect simple ('’ve read' = 'have read') is used to indicate a specific, completed result (reading 5 chapters), making it appropriate. 'Have been reading' focuses on the process, not the exact number completed."
+                },
+                {
+                    "text": "I think I ______ chocolate since I was born.",
+                    "options": [
+                        "'ve been liking",
+                        "'ve liked"
+                    ],
+                    "correctAnswer": "'ve liked",
+                    "explanation": "The present perfect simple ('’ve liked' = 'have liked') is used to describe a state or preference that started in the past and continues to the present, such as liking chocolate since birth (up to May 25, 2025). 'Like' is a stative verb, not typically used in the continuous form. 'Have been liking' is grammatically incorrect for stative verbs."
+                },
+                {
+                    "text": "They ______ for months, and they ______ three countries so far.",
+                    "options": [
+                        "have travelled / have visited",
+                        "have been travelling / have visited",
+                        "have travelled / have been visiting"
+                    ],
+                    "correctAnswer": "have been travelling / have visited",
+                    "explanation": "First gap: The present perfect continuous ('have been travelling') emphasizes the ongoing duration of an action ('for months') with relevance to the present, making it suitable. 'Have travelled' focuses on completion, less fitting for an ongoing journey. Second gap: The present perfect simple ('have visited') indicates specific, completed actions (visiting three countries) up to now, making it appropriate. 'Have been visiting' focuses on the process, not the specific number."
+                },
+                {
+                    "text": "I ______ my keys so many times this week!",
+                    "options": [
+                        "'ve lost",
+                        "'ve been losing"
+                    ],
+                    "correctAnswer": "'ve lost",
+                    "explanation": "The present perfect simple ('’ve lost' = 'have lost') is used to indicate multiple completed actions with present relevance, such as losing keys several times up to now (week ending May 25, 2025). The focus is on the result (keys are gone), making 'have lost' appropriate. 'Have been losing' is present perfect continuous, emphasizing the process, less fitting for a specific count."
+                },
+                {
+                    "text": "She ______ for hours, and her eyes are red now.",
+                    "options": [
+                        "has been studying",
+                        "has studied"
+                    ],
+                    "correctAnswer": "has been studying",
+                    "explanation": "The present perfect continuous ('has been studying') emphasizes the ongoing duration of an activity ('for hours') with a current effect (red eyes), making it suitable. 'Has studied' is present perfect simple, focusing on completion, less fitting for emphasizing the current physical effect."
+                },
+                {
+                    "text": "How many emails ______ this morning?",
+                    "options": [
+                        "have you sent",
+                        "have you been sending"
+                    ],
+                    "correctAnswer": "have you sent",
+                    "explanation": "The present perfect simple ('have you sent') is used to ask about the total number of completed actions up to now (morning of May 24, 2025, up to 01:07 AM on May 25), such as emails sent. 'How many' pairs with present perfect simple for countable outcomes. 'Have you been sending' is present perfect continuous, focusing on the process, not the total."
+                },
+                {
+                    "text": "They ______ in the garden all day, and they ______ three trees so far.",
+                    "options": [
+                        "have been working / have planted",
+                        "have worked / have planted",
+                        "have been working / have been planting"
+                    ],
+                    "correctAnswer": "have been working / have planted",
+                    "explanation": "First gap: The present perfect continuous ('have been working') emphasizes the ongoing activity ('all day') with relevance to the present, making it suitable. 'Have worked' focuses on completion, less fitting for duration. Second gap: The present perfect simple ('have planted') indicates specific, completed actions (planting three trees), making it appropriate. 'Have been planting' focuses on the process, not the specific number."
+                },
+                {
+                    "text": "I ______ to learn Spanish for months, but I ______ only a few phrases.",
+                    "options": [
+                        "'ve been trying / 've learned",
+                        "'ve tried / 've learned",
+                        "'ve been trying / 've been learning"
+                    ],
+                    "correctAnswer": "'ve been trying / 've learned",
+                    "explanation": "First gap: The present perfect continuous ('’ve been trying' = 'have been trying') emphasizes the ongoing effort ('for months'), making it suitable. 'Have tried' focuses on a completed attempt, less fitting for ongoing effort. Second gap: The present perfect simple ('’ve learned' = 'have learned') indicates a specific, completed result (a few phrases), making it appropriate. 'Have been learning' focuses on the process, not the specific outcome."
+                },
+                {
+                    "text": "He ______ his car all morning. It looks spotless now.",
+                    "options": [
+                        "has been cleaning",
+                        "has cleaned"
+                    ],
+                    "correctAnswer": "has been cleaning",
+                    "explanation": "The present perfect continuous ('has been cleaning') emphasizes the ongoing activity ('all morning') with a current result (spotless car), making it suitable. 'Has cleaned' is present perfect simple, focusing on completion, less fitting for emphasizing the duration and effort."
+                },
+                {
+                    "text": "______ to Paris before? Choose TWO correct options",
+                    "options": [
+                        "Have you been",
+                        "Have you gone",
+                        "Have you been going"
+                    ],
+                    "correctAnswer": "Have you been / Have you gone",
+                    "explanation": "Have you been: The present perfect simple ('Have you been') is used to ask about experiences or visits up to now (May 25, 2025), implying the person returned, making it appropriate. Have you gone: The present perfect simple ('Have you gone') can also be used to ask about a trip, though it may imply the person is still there, still fitting in some contexts. Have you been going: The present perfect continuous ('Have you been going') suggests repeated, ongoing trips, less fitting without context."
+                },
+                {
+                    "text": "I ______ my phone since last night, and I still can’t find it.",
+                    "options": [
+                        "'ve been looking for",
+                        "'ve looked for"
+                    ],
+                    "correctAnswer": "'ve been looking for",
+                    "explanation": "The present perfect continuous ('’ve been looking for' = 'have been looking for') emphasizes the ongoing effort ('since last night,' May 24, 2025) with a current result (still can’t find it), making it suitable. 'Have looked for' is present perfect simple, focusing on completion, less fitting for ongoing effort."
+                },
+                {
+                    "text": "How many times ______ this movie?",
+                    "options": [
+                        "have you seen",
+                        "have you been seeing"
+                    ],
+                    "correctAnswer": "have you seen",
+                    "explanation": "The present perfect simple ('have you seen') is used to ask about the total number of completed experiences up to now (May 25, 2025), such as watching a movie. 'How many times' pairs with present perfect simple for countable outcomes. 'Have you been seeing' is present perfect continuous, implying an ongoing process or a romantic context, not suitable here."
+                },
+                {
+                    "text": "She ______ yoga for years, but she ______ any classes this month.",
+                    "options": [
+                        "has been practicing / hasn’t attended",
+                        "has practiced / hasn’t attended",
+                        "has been practicing / hasn’t been attending"
+                    ],
+                    "correctAnswer": "has been practicing / hasn’t attended",
+                    "explanation": "First gap: The present perfect continuous ('has been practicing') emphasizes the ongoing activity ('for years') up to now (May 25, 2025), making it suitable. 'Has practiced' focuses on completion, less fitting for duration. Second gap: The present perfect simple ('hasn’t attended') indicates a specific, completed lack of action (no classes this month), making it appropriate. 'Hasn’t been attending' focuses on the process, less fitting for a specific absence."
+                },
+                {
+                    "text": "I ______ the book you lent me and it's great. I'll give it back to you when I finish it.",
+                    "options": [
+                        "'ve read",
+                        "was read",
+                        "'ve been reading"
+                    ],
+                    "correctAnswer": "'ve read",
+                    "explanation": "The present perfect simple ('’ve read' = 'have read') is used to indicate a completed action with present relevance, such as having read the book and forming an opinion ('it’s great'). The future intent to return it ('I’ll give it back') suggests the reading is finished, making 'have read' appropriate. 'Have been reading' is present perfect continuous, implying ongoing reading, which doesn’t fit the completion implied. 'Was read' is past simple passive, incorrect for a first-person active statement."
+                },
+                {
+                    "text": "Bruce ______ tennis since he was a child. He ______ many trophies.",
+                    "options": [
+                        "has been playing / has won",
+                        "is playing / has won",
+                        "has played / has been winning"
+                    ],
+                    "correctAnswer": "has been playing / has won",
+                    "explanation": "First gap: The present perfect continuous ('has been playing') emphasizes the ongoing nature of an activity starting in the past ('since he was a child') and continuing to the present (May 25, 2025), making it suitable. 'Has played' is present perfect simple, which could work but focuses less on duration. 'Is playing' is present continuous, implying a current action, not a lifelong habit. Second gap: The present perfect simple ('has won') indicates completed actions (winning trophies) with present relevance, fitting the result of his playing. 'Has been winning' is present perfect continuous, suggesting an ongoing process, less natural for a tally of trophies."
+                },
+                {
+                    "text": "You ______ too much time playing that stupid game! Choose TWO correct answers",
+                    "options": [
+                        "'ve spent",
+                        "'ve spending",
+                        "'ve been spending"
+                    ],
+                    "correctAnswer": "'ve spent / 've been spending",
+                    "explanation": "'ve spent: The present perfect simple ('have spent') is used for a completed amount of time with present relevance, suggesting the total time spent is excessive and noticeable now. 've been spending: The present perfect continuous ('have been spending') emphasizes the ongoing nature of the activity, with a current effect (e.g., frustration), also fitting the complaint. 've spending: This is grammatically incorrect, as 'spending' cannot stand alone without 'have been' in this context."
+                },
+                {
+                    "text": "You ______ tennis since 10 o'clock. How many sets ______?",
+                    "options": [
+                        "have played / have you been playing",
+                        "have been playing / have you played",
+                        "are playing / have you played"
+                    ],
+                    "correctAnswer": "have been playing / have you played",
+                    "explanation": "First gap: The present perfect continuous ('have been playing') emphasizes the ongoing duration of an activity ('since 10 o'clock,' likely earlier today, May 24, 2025, given the current time of 01:10 AM on May 25), making it appropriate. 'Have played' focuses on completion, less fitting for duration. 'Are playing' is present continuous, implying a current action without past context. Second gap: The present perfect simple ('have you played') asks about the total number of completed sets, a specific result, making it suitable. 'Have you been playing' focuses on the process, not the count."
+                },
+                {
+                    "text": "He ______ to me since we met last summer. He _______ over 100 emails.",
+                    "options": [
+                        "'s been writing / 's sent",
+                        "'s written / 's been sending",
+                        "is writing / 's sent"
+                    ],
+                    "correctAnswer": "'s been writing / 's sent",
+                    "explanation": "First gap: The present perfect continuous ('’s been writing' = 'has been writing') emphasizes the ongoing action of writing since last summer (e.g., June 2024 to May 25, 2025), making it appropriate. 'Has written' is present perfect simple, which could work but focuses less on duration. 'Is writing' is present continuous, implying a current action without past context. Second gap: The present perfect simple ('’s sent' = 'has sent') indicates a completed number of emails (over 100) as a result, making it suitable. 'Has been sending' focuses on the process, less natural for a specific total."
+                },
+                {
+                    "text": "He ______ since he was a little boy. Choose TWO correct options",
+                    "options": [
+                        "is fishing",
+                        "has fished",
+                        "has been fishing"
+                    ],
+                    "correctAnswer": "has fished / has been fishing",
+                    "explanation": "has fished: The present perfect simple ('has fished') indicates a series of completed actions or experiences from childhood to now (May 25, 2025), fitting a lifelong activity. has been fishing: The present perfect continuous ('has been fishing') emphasizes the ongoing nature of the activity, suggesting he still fishes, also appropriate. is fishing: The present continuous ('is fishing') implies a current action, less fitting without additional context about the present moment."
+                },
+                {
+                    "text": "______ any fish today?",
+                    "options": [
+                        "Have you caught",
+                        "Have you been catching",
+                        "Have you catching"
+                    ],
+                    "correctAnswer": "Have you caught",
+                    "explanation": "The present perfect simple ('Have you caught') is used to ask about the result or total of a completed action up to now (today, May 24, 2025, up to 01:10 AM on May 25), making it suitable for counting fish. 'Have you been catching' focuses on the process, less natural for a total. 'Have you catching' is grammatically incorrect."
+                },
+                {
+                    "text": "A: He ______ hundreds of job applications, but he's got no answers yet. B: How long ______ for a job?",
+                    "options": [
+                        "'s been sending / has he been looking",
+                        "'s sent / has he looked",
+                        "'s sent / has he been looking"
+                    ],
+                    "correctAnswer": "'s been sending / has he been looking",
+                    "explanation": "First gap: The present perfect continuous ('’s been sending' = 'has been sending') emphasizes the ongoing effort of sending applications, with 'yet' suggesting continued relevance, making it appropriate. 'Has sent' is present perfect simple, focusing on completion, less fitting for an ongoing process. Second gap: The present perfect continuous ('has he been looking') asks about the duration of an ongoing activity (job searching), making it suitable. 'Has he looked' is present perfect simple, implying a completed action, less natural for duration."
+                },
+                {
+                    "text": "Now that I ______ tidying the house, I'm going to clean it.",
+                    "options": [
+                        "have finished",
+                        "have been finishing",
+                        "am finishing"
+                    ],
+                    "correctAnswer": "have finished",
+                    "explanation": "The present perfect simple ('have finished') indicates a completed action that leads to a new action (cleaning), making it appropriate. 'Now that' suggests the tidying is done. 'Have been finishing' is present perfect continuous, implying an ongoing process, less fitting for completion. 'Am finishing' is present continuous, suggesting it’s still happening, not complete."
+                },
+                {
+                    "text": "We ______ this TV for ages. I think it's time to buy a new one.",
+                    "options": [
+                        "have",
+                        "'ve had",
+                        "'ve been having"
+                    ],
+                    "correctAnswer": "'ve had",
+                    "explanation": "The present perfect simple ('’ve had' = 'have had') is used to indicate a state that started in the past and continues to the present ('for ages,' up to May 25, 2025), with relevance to the decision to replace it. 'Have' is present simple, incomplete without 'had.' 'Have been having' is present perfect continuous, less natural for a possession state."
+                },
+                {
+                    "text": "I ______ my glasses three times this week!",
+                    "options": [
+                        "'ve lost",
+                        "'ve been losing"
+                    ],
+                    "correctAnswer": "'ve lost",
+                    "explanation": "The present perfect simple ('’ve lost' = 'have lost') is used to indicate multiple completed actions with present relevance, such as losing glasses three times up to now (week ending May 25, 2025). The focus is on the result (glasses are gone), making 'have lost' appropriate. 'Have been losing' is present perfect continuous, emphasizing the process, less fitting for a specific count."
+                },
+                {
+                    "text": "She ______ for hours, and her hands are sore now.",
+                    "options": [
+                        "has been painting",
+                        "has painted"
+                    ],
+                    "correctAnswer": "has been painting",
+                    "explanation": "The present perfect continuous ('has been painting') emphasizes the ongoing duration of an activity ('for hours') with a current effect (sore hands), making it suitable. 'Has painted' is present perfect simple, focusing on completion, less fitting for emphasizing the current physical effect."
+                },
+                {
+                    "text": "How many pictures ______ this week?",
+                    "options": [
+                        "have you taken",
+                        "have you been taking"
+                    ],
+                    "correctAnswer": "have you taken",
+                    "explanation": "The present perfect simple ('have you taken') is used to ask about the total number of completed actions up to now (week ending May 25, 2025), such as pictures taken. 'How many' pairs with present perfect simple for countable outcomes. 'Have you been taking' is present perfect continuous, focusing on the process, not the total."
+                },
+                {
+                    "text": "They ______ in the kitchen all morning, and they ______ five cakes so far.",
+                    "options": [
+                        "have been baking / have made",
+                        "have baked / have made",
+                        "have been baking / have been making"
+                    ],
+                    "correctAnswer": "have been baking / have made",
+                    "explanation": "First gap: The present perfect continuous ('have been baking') emphasizes the ongoing activity ('all morning') with relevance to the present, making it suitable. 'Have baked' focuses on completion, less fitting for duration. Second gap: The present perfect simple ('have made') indicates specific, completed actions (making five cakes), making it appropriate. 'Have been making' focuses on the process, not the specific number."
+                },
+                {
+                    "text": "I ______ to fix my bike for days, but I ______ only one wheel so far.",
+                    "options": [
+                        "'ve been trying / 've fixed",
+                        "'ve tried / 've fixed",
+                        "'ve been trying / 've been fixing"
+                    ],
+                    "correctAnswer": "'ve been trying / 've fixed",
+                    "explanation": "First gap: The present perfect continuous ('’ve been trying' = 'have been trying') emphasizes the ongoing effort ('for days'), making it suitable. 'Have tried' focuses on a completed attempt, less fitting for ongoing effort. Second gap: The present perfect simple ('’ve fixed' = 'have fixed') indicates a specific, completed result (one wheel), making it appropriate. 'Have been fixing' focuses on the process, not the specific outcome."
+                },
+                {
+                    "text": "He ______ his room all day. It looks perfect now.",
+                    "options": [
+                        "has been tidying",
+                        "has tidied"
+                    ],
+                    "correctAnswer": "has been tidying",
+                    "explanation": "The present perfect continuous ('has been tidying') emphasizes the ongoing activity ('all day') with a current result (perfect room), making it suitable. 'Has tidied' is present perfect simple, focusing on completion, less fitting for emphasizing the duration and effort."
+                },
+                {
+                    "text": "______ to London before? Choose TWO correct options",
+                    "options": [
+                        "Have you been",
+                        "Have you gone",
+                        "Have you been going"
+                    ],
+                    "correctAnswer": "Have you been / Have you gone",
+                    "explanation": "Have you been: The present perfect simple ('Have you been') is used to ask about experiences or visits up to now (May 25, 2025), implying the person returned, making it appropriate. Have you gone: The present perfect simple ('Have you gone') can also be used to ask about a trip, though it may imply the person is still there, still fitting in some contexts. Have you been going: The present perfect continuous ('Have you been going') suggests repeated, ongoing trips, less fitting without context."
+                },
+                {
+                    "text": "I ______ for my phone since yesterday, and I still can’t find it.",
+                    "options": [
+                        "'ve been searching",
+                        "'ve searched"
+                    ],
+                    "correctAnswer": "'ve been searching",
+                    "explanation": "The present perfect continuous ('’ve been searching' = 'have been searching') emphasizes the ongoing effort ('since yesterday,' May 24, 2025) with a current result (still can’t find it), making it suitable. 'Have searched' is present perfect simple, focusing on completion, less fitting for ongoing effort."
+                },
+                {
+                    "text": "How many songs ______ this year?",
+                    "options": [
+                        "have you written",
+                        "have you been writing"
+                    ],
+                    "correctAnswer": "have you written",
+                    "explanation": "The present perfect simple ('have you written') is used to ask about the total number of completed actions up to now (year 2025), such as songs written. 'How many' pairs with present perfect simple for countable outcomes. 'Have you been writing' is present perfect continuous, focusing on the process, not the total."
+                },
+                {
+                    "text": "She ______ yoga for years, but she ______ any classes this week.",
+                    "options": [
+                        "has been practicing / hasn’t attended",
+                        "has practiced / hasn’t attended",
+                        "has been practicing / hasn’t been attending"
+                    ],
+                    "correctAnswer": "has been practicing / hasn’t attended",
+                    "explanation": "First gap: The present perfect continuous ('has been practicing') emphasizes the ongoing activity ('for years') up to now (May 25, 2025), making it suitable. 'Has practiced' focuses on completion, less fitting for duration. Second gap: The present perfect simple ('hasn’t attended') indicates a specific, completed lack of action (no classes this week), making it appropriate. 'Hasn’t been attending' focuses on the process, less fitting for a specific absence."
+                },
+                {
+                    "text": "I ______ and my back hurts now.",
+                    "options": [
+                        "'ve been lifting",
+                        "'ve lifted"
+                    ],
+                    "correctAnswer": "'ve been lifting",
+                    "explanation": "The present perfect continuous ('’ve been lifting' = 'have been lifting') is used to emphasize the ongoing nature of an action with a current effect (back pain), making it suitable. 'Have lifted' is present perfect simple, focusing on completion, less fitting for emphasizing the current physical effect."
+                },
+                {
+                    "text": "They ______ all their savings on that car. Choose TWO correct options",
+                    "options": [
+                        "'ve spent",
+                        "'ve been spending",
+                        "'ve spending"
+                    ],
+                    "correctAnswer": "'ve spent / 've been spending",
+                    "explanation": "'ve spent: The present perfect simple ('have spent') indicates a completed action with present relevance (all savings gone), making it appropriate. 've been spending: The present perfect continuous ('have been spending') emphasizes the ongoing process leading to the result, also fitting. 've spending: This is grammatically incorrect, as 'spending' cannot stand alone without 'have been.'"
+                },
+                {
+                    "text": "How long ______ this book?",
+                    "options": [
+                        "have you been reading",
+                        "have you read"
+                    ],
+                    "correctAnswer": "have you been reading",
+                    "explanation": "The present perfect continuous ('have you been reading') is used to ask about the duration of an ongoing activity with relevance to the present, suitable for a book still being read. 'Have you read' is present perfect simple, implying the book is finished, less fitting for duration."
+                },
+                {
+                    "text": "Someone ______ my coffee. The cup is empty now.",
+                    "options": [
+                        "has drunk",
+                        "has been drinking"
+                    ],
+                    "correctAnswer": "has drunk",
+                    "explanation": "The present perfect simple ('has drunk') indicates a completed action with a present result (empty cup), making it appropriate. 'Has been drinking' is present perfect continuous, emphasizing the process, less fitting when the coffee is completely gone."
+                },
+                {
+                    "text": "Someone ______ my coffee. There’s only a little left.",
+                    "options": [
+                        "has been drinking",
+                        "has drunk"
+                    ],
+                    "correctAnswer": "has been drinking",
+                    "explanation": "The present perfect continuous ('has been drinking') emphasizes an ongoing action with a current result (only a little coffee left), suggesting recent activity. 'Has drunk' is present perfect simple, implying completion, less fitting when some coffee remains."
+                },
+                {
+                    "text": "I ______ to call you all week, but I ______ only one voicemail.",
+                    "options": [
+                        "'ve been trying / 've left",
+                        "'ve tried / 've left",
+                        "'ve been trying / 've been leaving"
+                    ],
+                    "correctAnswer": "'ve been trying / 've left",
+                    "explanation": "First gap: The present perfect continuous ('’ve been trying' = 'have been trying') emphasizes ongoing effort ('all week'), making it suitable. 'Have tried' focuses on a completed attempt, less fitting. Second gap: The present perfect simple ('’ve left' = 'have left') indicates a specific, completed action (one voicemail), making it appropriate. 'Have been leaving' focuses on the process, not a specific outcome."
+                },
+                {
+                    "text": "She ______ her homework for hours, and she ______ only one page.",
+                    "options": [
+                        "has been doing / has written",
+                        "has done / has written",
+                        "has been doing / has been writing"
+                    ],
+                    "correctAnswer": "has been doing / has written",
+                    "explanation": "First gap: The present perfect continuous ('has been doing') emphasizes ongoing effort ('for hours'), making it suitable. 'Has done' focuses on completion, less fitting for duration. Second gap: The present perfect simple ('has written') indicates a specific, completed result (one page), making it appropriate. 'Has been writing' focuses on the process, not the specific outcome."
+                },
+                {
+                    "text": "How many countries ______ in your life?",
+                    "options": [
+                        "have you visited",
+                        "have you been visiting"
+                    ],
+                    "correctAnswer": "have you visited",
+                    "explanation": "The present perfect simple ('have you visited') is used to ask about the total number of completed experiences up to now (May 25, 2025), such as countries visited. 'How many' pairs with present perfect simple for countable outcomes. 'Have you been visiting' is present perfect continuous, focusing on the process, not the total."
+                },
+                {
+                    "text": "I ______ this song forever. It’s my favorite.",
+                    "options": [
+                        "'ve loved",
+                        "'ve been loving"
+                    ],
+                    "correctAnswer": "'ve loved",
+                    "explanation": "The present perfect simple ('’ve loved' = 'have loved') describes a state or preference that started in the past and continues to the present (up to May 25, 2025). 'Love' is a stative verb, not typically used in the continuous form. 'Have been loving' is grammatically incorrect for stative verbs."
+                },
+                {
+                    "text": "He ______ on this project since January, and he ______ two reports so far.",
+                    "options": [
+                        "has been working / has completed",
+                        "has worked / has completed",
+                        "has been working / has been completing"
+                    ],
+                    "correctAnswer": "has been working / has completed",
+                    "explanation": "First gap: The present perfect continuous ('has been working') emphasizes ongoing effort ('since January' 2025), making it suitable. 'Has worked' focuses on completion, less fitting for duration. Second gap: The present perfect simple ('has completed') indicates specific, completed actions (two reports), making it appropriate. 'Has been completing' focuses on the process, not the specific number."
+                }
+            ]
+        },
+        {
+            "topic": "Passive Verb Forms",
+            "questions": [
+                {
+                    "text": "We are staying at the hotel because my house ______ redecorated.",
+                    "options": [
+                        "has being",
+                        "is being",
+                        "was been"
+                    ],
+                    "correctAnswer": "is being",
+                    "explanation": "The present continuous passive ('is being redecorated') is used to describe an ongoing action happening now, affecting the present decision to stay at the hotel (as of May 25, 2025). 'Is being' is the correct passive form of 'to be' with the present participle 'redecorated.' 'Has being' is grammatically incorrect (should be 'has been'), and 'was been' is an incorrect form (should be 'was being' for past continuous passive or 'was' for simple past passive)."
+                },
+                {
+                    "text": "Let's go; we ______ here.",
+                    "options": [
+                        "are not wanted",
+                        "are not wanting",
+                        "aren't been wanted"
+                    ],
+                    "correctAnswer": "are not wanted",
+                    "explanation": "The present simple passive ('are not wanted') is used to express a general state or fact, implying the group is unwelcome now. 'Are not wanted' is the correct passive form with 'want' in the present tense. 'Are not wanting' is active voice, incorrect for a passive context. 'Aren't been wanted' is grammatically incorrect (should be 'are not being wanted' for present continuous passive, but this is less natural here)."
+                },
+                {
+                    "text": "The letter ______ a week ago.",
+                    "options": [
+                        "has been posted",
+                        "was posted",
+                        "was post"
+                    ],
+                    "correctAnswer": "was posted",
+                    "explanation": "The past simple passive ('was posted') is used for a completed action at a specific past time, 'a week ago' (around May 18, 2025). 'Was posted' is the correct passive form. 'Has been posted' is present perfect passive, suggesting relevance to now, which doesn’t fit the specific past time. 'Was post' is an incorrect form (should be 'was posted')."
+                },
+                {
+                    "text": "We suddenly realised that we _______. There was someone on the roof of the house next to us.",
+                    "options": [
+                        "were watched",
+                        "were being watched",
+                        "were been watched"
+                    ],
+                    "correctAnswer": "were being watched",
+                    "explanation": "The past continuous passive ('were being watched') is used to describe an ongoing action in the past at the moment of realization, aligning with 'suddenly realised' and the presence of someone on the roof. 'Were being watched' is the correct form. 'Were watched' is past simple passive, implying a completed action, less fitting for an ongoing observation. 'Were been watched' is grammatically incorrect."
+                },
+                {
+                    "text": "All the tickets for the concert _______.",
+                    "options": [
+                        "been sold",
+                        "have been sold",
+                        "have being sold"
+                    ],
+                    "correctAnswer": "have been sold",
+                    "explanation": "The present perfect passive ('have been sold') is used to indicate a completed action with present relevance, suggesting the tickets are currently sold out (as of May 25, 2025). 'Have been sold' is the correct form with 'have' as the auxiliary. 'Been sold' lacks the auxiliary verb, making it incomplete. 'Have being sold' is incorrect (should be 'have been sold')."
+                },
+                {
+                    "text": "When we arrived at the car park, our car wasn't there; it ______ stolen.",
+                    "options": [
+                        "was been",
+                        "been",
+                        "had been"
+                    ],
+                    "correctAnswer": "had been",
+                    "explanation": "The past perfect passive ('had been stolen') is used to describe an action completed before another past event (arrival at the car park), explaining the car’s absence. 'Had been' is the correct form. 'Was been' and 'been' are grammatically incorrect (should be 'had been' for past perfect passive)."
+                },
+                {
+                    "text": "Now it's too late. Nothing ______ done.",
+                    "options": [
+                        "can be",
+                        "can been",
+                        "can being"
+                    ],
+                    "correctAnswer": "can be",
+                    "explanation": "The modal passive ('can be done') is used to express possibility or ability in the present, with 'nothing' indicating no action is possible now (May 25, 2025). 'Can be' is the correct modal passive form. 'Can been' and 'can being' are grammatically incorrect (should be 'can be')."
+                },
+                {
+                    "text": "We were afraid of ______ seen together.",
+                    "options": [
+                        "be",
+                        "been",
+                        "being"
+                    ],
+                    "correctAnswer": "being",
+                    "explanation": "The gerund passive ('being seen') is used after 'afraid of' to indicate the action feared, in passive form to show the subject as the receiver. 'Being' is the correct gerund form. 'Be' is the base form, incorrect after 'afraid of.' 'Been' lacks the gerund form, making it incomplete."
+                },
+                {
+                    "text": "Home buyers ______ informed of potential taxes before buying their house.",
+                    "options": [
+                        "are be",
+                        "are been",
+                        "are"
+                    ],
+                    "correctAnswer": "are",
+                    "explanation": "The sentence appears to be active voice, with 'are' as the present simple form of 'to be,' and 'informed' as an adjective or past participle modifying 'home buyers.' The intended meaning seems to be that home buyers are currently informed, making 'are' correct. 'Are be' and 'are been' are grammatically incorrect (should be 'are being informed' for present continuous passive, but the sentence structure suggests active voice or a typo in options)."
+                },
+                {
+                    "text": "The negotiations ______ postponed indefinitely.",
+                    "options": [
+                        "did",
+                        "were",
+                        "were been"
+                    ],
+                    "correctAnswer": "were",
+                    "explanation": "The past simple passive ('were postponed') is used for a completed action in the past, with 'indefinitely' suggesting a past decision. 'Were' is the correct auxiliary, and 'postponed' completes the passive form. 'Did' is active voice, incorrect for a passive context. 'Were been' is grammatically incorrect (should be 'were postponed')."
+                },
+                {
+                    "text": "She ______ her emails every morning before work.",
+                    "options": [
+                        "checks",
+                        "is checking"
+                    ],
+                    "correctAnswer": "checks",
+                    "explanation": "The present simple tense ('checks') is used for habits or routines. The phrase 'every morning' indicates a regular activity, making 'checks' appropriate. The present continuous ('is checking') would imply a specific action happening now, which doesn’t fit the context of a daily routine."
+                },
+                {
+                    "text": "Look! The dog ______ with a ball in the park right now.",
+                    "options": [
+                        "plays",
+                        "is playing"
+                    ],
+                    "correctAnswer": "is playing",
+                    "explanation": "The present continuous tense ('is playing') is used for actions happening at the moment of speaking. The phrase 'right now' and the exclamation 'Look!' suggest the dog is currently playing, making 'is playing' correct. The present simple ('plays') would describe a general habit, not a specific current action."
+                },
+                {
+                    "text": "I ______ spicy food, but today I ______ it because it’s a special dish.",
+                    "options": [
+                        "don’t eat / eat",
+                        "don’t eat / am eating",
+                        "am not eating / eat"
+                    ],
+                    "correctAnswer": "don’t eat / am eating",
+                    "explanation": "First gap: The present simple ('don’t eat') is used for general habits or preferences, indicating the speaker typically avoids spicy food, making 'don’t eat' correct. Second gap: The present continuous ('am eating') is used for a specific, temporary action. The phrase 'today... because it’s a special dish' suggests a current, unusual action, making 'am eating' appropriate."
+                },
+                {
+                    "text": "What time ______ the library close on weekends?",
+                    "options": [
+                        "does the library close",
+                        "is the library closing"
+                    ],
+                    "correctAnswer": "does the library close",
+                    "explanation": "The present simple tense ('does... close') is used for scheduled events or regular routines, such as library hours. The phrase 'on weekends' indicates a regular schedule, making 'does the library close' correct. The present continuous ('is... closing') would suggest a specific, ongoing action, which is less common for fixed schedules."
+                },
+                {
+                    "text": "He ______ to the radio every evening, but tonight he ______ a movie.",
+                    "options": [
+                        "listens / watches",
+                        "listens / is watching",
+                        "'s listening / watches",
+                        "'s listening / is watching"
+                    ],
+                    "correctAnswer": "listens / is watching",
+                    "explanation": "First gap: The present simple ('listens') is used for habits or routines. The phrase 'every evening' indicates a regular activity, making 'listens' correct. Second gap: The present continuous ('is watching') is used for actions happening now or in the current period. The word 'tonight' suggests a specific, current action, making 'is watching' appropriate."
+                },
+                {
+                    "text": "Why ______ so tired today?",
+                    "options": [
+                        "are you looking",
+                        "do you look"
+                    ],
+                    "correctAnswer": "are you looking",
+                    "explanation": "The present continuous tense ('are you looking') is used for actions or states observed at the moment of speaking, especially with verbs like 'look' when describing appearance or behavior. The word 'today' and the question about tiredness suggest a current state, making 'are you looking' correct. The present simple ('do you look') would imply a general appearance or habit, which doesn’t fit the specific context."
+                },
+                {
+                    "text": "Most students ______ their notes before exams.",
+                    "options": [
+                        "review",
+                        "are reviewing"
+                    ],
+                    "correctAnswer": "review",
+                    "explanation": "The present simple tense ('review') is used for general habits or behaviors. The phrase 'before exams' indicates a regular action for most students, making 'review' appropriate. The present continuous ('are reviewing') would imply a specific action happening now, which doesn’t fit the general context."
+                },
+                {
+                    "text": "Shh! The children ______ right now.",
+                    "options": [
+                        "sleep",
+                        "are sleeping"
+                    ],
+                    "correctAnswer": "are sleeping",
+                    "explanation": "The present continuous tense ('are sleeping') is used for actions happening at the moment of speaking. The phrase 'right now' and the request to be quiet suggest the children are currently sleeping, making 'are sleeping' correct. The present simple ('sleep') would describe a general habit, not a specific current action."
+                },
+                {
+                    "text": "She ______ her room every weekend.",
+                    "options": [
+                        "cleans",
+                        "is cleaning"
+                    ],
+                    "correctAnswer": "cleans",
+                    "explanation": "The present simple tense ('cleans') is used for habits or routines. The phrase 'every weekend' indicates a regular activity, making 'cleans' appropriate. The present continuous ('is cleaning') would suggest a specific action happening now, which doesn’t fit the context of a weekly routine."
+                },
+                {
+                    "text": "What ______ about? You seem upset.",
+                    "options": [
+                        "do you think",
+                        "are you thinking"
+                    ],
+                    "correctAnswer": "are you thinking",
+                    "explanation": "The present continuous tense ('are you thinking') is used when asking about current thoughts or considerations, especially when someone appears upset. The context suggests the question is about the person’s current thoughts, making 'are you thinking' correct. The present simple ('do you think') would ask for a general opinion, which is less fitting given the immediate, emotional context."
+                },
+                {
+                    "text": "A: I ______ coffee every morning. B: Really? ______ it this week?",
+                    "options": [
+                        "drink / Are you drinking",
+                        "drink / Do you drink",
+                        "'m drinking / Are you drinking"
+                    ],
+                    "correctAnswer": "drink / Are you drinking",
+                    "explanation": "First gap: The present simple ('drink') is used for habits or routines. The phrase 'every morning' indicates a regular activity, making 'drink' correct. Second gap: The present continuous ('Are you drinking') is used to ask about specific plans or actions in the current period, such as 'this week.' This makes 'Are you drinking' appropriate for asking about a specific timeframe."
+                },
+                {
+                    "text": "A: What time ______ the store open? B: It ______ at 9 a.m.",
+                    "options": [
+                        "does the store open / opens",
+                        "is the store opening / opens",
+                        "does the store open / is opening"
+                    ],
+                    "correctAnswer": "does the store open / opens",
+                    "explanation": "First gap: The present simple ('does the store open') is used for scheduled events or regular routines, such as store hours. The question asks about the usual opening time, making 'does the store open' correct. Second gap: The present simple ('opens') is used for scheduled events. The phrase 'at 9 a.m.' indicates a fixed schedule, making 'opens' appropriate. The present continuous ('is opening') would suggest a specific, imminent action, which is less common for fixed schedules."
+                },
+                {
+                    "text": "A: ______ to the gym often? B: No, but I ______ there tonight.",
+                    "options": [
+                        "Do you go / go",
+                        "Do you go / 'm going",
+                        "Are you going / 'm going"
+                    ],
+                    "correctAnswer": "Do you go / 'm going",
+                    "explanation": "First gap: The present simple ('Do you go') is used to ask about general habits or routines. The word 'often' suggests a question about regular behavior, making 'Do you go' correct. Second gap: The present continuous ('’m going' = 'am going') is used for fixed plans in the near future. The phrase 'tonight' indicates a specific plan, making '’m going' appropriate."
+                },
+                {
+                    "text": "The city ______ busier every year.",
+                    "options": [
+                        "gets",
+                        "is getting"
+                    ],
+                    "correctAnswer": "is getting",
+                    "explanation": "The present continuous tense ('is getting') is used for ongoing trends or changes over time. The phrase 'every year' suggests a gradual, ongoing process of the city becoming busier, making 'is getting' correct. The present simple ('gets') would imply a general fact, which is less suitable for describing an ongoing trend."
+                },
+                {
+                    "text": "I ______ my phone. Can you help me find it?",
+                    "options": [
+                        "lose",
+                        "'m losing"
+                    ],
+                    "correctAnswer": "'m losing",
+                    "explanation": "The present continuous tense ('’m losing' = 'am losing') is used for actions happening now or around the present time, especially in specific situations. The request for help suggests the speaker is currently unable to find their phone, making '’m losing' correct. The present simple ('lose') would imply a general habit, which doesn’t fit the immediate context."
+                },
+                {
+                    "text": "He ______ to school, but this week he ______ at home.",
+                    "options": [
+                        "walks / studies",
+                        "walks / is studying",
+                        "'s walking / studies"
+                    ],
+                    "correctAnswer": "walks / is studying",
+                    "explanation": "First gap: The present simple ('walks') is used for habits or routines. The statement indicates a regular activity of walking to school, making 'walks' correct. Second gap: The present continuous ('is studying') is used for temporary actions or actions in the current period. The phrase 'this week' suggests a temporary change, making 'is studying' appropriate."
+                },
+                {
+                    "text": "A: Why ______ so quietly? B: Because I ______ to my sister on the phone.",
+                    "options": [
+                        "are you speaking / speak",
+                        "do you speak / 'm speaking",
+                        "are you speaking / 'm speaking"
+                    ],
+                    "correctAnswer": "are you speaking / 'm speaking",
+                    "explanation": "First gap: The present continuous ('are you speaking') is used for actions happening at the moment of speaking. The question about speaking 'so quietly' suggests a current action, making 'are you speaking' correct. Second gap: The present continuous ('’m speaking' = 'am speaking') is used for actions happening now. The speaker is currently talking to a sister, making '’m speaking' appropriate."
+                },
+                {
+                    "text": "This movie ______ very exciting, but I ______ it right now.",
+                    "options": [
+                        "is / don’t watch",
+                        "is / ’m not watching",
+                        "seems / don’t watch"
+                    ],
+                    "correctAnswer": "is / ’m not watching",
+                    "explanation": "First gap: The present simple ('is') is used for general states or facts. The statement describes the movie’s general quality, making 'is' correct. Second gap: The present continuous ('’m not watching' = 'am not watching') is used for actions (or lack thereof) at the moment of speaking. The phrase 'right now' indicates the speaker is not currently watching, making '’m not watching' appropriate."
+                },
+                {
+                    "text": "A: ______ the new manager? B: Yes, he ______ very professional.",
+                    "options": [
+                        "Do you like / seems",
+                        "Are you liking / seems",
+                        "Do you like / is seeming"
+                    ],
+                    "correctAnswer": "Do you like / seems",
+                    "explanation": "First gap: The present simple ('Do you like') is used for general opinions or preferences. The question asks about the person’s general feelings about the manager, making 'Do you like' correct. The present continuous ('Are you liking') is incorrect because 'like' is a stative verb not typically used in the continuous form. Second gap: The present simple ('seems') is used for general impressions or states. The response describes the manager’s general quality, making 'seems' appropriate."
+                },
+                {
+                    "text": "A: What ______ for lunch today? B: I ______ a salad.",
+                    "options": [
+                        "are you cooking / make",
+                        "do you cook / make",
+                        "are you cooking / ’m making"
+                    ],
+                    "correctAnswer": "are you cooking / ’m making",
+                    "explanation": "First gap: The present continuous ('are you cooking') is used to ask about specific plans for the near future, such as 'today.' The question is about lunch plans, making 'are you cooking' correct. Second gap: The present continuous ('’m making' = 'am making') is used for fixed plans in the near future. The speaker has a specific plan to make a salad, making '’m making' appropriate."
+                }
+            ]
+        },
+        {
+            "topic": "Present Perfect or Past Simple",
+            "questions": [
+                {
+                    "text": "______ painting the bedroom yet? 'Not yet. I'll finish it tomorrow.'",
+                    "options": [
+                        "Have you finished",
+                        "Did you finish"
+                    ],
+                    "correctAnswer": "Have you finished",
+                    "explanation": "The present perfect ('Have you finished') is used to ask about a situation that began in the past and has relevance to the present moment, especially with 'yet,' which implies the action may still be ongoing or expected. The response 'Not yet' and future reference ('I'll finish it tomorrow,' May 26, 2025) confirm the task is incomplete now, making 'Have you finished' appropriate. 'Did you finish' is past simple, which asks about a completed action at a specific time, not suitable with 'yet.'"
+                },
+                {
+                    "text": "______ a holiday recently?",
+                    "options": [
+                        "Have you had",
+                        "Did you have"
+                    ],
+                    "correctAnswer": "Have you had",
+                    "explanation": "The present perfect ('Have you had') is used to ask about experiences or actions with relevance to the present, especially with 'recently,' which connects past events to now (May 25, 2025). This suggests interest in whether the person has had a holiday lately. 'Did you have' is past simple, used for a specific past event, less natural without a specific time reference."
+                },
+                {
+                    "text": "Mr. Barnes is very important in this company. He ______ here for 30 years.",
+                    "options": [
+                        "worked",
+                        "has worked"
+                    ],
+                    "correctAnswer": "has worked",
+                    "explanation": "The present perfect ('has worked') shows an action that started in the past and continues to have relevance to the present, especially with 'for 30 years' (since 1995, up to May 25, 2025), indicating Mr. Barnes still works there. 'Worked' is past simple, suggesting he no longer works there, which contradicts his current importance."
+                },
+                {
+                    "text": "He loves gardening. He ______ a gardener all his life.",
+                    "options": [
+                        "has been",
+                        "was"
+                    ],
+                    "correctAnswer": "has been",
+                    "explanation": "The present perfect ('has been') describes a state that started in the past and continues to the present, especially with 'all his life,' implying he is still a gardener as of May 25, 2025. 'Was' is past simple, suggesting he is no longer a gardener, which contradicts the present tense 'loves gardening.'"
+                },
+                {
+                    "text": "______ anything like this before?",
+                    "options": [
+                        "Did you see",
+                        "Have you seen"
+                    ],
+                    "correctAnswer": "Have you seen",
+                    "explanation": "The present perfect ('Have you seen') is used to ask about life experiences up to the present, especially with 'before,' which has no specific time reference and implies relevance now. 'Did you see' is past simple, used for a specific past event, less natural without a time context."
+                },
+                {
+                    "text": "This is the most delicious dish I ______.",
+                    "options": [
+                        "have ever eaten",
+                        "ever ate"
+                    ],
+                    "correctAnswer": "have ever eaten",
+                    "explanation": "The present perfect ('have ever eaten') is used with superlatives like 'most delicious' and 'ever' to compare experiences up to the present, suggesting the speaker’s evaluation is current as of May 25, 2025. 'Ever ate' is past simple, which would require a specific past context, not fitting the general comparison."
+                },
+                {
+                    "text": "I ______ him behave like this before.",
+                    "options": [
+                        "never saw",
+                        "'ve never seen"
+                    ],
+                    "correctAnswer": "'ve never seen",
+                    "explanation": "The present perfect ('ve never seen' = 'have never seen') with 'never' indicates an absence of experience up to the present, implying the speaker’s observation is relevant now. 'Never saw' is past simple, which would need a specific past time frame, not provided here."
+                },
+                {
+                    "text": "My mother ______ in Scotland.",
+                    "options": [
+                        "grew up",
+                        "has grown up"
+                    ],
+                    "correctAnswer": "grew up",
+                    "explanation": "The past simple ('grew up') is used for a completed action or state in the past, as growing up is a one-time process that ends when a person reaches adulthood. 'Has grown up' is present perfect, suggesting an ongoing or incomplete action, which doesn’t apply to a completed life stage."
+                },
+                {
+                    "text": "A: Mary isn't here. She ______ to Egypt. B: I ______ to Egypt.",
+                    "options": [
+                        "has gone / have never gone",
+                        "has gone / have never been",
+                        "went / have never gone"
+                    ],
+                    "correctAnswer": "has gone / have never been",
+                    "explanation": "First gap: The present perfect ('has gone') indicates a person has left and is still away (in Egypt) at the present moment (May 25, 2025), explaining her absence. 'Went' is past simple, implying a completed action without current relevance, less suitable. Second gap: The present perfect ('have never been') expresses a lack of experience up to now, aligning with never visiting Egypt. 'Have never gone' is less natural, as 'been' is typically used for visiting places."
+                },
+                {
+                    "text": "I ______ my arm. I ______ it playing with my cousin.",
+                    "options": [
+                        "'ve broken / broke",
+                        "'ve broken / 've broken",
+                        "broke / 've broken"
+                    ],
+                    "correctAnswer": "'ve broken / broke",
+                    "explanation": "First gap: The present perfect ('ve broken' = 'have broken') indicates a recent action with present relevance (the arm is still broken as of May 25, 2025). Second gap: The past simple ('broke') describes the specific past event when the injury occurred, a completed action. 'Have broken' in the second gap suggests an ongoing or repeated action, which doesn’t fit the single event."
+                },
+                {
+                    "text": "______ a ghost?",
+                    "options": [
+                        "Have you ever seen",
+                        "Did you ever see",
+                        "Have you ever see"
+                    ],
+                    "correctAnswer": "Have you ever seen",
+                    "explanation": "The present perfect ('Have you ever seen') asks about life experiences up to the present (May 25, 2025), with 'ever' indicating an unspecified time. 'Did you ever see' is past simple, less natural without a specific time context. 'Have you ever see' is grammatically incorrect (should be 'seen')."
+                },
+                {
+                    "text": "A: I ______ to China this year. B: When ______ there?",
+                    "options": [
+                        "have been / have you been",
+                        "have been / did you go",
+                        "was / have you gone"
+                    ],
+                    "correctAnswer": "have been / did you go",
+                    "explanation": "First gap: The present perfect ('have been') indicates a visit in the current year (2025, up to May 25), with relevance to now. 'Was' is past simple, incomplete without context. Second gap: The past simple ('did you go') asks about the specific time of a completed visit, a common follow-up. 'Have you been' is present perfect, less natural for a specific past occasion. 'Have you gone' implies the person is still there, which doesn’t fit."
+                },
+                {
+                    "text": "I'm sure I ______ this man before.",
+                    "options": [
+                        "'ve seen",
+                        "saw",
+                        "'ve see"
+                    ],
+                    "correctAnswer": "'ve seen",
+                    "explanation": "The present perfect ('ve seen' = 'have seen') indicates a past experience with present relevance (recognition now, May 25, 2025). 'Saw' is past simple, requiring a specific time, which isn’t provided. 'Have you see' is grammatically incorrect (should be 'seen')."
+                },
+                {
+                    "text": "A: How long ______ a teacher? B: I ______ teaching a long time ago.",
+                    "options": [
+                        "were / started",
+                        "have you been / have started",
+                        "have you been / started"
+                    ],
+                    "correctAnswer": "have you been / started",
+                    "explanation": "First gap: The present perfect ('have you been') asks about the duration of a state or job continuing to the present (May 25, 2025). 'Were' is past simple, incorrect for an ongoing state. Second gap: The past simple ('started') indicates the specific past starting point of teaching. 'Have started' is present perfect, suggesting an ongoing or recent start, which doesn’t fit 'a long time ago.'"
+                },
+                {
+                    "text": "______ Titanic?",
+                    "options": [
+                        "Did you see",
+                        "You have seen",
+                        "Have you seen"
+                    ],
+                    "correctAnswer": "Have you seen",
+                    "explanation": "The present perfect ('Have you seen') asks about a life experience up to now (May 25, 2025), likely referring to the movie or event. 'Did you see' is past simple, less natural without a specific time. 'You have seen' is a statement, not a question."
+                },
+                {
+                    "text": "A: I ______ the keys. B: Where ______ them?",
+                    "options": [
+                        "have found / did you find",
+                        "found / have you found",
+                        "found / did you find"
+                    ],
+                    "correctAnswer": "have found / did you find",
+                    "explanation": "First gap: The present perfect ('have found') indicates a recent action with present relevance (the keys are now found, May 25, 2025). 'Found' is past simple, less fitting without a specific time emphasis. Second gap: The past simple ('did you find') asks about the specific time or place of the completed action, a natural follow-up. 'Have you found' is present perfect, less suitable for a specific detail."
+                },
+                {
+                    "text": "Here are your shoes. I ______ them.",
+                    "options": [
+                        "just cleaned",
+                        "'ve just cleaned",
+                        "just have cleaned"
+                    ],
+                    "correctAnswer": "'ve just cleaned",
+                    "explanation": "The present perfect ('ve just cleaned' = 'have just cleaned') indicates a very recent action with present relevance (the shoes are now clean, May 25, 2025). 'Just' typically pairs with present perfect. 'Just cleaned' lacks the auxiliary, making it incomplete. 'Just have cleaned' is in the wrong order (should be 'have just cleaned')."
+                },
+                {
+                    "text": "She ______ to be a singer since she ______ a kid.",
+                    "options": [
+                        "wanted / was",
+                        "has wanted / has been",
+                        "has wanted / was"
+                    ],
+                    "correctAnswer": "has wanted / was",
+                    "explanation": "First gap: The present perfect ('has wanted') indicates a desire that started in the past and continues to the present (May 25, 2025). 'Wanted' is past simple, suggesting it no longer applies. Second gap: The past simple ('was') indicates a specific past state ('a kid'), a completed time frame. 'Has been' is present perfect, implying an ongoing state, which doesn’t fit a past age."
+                },
+                {
+                    "text": "______ your homework yet?",
+                    "options": [
+                        "Have you done",
+                        "Did you do"
+                    ],
+                    "correctAnswer": "Have you done",
+                    "explanation": "The present perfect ('Have you done') is used to ask about an action that has relevance to the present moment, especially with 'yet,' which suggests the action is expected or incomplete as of May 25, 2025. 'Did you do' is past simple, implying a specific past time, which is less suitable without a time reference."
+                },
+                {
+                    "text": "She ______ to Paris last summer.",
+                    "options": [
+                        "went",
+                        "has gone"
+                    ],
+                    "correctAnswer": "went",
+                    "explanation": "The past simple ('went') is used for a completed action at a specific time, 'last summer' (2024), which has no ongoing relevance to May 25, 2025. 'Has gone' is present perfect, suggesting she is still in Paris, which doesn’t fit the context."
+                },
+                {
+                    "text": "I ______ this movie three times already.",
+                    "options": [
+                        "have seen",
+                        "saw"
+                    ],
+                    "correctAnswer": "have seen",
+                    "explanation": "The present perfect ('have seen') is used to describe experiences up to the present, with 'already' indicating a cumulative count as of May 25, 2025. 'Saw' is past simple, requiring a specific time, which is not provided."
+                },
+                {
+                    "text": "______ to a concert last weekend?",
+                    "options": [
+                        "Did you go",
+                        "Have you gone"
+                    ],
+                    "correctAnswer": "Did you go",
+                    "explanation": "The past simple ('Did you go') is used to ask about a specific event in the past, 'last weekend' (around May 18, 2025). 'Have you gone' is present perfect, implying the person is still at the concert, which doesn’t fit a past time frame."
+                },
+                {
+                    "text": "They ______ in this house since 2020.",
+                    "options": [
+                        "have lived",
+                        "lived"
+                    ],
+                    "correctAnswer": "have lived",
+                    "explanation": "The present perfect ('have lived') indicates an action that started in the past (2020) and continues to the present (May 25, 2025). 'Lived' is past simple, suggesting they no longer live there, which contradicts the ongoing duration."
+                },
+                {
+                    "text": "He ______ his keys yesterday.",
+                    "options": [
+                        "lost",
+                        "has lost"
+                    ],
+                    "correctAnswer": "lost",
+                    "explanation": "The past simple ('lost') is used for a completed action at a specific time, 'yesterday' (May 24, 2025). 'Has lost' is present perfect, implying current relevance (e.g., the keys are still missing), which isn’t specified."
+                },
+                {
+                    "text": "______ ever ______ to Japan?",
+                    "options": [
+                        "Have you / been",
+                        "Did you / go"
+                    ],
+                    "correctAnswer": "Have you / been",
+                    "explanation": "The present perfect ('Have you been') is used to ask about life experiences up to the present (May 25, 2025), with 'ever' indicating an unspecified time. 'Did you go' is past simple, less natural without a specific time reference."
+                },
+                {
+                    "text": "We ______ a new car last month.",
+                    "options": [
+                        "bought",
+                        "have bought"
+                    ],
+                    "correctAnswer": "bought",
+                    "explanation": "The past simple ('bought') is used for a completed action at a specific time, 'last month' (April 2025). 'Have bought' is present perfect, suggesting ongoing relevance, which isn’t implied here."
+                },
+                {
+                    "text": "I ______ my best friend since we ______ kids.",
+                    "options": [
+                        "have known / were",
+                        "knew / were"
+                    ],
+                    "correctAnswer": "have known / were",
+                    "explanation": "First gap: The present perfect ('have known') indicates a relationship that started in the past and continues to May 25, 2025. 'Knew' is past simple, suggesting the relationship ended. Second gap: The past simple ('were') refers to a completed state ('kids'), appropriate for a past time frame."
+                },
+                {
+                    "text": "______ the new museum yet?",
+                    "options": [
+                        "Have you visited",
+                        "Did you visit"
+                    ],
+                    "correctAnswer": "Have you visited",
+                    "explanation": "The present perfect ('Have you visited') is used to ask about an experience with relevance to the present, especially with 'yet,' implying the action is expected as of May 25, 2025. 'Did you visit' is past simple, needing a specific past time."
+                },
+                {
+                    "text": "She ______ her exam last week.",
+                    "options": [
+                        "passed",
+                        "has passed"
+                    ],
+                    "correctAnswer": "passed",
+                    "explanation": "The past simple ('passed') is used for a completed action at a specific time, 'last week' (around May 18, 2025). 'Has passed' is present perfect, implying current relevance, which isn’t indicated."
+                },
+                {
+                    "text": "I ______ sushi before, and I loved it.",
+                    "options": [
+                        "have tried",
+                        "tried"
+                    ],
+                    "correctAnswer": "have tried",
+                    "explanation": "The present perfect ('have tried') is used for past experiences with relevance to the present (May 25, 2025), especially with 'before,' indicating an unspecified time. 'Tried' is past simple, requiring a specific time context."
+                },
+                {
+                    "text": "When ______ you ______ your new phone?",
+                    "options": [
+                        "did / buy",
+                        "have / bought"
+                    ],
+                    "correctAnswer": "did / buy",
+                    "explanation": "The past simple ('did buy') is used to ask about a specific completed action in the past, appropriate with 'when,' which seeks a specific time before May 25, 2025. 'Have bought' is present perfect, less suitable for a specific time question."
+                },
+                {
+                    "text": "They ______ married for 10 years.",
+                    "options": [
+                        "have been",
+                        "were"
+                    ],
+                    "correctAnswer": "have been",
+                    "explanation": "The present perfect ('have been') indicates a state that started in the past (2015) and continues to the present (May 25, 2025). 'Were' is past simple, suggesting the marriage ended, which isn’t implied."
+                },
+                {
+                    "text": "I ______ to the gym yesterday evening.",
+                    "options": [
+                        "went",
+                        "have gone"
+                    ],
+                    "correctAnswer": "went",
+                    "explanation": "The past simple ('went') is used for a completed action at a specific time, 'yesterday evening' (May 24, 2025). 'Have gone' is present perfect, implying the person is still at the gym, which doesn’t fit."
+                },
+                {
+                    "text": "______ ever ______ a marathon?",
+                    "options": [
+                        "Have you / run",
+                        "Did you / run"
+                    ],
+                    "correctAnswer": "Have you / run",
+                    "explanation": "The present perfect ('Have you run') asks about life experiences up to the present (May 25, 2025), with 'ever' indicating an unspecified time. 'Did you run' is past simple, less natural without a specific time."
+                },
+                {
+                    "text": "He ______ his homework an hour ago.",
+                    "options": [
+                        "finished",
+                        "has finished"
+                    ],
+                    "correctAnswer": "finished",
+                    "explanation": "The past simple ('finished') is used for a completed action at a specific time, 'an hour ago' (around 12:31 AM, May 25, 2025). 'Has finished' is present perfect, implying current relevance, which isn’t specified."
+                },
+                {
+                    "text": "We ______ in this city since we ______ here in 2022.",
+                    "options": [
+                        "have lived / moved",
+                        "lived / moved"
+                    ],
+                    "correctAnswer": "have lived / moved",
+                    "explanation": "First gap: The present perfect ('have lived') indicates an ongoing state from 2022 to May 25, 2025. 'Lived' is past simple, suggesting they no longer live there. Second gap: The past simple ('moved') refers to a specific completed action in 2022."
+                },
+                {
+                    "text": "______ you ______ the news about the election?",
+                    "options": [
+                        "Have / heard",
+                        "Did / hear"
+                    ],
+                    "correctAnswer": "Have / heard",
+                    "explanation": "The present perfect ('Have heard') is used to ask about an experience with relevance to the present (May 25, 2025), especially for recent or impactful news. 'Did hear' is past simple, needing a specific time context."
+                },
+                {
+                    "text": "I ______ my wallet at the store yesterday.",
+                    "options": [
+                        "left",
+                        "have left"
+                    ],
+                    "correctAnswer": "left",
+                    "explanation": "The past simple ('left') is used for a completed action at a specific time, 'yesterday' (May 24, 2025). 'Have left' is present perfect, implying the wallet is still missing, which isn’t specified."
+                }
+            ]
+        },
+        {
+            "topic": "Common Questions",
+            "questions": [
+                {
+                    "text": "Can I park here?",
+                    "options": [
+                        "Sorry, I did that.",
+                        "It's the same place.",
+                        "Only for half an hour.",
+                        "None of the above."
+                    ],
+                    "correctAnswer": "Only for half an hour.",
+                    "explanation": "The question asks about the permissibility of parking in a specific location. 'Only for half an hour' directly addresses whether parking is allowed, specifying a time restriction, which is a common response to such inquiries."
+                },
+                {
+                    "text": "What colour will you paint the children's bedroom?",
+                    "options": [
+                        "I hope it was right.",
+                        "We can't decide.",
+                        "It wasn't very difficult.",
+                        "None of the above."
+                    ],
+                    "correctAnswer": "We can't decide.",
+                    "explanation": "The question seeks a decision about the color of the children's bedroom. 'We can't decide' directly responds by indicating no final color choice has been made, fitting the context of an undecided choice."
+                },
+                {
+                    "text": "I can't understand this email.",
+                    "options": [
+                        "Would you like some help?",
+                        "Don't you know?",
+                        "I suppose you can.",
+                        "None of the above."
+                    ],
+                    "correctAnswer": "Would you like some help?",
+                    "explanation": "The statement expresses difficulty with an email, implying a need for assistance. 'Would you like some help?' offers support, making it a polite and relevant response to the stated problem."
+                },
+                {
+                    "text": "I'd like two tickets for tomorrow night.",
+                    "options": [
+                        "How much did you pay?",
+                        "Afternoon and evening.",
+                        "I'll just check for you.",
+                        "None of the above."
+                    ],
+                    "correctAnswer": "I'll just check for you.",
+                    "explanation": "The request is for two tickets for a specific time. 'I'll just check for you' is a standard response indicating the speaker will verify ticket availability, appropriate for a ticket counter context."
+                },
+                {
+                    "text": "Shall we go to the gym now?",
+                    "options": [
+                        "I'm too tired.",
+                        "It's very good.",
+                        "Not at all.",
+                        "None of the above."
+                    ],
+                    "correctAnswer": "I'm too tired.",
+                    "explanation": "The question proposes going to the gym. 'I'm too tired' declines the suggestion with a reason, making it a direct and contextually appropriate response."
+                },
+                {
+                    "text": "His eyes were ______ bad that he couldn't read the number plate of the car in front.",
+                    "options": [
+                        "such",
+                        "too",
+                        "so",
+                        "very"
+                    ],
+                    "correctAnswer": "too",
+                    "explanation": "The structure 'too + adjective + to + verb' indicates excessiveness causing a negative outcome. 'His eyes were too bad to read the number plate' means his poor eyesight prevented reading. 'So' requires 'so bad that,' 'such' is for nouns, and 'very' doesn’t imply excess."
+                },
+                {
+                    "text": "The company needs to decide ______ and for all what its position is on this point.",
+                    "options": [
+                        "here",
+                        "once",
+                        "first",
+                        "finally"
+                    ],
+                    "correctAnswer": "once",
+                    "explanation": "The phrase 'once and for all' means to settle something definitively. 'Decide once and for all' indicates a final decision, fitting the context. The other options do not form this idiomatic expression."
+                },
+                {
+                    "text": "Don't put your cup on the ______ of the table - someone will knock it off.",
+                    "options": [
+                        "outside",
+                        "edge",
+                        "boundary",
+                        "border"
+                    ],
+                    "correctAnswer": "edge",
+                    "explanation": "The 'edge' of a table is its outer rim, where a cup could be knocked off. 'Outside' is vague, 'boundary' and 'border' are for larger areas, making 'edge' the precise term."
+                },
+                {
+                    "text": "I'm sorry - I didn't ______ to disturb you.",
+                    "options": [
+                        "hope",
+                        "think",
+                        "mean",
+                        "suppose"
+                    ],
+                    "correctAnswer": "mean",
+                    "explanation": "The phrase 'I didn't mean to' apologizes for an unintended action, fitting the context of disturbing someone unintentionally. The other options do not convey this sense of apology."
+                },
+                {
+                    "text": "The singer ended the concert ______ her most popular song.",
+                    "options": [
+                        "by",
+                        "with",
+                        "in",
+                        "as"
+                    ],
+                    "correctAnswer": "with",
+                    "explanation": "The preposition 'with' indicates what something concludes with, as in 'ended the concert with her most popular song,' meaning it was the final performance. The other options do not fit this context."
+                },
+                {
+                    "text": "Would you mind ______ these plates a wipe before putting them in the cupboard?",
+                    "options": [
+                        "making",
+                        "doing",
+                        "getting",
+                        "giving"
+                    ],
+                    "correctAnswer": "giving",
+                    "explanation": "The phrase 'give something a wipe' means to clean briefly. 'Giving these plates a wipe' is idiomatic and correct. The other options do not form this expression."
+                },
+                {
+                    "text": "I was looking forward ______ at the new restaurant, but it was closed.",
+                    "options": [
+                        "to eat",
+                        "to have eaten",
+                        "to eating",
+                        "eating"
+                    ],
+                    "correctAnswer": "to eating",
+                    "explanation": "The phrase 'look forward to' requires a gerund. 'Looking forward to eating' is correct for an activity. The other options do not follow this grammatical rule."
+                },
+                {
+                    "text": "______ tired Melissa is when she gets home from work, she always makes time to say goodnight to the children.",
+                    "options": [
+                        "Whatever",
+                        "No matter how",
+                        "However much",
+                        "Although"
+                    ],
+                    "correctAnswer": "No matter how",
+                    "explanation": "'No matter how' introduces a concessive clause with an adjective, indicating that regardless of tiredness, Melissa acts. The other options do not fit with 'tired.'"
+                },
+                {
+                    "text": "It was only ten days ago ______ she started her new job.",
+                    "options": [
+                        "then",
+                        "since",
+                        "after",
+                        "that"
+                    ],
+                    "correctAnswer": "that",
+                    "explanation": "The structure 'It was... that...' emphasizes the time frame, as in 'It was only ten days ago that she started,' highlighting May 15, 2025. The other options do not fit this emphatic structure."
+                },
+                {
+                    "text": "The shop didn't have the shoes I wanted, but they've ______ a pair specially for me.",
+                    "options": [
+                        "booked",
+                        "ordered",
+                        "commanded",
+                        "asked"
+                    ],
+                    "correctAnswer": "ordered",
+                    "explanation": "In retail, 'ordered' means arranging to have an item brought in, as in 'they've ordered a pair.' The other options are less appropriate for this context."
+                },
+                {
+                    "text": "Have you got time to discuss your work now or are you ______ to leave?",
+                    "options": [
+                        "thinking",
+                        "round",
+                        "planned",
+                        "about"
+                    ],
+                    "correctAnswer": "about",
+                    "explanation": "'About to leave' means on the verge of leaving, fitting the context of checking availability. The other options do not form this phrase."
+                },
+                {
+                    "text": "She came to live here ______ a month ago.",
+                    "options": [
+                        "quite",
+                        "beyond",
+                        "already",
+                        "almost"
+                    ],
+                    "correctAnswer": "almost",
+                    "explanation": "'Almost' indicates a time close to a month, as in 'almost a month ago' (around April 25, 2025). The other options do not fit temporally."
+                },
+                {
+                    "text": "Once the plane is in the air, you can ______ your seat belts if you wish.",
+                    "options": [
+                        "undress",
+                        "unfasten",
+                        "unlock",
+                        "untie"
+                    ],
+                    "correctAnswer": "unfasten",
+                    "explanation": "'Unfasten' is the correct term for releasing a seat belt. The other options do not apply to seat belts."
+                },
+                {
+                    "text": "I left my last job because I had no ______ to travel.",
+                    "options": [
+                        "place",
+                        "position",
+                        "opportunity",
+                        "possibility"
+                    ],
+                    "correctAnswer": "opportunity",
+                    "explanation": "'Opportunity' means a chance to travel, fitting the context. The other options are less precise or contextually inappropriate."
+                },
+                {
+                    "text": "It wasn't a bad crash and ______ damage was done to my car.",
+                    "options": [
+                        "little",
+                        "small",
+                        "light",
+                        "mere"
+                    ],
+                    "correctAnswer": "little",
+                    "explanation": "'Little' is used with uncountable nouns like 'damage' to indicate a small amount. The other options are less suitable for 'damage.'"
+                },
+                {
+                    "text": "I'd rather you ______ to her why we can't go.",
+                    "options": [
+                        "would explain",
+                        "explained",
+                        "to explain",
+                        "will explain"
+                    ],
+                    "correctAnswer": "explained",
+                    "explanation": "'I’d rather you + past tense' expresses a preference, as in 'I’d rather you explained,' using the subjunctive past tense for a present/future action."
+                },
+                {
+                    "text": "Before making a decision, the leader considered all ______ of the argument.",
+                    "options": [
+                        "sides",
+                        "features",
+                        "perspectives",
+                        "shades"
+                    ],
+                    "correctAnswer": "sides",
+                    "explanation": "'All sides of the argument' means considering all viewpoints, a common phrase. The other options are less idiomatic."
+                },
+                {
+                    "text": "This new printer is recommended as being ______ reliable.",
+                    "options": [
+                        "greatly",
+                        "highly",
+                        "strongly",
+                        "readily"
+                    ],
+                    "correctAnswer": "highly",
+                    "explanation": "'Highly reliable' is a standard collocation meaning very reliable. The other options do not pair as naturally with 'reliable.'"
+                },
+                {
+                    "text": "When I realised I had dropped my gloves, I decided to ______ my steps.",
+                    "options": [
+                        "retrace",
+                        "regress",
+                        "resume",
+                        "return"
+                    ],
+                    "correctAnswer": "retrace",
+                    "explanation": "'Retrace my steps' means to go back along a path to find something lost, fitting the context. The other options are incorrect."
+                },
+                {
+                    "text": "Anne's house is somewhere in the ______ of the railway station.",
+                    "options": [
+                        "region",
+                        "quarter",
+                        "vicinity",
+                        "district"
+                    ],
+                    "correctAnswer": "vicinity",
+                    "explanation": "'In the vicinity of' means near, as in 'near the railway station.' The other options are too broad or less precise."
+                },
+                {
+                    "text": "Could you tell me your surname?",
+                    "options": [
+                        "Would you like me to spell it?",
+                        "Do you like my family name?",
+                        "How do I say that?",
+                        "None of the above."
+                    ],
+                    "correctAnswer": "Would you like me to spell it?",
+                    "explanation": "Offering to spell the surname is a logical follow-up, especially if the name might be unclear. The other options are irrelevant."
+                },
+                {
+                    "text": "This plant looks dead.",
+                    "options": [
+                        "It's in the garden.",
+                        "It only needs some water.",
+                        "It's sleeping.",
+                        "None of the above."
+                    ],
+                    "correctAnswer": "It only needs some water.",
+                    "explanation": "'It only needs some water' suggests the plant is dehydrated, not dead, addressing the statement directly. The other options are irrelevant."
+                },
+                {
+                    "text": "I hope it doesn't rain.",
+                    "options": [
+                        "Of course not.",
+                        "Will it be wet?",
+                        "So do I.",
+                        "None of the above."
+                    ],
+                    "correctAnswer": "So do I.",
+                    "explanation": "'So do I' expresses agreement with the hope that it doesn’t rain, fitting the context. The other options are inappropriate."
+                },
+                {
+                    "text": "Are you going to come inside soon?",
+                    "options": [
+                        "For ever.",
+                        "Not long.",
+                        "In a minute.",
+                        "None of the above."
+                    ],
+                    "correctAnswer": "In a minute.",
+                    "explanation": "'In a minute' indicates a short delay in coming inside, directly answering the question. The other options are vague or irrelevant."
+                },
+                {
+                    "text": "Who gave you this book, Lucy?",
+                    "options": [
+                        "I bought it.",
+                        "For my birthday.",
+                        "My uncle was.",
+                        "None of the above."
+                    ],
+                    "correctAnswer": "I bought it.",
+                    "explanation": "'I bought it' answers the question by stating Lucy acquired the book herself. The other options do not directly answer."
+                },
+                {
+                    "text": "Shall we go out for pizza tonight?",
+                    "options": [
+                        "I know that.",
+                        "It's very good.",
+                        "I'm too tired.",
+                        "None of the above."
+                    ],
+                    "correctAnswer": "I'm too tired.",
+                    "explanation": "'I'm too tired' declines the suggestion to go out with a reason, fitting the context. The other options are irrelevant."
+                },
+                {
+                    "text": "Do you mind if I come too?",
+                    "options": [
+                        "That's fine!",
+                        "I'd like to.",
+                        "I don't know if I can.",
+                        "None of the above."
+                    ],
+                    "correctAnswer": "That's fine!",
+                    "explanation": "'That's fine!' grants permission to join in a friendly way, fitting the request. The other options do not address the permission."
+                },
+                {
+                    "text": "There's someone at the door.",
+                    "options": [
+                        "Can I help you?",
+                        "Well, go and answer it then.",
+                        "He's busy at the moment.",
+                        "None of the above."
+                    ],
+                    "correctAnswer": "Well, go and answer it then.",
+                    "explanation": "'Well, go and answer it then' urges action in response to someone at the door, fitting the context. The other options are misdirected."
+                },
+                {
+                    "text": "How much butter do I need for this cake?",
+                    "options": [
+                        "I'd like one.",
+                        "I'll use some.",
+                        "I'm not sure.",
+                        "None of the above."
+                    ],
+                    "correctAnswer": "I'm not sure.",
+                    "explanation": "'I'm not sure' is a reasonable response if the amount is unknown, prompting clarification. The other options do not address quantity."
+                },
+                {
+                    "text": "How long are you here for?",
+                    "options": [
+                        "Since last week.",
+                        "Ten days ago.",
+                        "Till tomorrow.",
+                        "None of the above."
+                    ],
+                    "correctAnswer": "Till tomorrow.",
+                    "explanation": "'Till tomorrow' specifies the duration of stay, answering the question directly. The other options refer to past events, not duration."
+                },
+                {
+                    "text": "Have you guys had enough to eat?",
+                    "options": [
+                        "That's all right.",
+                        "Is there any more rice?",
+                        "It's not the right time.",
+                        "None of the above."
+                    ],
+                    "correctAnswer": "Is there any more rice?",
+                    "explanation": "'Is there any more rice?' implies they might want more, indirectly addressing sufficiency. The other options are irrelevant."
+                },
+                {
+                    "text": "That's my coat over there.",
+                    "options": [
+                        "Will you take it off?",
+                        "No, you haven't!",
+                        "Here you are.",
+                        "None of the above."
+                    ],
+                    "correctAnswer": "Here you are.",
+                    "explanation": "'Here you are' acknowledges or hands over the coat, fitting the context. The other options are inappropriate."
+                },
+                {
+                    "text": "Let's go by bus.",
+                    "options": [
+                        "The train was expensive.",
+                        "We'll buy a ticket.",
+                        "It'll take too long.",
+                        "None of the above."
+                    ],
+                    "correctAnswer": "We'll buy a ticket.",
+                    "explanation": "'We'll buy a ticket' agrees with the bus suggestion and indicates the next step. The other options are irrelevant or oppositional."
+                },
+                {
+                    "text": "Do you know my brother Charlie?",
+                    "options": [
+                        "Sorry, he's not here.",
+                        "I don't think I do.",
+                        "I know.",
+                        "None of the above."
+                    ],
+                    "correctAnswer": "I don't think I do.",
+                    "explanation": "'I don't think I do' indicates unfamiliarity with Charlie, directly answering the question. The other options are irrelevant."
+                },
+                {
+                    "text": "Would you like some ice in your drink or not?",
+                    "options": [
+                        "I hope so.",
+                        "Yes, I shall.",
+                        "I don't mind.",
+                        "None of the above."
+                    ],
+                    "correctAnswer": "I don't mind.",
+                    "explanation": "'I don't mind' indicates indifference to having ice, fitting the choice offered. The other options do not address the question."
+                },
+                {
+                    "text": "I hope I haven't ______ you any trouble by changing the arrangements.",
+                    "options": [
+                        "put",
+                        "caused",
+                        "made",
+                        "done"
+                    ],
+                    "correctAnswer": "caused",
+                    "explanation": "'Cause trouble' is a standard expression, as in 'haven’t caused you any trouble,' fitting the apology context. The other options are not idiomatic."
+                },
+                {
+                    "text": "The floor is wet: don't run or you might ______ !",
+                    "options": [
+                        "stoop",
+                        "spill",
+                        "slip",
+                        "spin"
+                    ],
+                    "correctAnswer": "slip",
+                    "explanation": "'Slip' is the correct warning for a wet floor, indicating the risk of falling. The other options do not relate to falling."
+                },
+                {
+                    "text": "When you come to my house, ______ your camera with you.",
+                    "options": [
+                        "take",
+                        "show",
+                        "fetch",
+                        "bring"
+                    ],
+                    "correctAnswer": "bring",
+                    "explanation": "'Bring' is used for moving something toward the speaker’s location, as in 'bring your camera.' The other options are incorrect in this context."
+                },
+                {
+                    "text": "Paul arrived at the shop ______ as the manager was closing for the day.",
+                    "options": [
+                        "even",
+                        "just",
+                        "still",
+                        "right"
+                    ],
+                    "correctAnswer": "just",
+                    "explanation": "'Just' indicates arriving at the exact moment of closing, fitting the context. The other options do not convey this timing."
+                },
+                {
+                    "text": "I would ______ to stay at home and relax for a change.",
+                    "options": [
+                        "rather",
+                        "better",
+                        "prefer",
+                        "enjoy"
+                    ],
+                    "correctAnswer": "prefer",
+                    "explanation": "'Prefer' expresses a choice, as in 'I would prefer to stay at home,' fitting the context. The other options do not imply choice correctly."
+                },
+                {
+                    "text": "Is there ______ of food for everyone?",
+                    "options": [
+                        "adequate",
+                        "enough",
+                        "sufficient",
+                        "plenty"
+                    ],
+                    "correctAnswer": "enough",
+                    "explanation": "'Enough' asks if there is a sufficient quantity, fitting the context. The other options are less neutral or more formal."
+                },
+                {
+                    "text": "Lily says she's happy at school but she's ______ complaining.",
+                    "options": [
+                        "rarely",
+                        "sometimes",
+                        "always",
+                        "often"
+                    ],
+                    "correctAnswer": "always",
+                    "explanation": "'Always complaining' highlights the contrast with her claim of happiness, fitting the context. The other options are less extreme."
+                },
+                {
+                    "text": "______ the step when you go in.",
+                    "options": [
+                        "Consider",
+                        "Mind",
+                        "Attend",
+                        "Look"
+                    ],
+                    "correctAnswer": "Mind",
+                    "explanation": "'Mind the step' is a common warning to avoid tripping, fitting the context. The other options are not idiomatic warnings."
+                },
+                {
+                    "text": "______ stay the night if it's too difficult to get home.",
+                    "options": [
+                        "At all costs",
+                        "By all means",
+                        "In all",
+                        "On the whole"
+                    ],
+                    "correctAnswer": "By all means",
+                    "explanation": "'By all means' grants permission to stay, fitting the context. The other options are negative or irrelevant."
+                },
+                {
+                    "text": "No ______ Hannah is happy when you think how many prizes she has won recently.",
+                    "options": [
+                        "surprise",
+                        "problem",
+                        "question",
+                        "wonder"
+                    ],
+                    "correctAnswer": "wonder",
+                    "explanation": "'No wonder' means it’s not surprising, as in 'No wonder Hannah is happy,' given her recent success. The other options do not fit."
+                }
+            ]
+        }
+    ]
+}

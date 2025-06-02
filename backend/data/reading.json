@@ -1,0 +1,595 @@
+{
+    "reading": [
+        {
+            "passage": "A\nAfter years in the wilderness, the term 'artificial intelligence' (AI) seems poised to make a comeback. AI was big in the 1980s but vanished in the 1990s. It re-entered public consciousness with the release of AI, a movie about a robot boy. This has ignited public debate about AI, but the term is also being used once more within the computer industry. Researchers, executives and marketing people are now using the expression without irony or inverted commas. And it is not always hype. The term is being applied, with some justification, to products that depend on technology that was originally developed by AI researchers. Admittedly, the rehabilitation of the term has a long way to go, and some firms still prefer to avoid using it. But the fact that others are starting to use it again suggests that AI has moved on from being seen as an over-ambitious and under-achieving field of research.\n\nB\nThe field was launched, and the term 'artificial intelligence' coined, at a conference in 1956 by a group of researchers that included Marvin Minsky, John McCarthy, Herbert Simon and Alan Newell, all of whom went on to become leading figures in the field. The expression provided an attractive but informative name for a research programme that encompassed such previously disparate fields as operations research, cybernetics, logic and computer science. The goal they shared was an attempt to capture or mimic human abilities using machines. That said, different groups of researchers attacked different problems, from speech recognition to chess playing, in different ways; AI unified the field in name only. But it was a term that captured the public imagination.\n\nC\nMost researchers agree that AI peaked around 1985. A public reared on science-fiction movies and excited by the growing power of computers had high expectations. For years, AI researchers had implied that a breakthrough was just around the corner. Marvin Minsky said in 1967 that within a generation the problem of creating 'artificial intelligence' would be substantially solved. Prototypes of medical-diagnosis programs and speech recognition software appeared to be making progress. It proved to be a false dawn. Thinking computers and household robots failed to materialise, and a backlash ensued. 'There was undue optimism in the early 1980s,' says David Leake, a researcher at Indiana University. 'Then when people realised these were hard problems, there was retrenchment. By the late 1980s, the term AI was being avoided by many researchers, who opted instead to align themselves with specific sub-disciplines such as neural networks, agent technology, case-based reasoning, and so on.'\n\nD\nIronically, in some ways AI was a victim of its own success. Whenever an apparently mundane problem was solved, such as building a system that could land an aircraft unattended, the problem was deemed not to have been AI in the first place. 'If it works, it can't be AI,' as Dr Leake characterises it. The effect of repeatedly moving the goal-posts in this way was that AI came to refer to 'blue-sky' research that was still years away from commercialisation. Researchers joked that AI stood for 'almost implemented'. Meanwhile, the technologies that made it once the market, such as speech recognition, language translation and decision-support software, were no longer regarded as AI. Yet all three once fell well within the umbrella of AI research.\n\nE\nBut the tide may now be turning, according to Dr Leake. HNC Software of San Diego, backed by a government agency, reckon that their new approach to artificial intelligence is the most powerful and promising approach ever discovered. HNC claim that their system, based on a cluster of 30 processors, could be used to spot camouflaged vehicles on a battlefield or extract a voice signal from a noisy background - tasks humans can do well, but computers cannot. 'Whether or not their technology lives up to the claims made for it, the fact that HNC are emphasising the use of AI is itself an interesting development,' says Dr Leake.\n\nF\nAnother factor that may boost the prospects for AI in the near future is that investors are now looking for firms using clever technology, rather than just a clever business model, to differentiate themselves. In particular, the problem of information overload, exacerbated by the growth of e-mail and the explosion in the number of web pages, means there are plenty of opportunities for new technologies to help filter and categorise information - classic AI problems. That may mean that more artificial intelligence companies will start to emerge to meet this challenge.\n\nG\nThe 1969 film, 2001: A Space Odyssey, featured an intelligent computer called HAL 9000. As well as understanding and speaking English, HAL could play chess and even learned to lipread. HAL thus encapsulated the optimism of the 1960s that intelligent computers would be widespread by 2001. But 2001 has been and gone, and there is still no sign of a HAL-like computer. Individual systems can play chess or transcribe speech, but a general theory of machine intelligence still remains elusive. It may be, however, that the comparison with HAL no longer seems quite so important, and AI can now be judged by what it can do, rather than by how well it matches up to a 30-year-old science-fiction film. 'People are beginning to realise that there are impressive things that these systems can do,' says Dr Leake hopefully.",
+            "paragraphs": {
+                "A": "After years in the wilderness...field of research.",
+                "B": "The field was launched...public imagination.",
+                "C": "Most researchers agree...and so on.'",
+                "D": "Ironically, in some ways...AI research.",
+                "E": "But the tide may...says Dr Leake.",
+                "F": "Another factor that...this challenge.",
+                "G": "The 1969 film...Leake hopefully."
+            },
+            "questions": [
+                {
+                    "type": "paragraph_identification",
+                    "text": "Which paragraph contains information about how AI might have a military impact?",
+                    "correctAnswer": "E"
+                },
+                {
+                    "type": "paragraph_identification",
+                    "text": "Which paragraph mentions that AI brings together a range of separate research areas?",
+                    "correctAnswer": "B"
+                },
+                {
+                    "type": "paragraph_identification",
+                    "text": "Which paragraph discusses why AI has become a common topic of conversation again?",
+                    "correctAnswer": "A"
+                },
+                {
+                    "type": "paragraph_identification",
+                    "text": "Which paragraph explains how AI could help with information overload?",
+                    "correctAnswer": "F"
+                },
+                {
+                    "type": "paragraph_identification",
+                    "text": "Which paragraph describes where the expression AI was first used?",
+                    "correctAnswer": "B"
+                },
+                {
+                    "type": "true_false_notgiven",
+                    "text": "The researchers who launched the field of AI had worked together on other projects in the past.",
+                    "correctAnswer": "NOT GIVEN"
+                },
+                {
+                    "type": "true_false_notgiven",
+                    "text": "In 1985, AI was at its lowest point.",
+                    "correctAnswer": "FALSE"
+                },
+                {
+                    "type": "true_false_notgiven",
+                    "text": "Research into agent technology was more costly than research into neural networks.",
+                    "correctAnswer": "NOT GIVEN"
+                },
+                {
+                    "type": "true_false_notgiven",
+                    "text": "Applications of AI have already had a degree of success.",
+                    "correctAnswer": "TRUE"
+                },
+                {
+                    "type": "true_false_notgiven",
+                    "text": "The problems waiting to be solved by AI have not changed since 1967.",
+                    "correctAnswer": "FALSE"
+                }
+            ]
+        },
+        {
+            "passage": "Located in the beautiful state of Alaska, a little town called Whittier is tucked away in a picturesque area surrounded by mountains and the ocean. This hidden gem is hard to reach: the only ways to and from Whittier are either by ferry or through a one-lane tunnel that cuts through the mountains. This tunnel is unique because it is shared by both vehicles and trains, necessitating a precisely managed schedule to accommodate both modes of transportation and both directions of traffic.\n\nWhittier's economy thrives on its port, the town's main source of employment, where cargo ships drop off their containers for rail transportation across Alaska. The town also has a grocery store, a museum, two hotels, and various other job opportunities for all its citizens: police officers, municipal workers, educators at the local school, and marina staff. Tourism has grown over the last few years to become an alternative source of income, drawing visitors to attractions such as the Anton Anderson Memorial Tunnel, glacier jet ski tours, and scenic boat excursions that offer breathtaking views of marine wildlife and icebergs.\n\nBut the most fascinating aspect of Whittier is perhaps the fact that nearly all of its 200-odd residents live under the same roof. The Begich Towers, a 14-story building, is more than just an apartment complex; it's a self-contained town! The harsh winter weather helps to explain the convenience of this unusual way of living. Whittier's winter months are known for their heavy snowfalls and fierce winds. By having all the necessary facilities and services in one building, the residents don't have to brave the cold weather every time they need to run an errand or go to church. Not even the children need to step outside to attend school, which is in an adjacent building connected through a tunnel. It's an ingenious solution that makes life in such an extreme climate much more manageable.\n\nHowever, the origins of Whittier's unique living situation date back to the early last century when the area was chosen for a military base. Shielded by towering mountains and situated by a bay with unfreezing waters, this location offered an ideal strategic position. Initially, wooden camps housed the soldiers, but as the need for more permanent structures grew with the increasing population, two significant buildings were erected: the once largest building in Alaska, the Buckner Building, and the Begich Towers. The construction of the tunnel in the 1940s, intended to provide railway access, marked Whittier's transformation into an essential cargo and passenger port. After the military left in the 1960s, the Buckner Building was abandoned, and the Begich Towers became the main residential and communal space for the town's inhabitants.\n\nNowadays, Whittier's residents just need to hop on the elevator to go grocery shopping, visit the police station, or eat 'out'—though in this case, 'eat in' might be more accurate. There's even a health clinic, which is far from being a hospital but more than enough for minor ailments. In essence, everything the residents may need is a few steps away from their homes. Living in Begich Towers offers a sense of community and convenience that is hard to find elsewhere. The close proximity of homes and businesses fosters a strong bond among the residents. Whether they're sharing a cup of coffee at the café on the ground floor or attending a community meeting, the people of Whittier have created a unique and supportive environment.\n\nWhittier might be small, but it's a remarkable example of adaptability and community spirit. Its single-building town, surrounded by Alaska's breathtaking landscape, is a testament to human ingenuity and resilience.",
+            "questions": [
+                {
+                    "text": "Which adjective would better describe Whittier?",
+                    "options": [
+                        "remote",
+                        "reachable",
+                        "mountainous"
+                    ],
+                    "correctAnswer": "remote"
+                },
+                {
+                    "text": "If you are going to Whittier through the tunnel...",
+                    "options": [
+                        "your only option is to take a train.",
+                        "you can't use the tunnel while other people are leaving.",
+                        "you can go by car at any time."
+                    ],
+                    "correctAnswer": "you can't use the tunnel while other people are leaving."
+                },
+                {
+                    "text": "Most people in Whittier work in...",
+                    "options": [
+                        "the shipping industry.",
+                        "tourism.",
+                        "services."
+                    ],
+                    "correctAnswer": "the shipping industry."
+                },
+                {
+                    "text": "According to the text...",
+                    "options": [
+                        "having a town in one building is not ideal.",
+                        "the school is in the same building.",
+                        "the town's church is in the Begich Towers."
+                    ],
+                    "correctAnswer": "the town's church is in the Begich Towers."
+                },
+                {
+                    "text": "The towers were built...",
+                    "options": [
+                        "to protect the soldiers from the weather.",
+                        "to accommodate an expanding population.",
+                        "to mark Whittier's transformation."
+                    ],
+                    "correctAnswer": "to accommodate an expanding population."
+                },
+                {
+                    "text": "Which of these can you NOT find in Begich Towers?",
+                    "options": [
+                        "a restaurant",
+                        "a hospital",
+                        "a supermarket"
+                    ],
+                    "correctAnswer": "a hospital"
+                },
+                {
+                    "text": "What is a key feature of the Anton Anderson Memorial Tunnel?",
+                    "options": [
+                        "It is exclusively for train travel.",
+                        "It is shared by vehicles and trains.",
+                        "It is only accessible by ferry."
+                    ],
+                    "correctAnswer": "It is shared by vehicles and trains."
+                },
+                {
+                    "text": "What has contributed to Whittier’s economy in recent years besides the port?",
+                    "options": [
+                        "Fishing industry",
+                        "Tourism",
+                        "Mining"
+                    ],
+                    "correctAnswer": "Tourism"
+                },
+                {
+                    "text": "Why is living in Begich Towers convenient during Whittier’s winter months?",
+                    "options": [
+                        "It offers protection from heavy snow and winds.",
+                        "It is located near the port for easy commuting.",
+                        "It has larger apartments than other buildings."
+                    ],
+                    "correctAnswer": "It offers protection from heavy snow and winds."
+                },
+                {
+                    "text": "What role did the tunnel play in Whittier’s development in the 1940s?",
+                    "options": [
+                        "It provided access for tourists.",
+                        "It facilitated railway access for cargo and passengers.",
+                        "It connected Whittier to a nearby military base."
+                    ],
+                    "correctAnswer": "It facilitated railway access for cargo and passengers."
+                }
+            ]
+        },
+        {
+            "passage": "The 2009 British Homes Awards challenged the industry to design a house that can adapt to different life stages. The participants were asked to rethink the construction and design of individual homes, so that they were easily adaptable to less mobile inhabitants, and also to create communities in which ageing occupants could continue to enjoy shared amenities. The top design also had to be attractive to its potential buyers, because the competition was put to the public vote.\n\nThe winner, gaining 12,000 votes from Mail on Sunday readers, was the strikingly modern SunnySideUp, designed by Kosi Architects. Here are its three main features:\n\n1. Upside Down House\nThe architects took as a starting point the accepted norm for a house - rows of houses facing onto streets crammed with cars, with living rooms on the ground floor and bedrooms above. Then they scrapped it. They ended up with the living room, dining room and kitchen on the top floor where they can benefit from the light and views, and maximise energy efficiency. And they put the bedrooms on the ground floor where the garden aspect gives inhabitants increased privacy, and a cool temperature is maintained throughout the day. The two floors are linked by wide, gentle gradient stairs, which are designed to allow for a stair lift to be fitted if necessary as owners age.\n\n2. Concealed Parking Spaces\nBut the feature that, according to Warren Rosing, one of the Kosi architects responsible for the design, was particularly popular with the public, is actually the parking. In a SunnySideUp development no one has to look out onto a street full of cars, or worry about their kids being run over, because the terrace zone at the first floor level link all the homes and is a car-free zone. Vehicles are tucked away on the lower floor, leaving safe and pleasant spaces outside the houses for people to meet, and kids to play. A lift takes people directly from garage to living area, so that all residents, including the elderly and those with heavy shopping, can move comfortably between the floors. The natural feel of the front area is enhanced by the planters that are placed outside the kitchens at the front to encourage residents to grow vegetables and flowers where they can be seen. The idea is that not only would they look pretty, but they would be a talking point, encouraging interaction between residents on the terrace area outside.\n\n3. Flexible Spaces\nBut it's the fact that the space is designed to adapt to the changing needs, including the fluctuating income of its owners, that makes it a thought-provoking, as well as a winning, design. The lower-floor bedrooms have separate outdoor access so they can be easily let. The idea is that owners can get some extra money to pay for their mortgages during the first years. And later in the future, those bedrooms can be used as a granny flat, or an office, and can easily be converted into a separate one-bed flat if your kids won't leave home. And if more space is required, as well as the usual loft that can be converted, there is potential for a gallery floor to be inserted in the living room.\n\n4. Where can you get one?\nAt the moment the SunnySideUp house is still just a set of drawings. But Warren Rosing says, 'We are hoping to have it built.' The organisers are in talks with builders, but due to the economic climate it may take longer than we would like. 'We're sure it will be worth the wait' they say.",
+            "questions": [
+                {
+                    "text": "According to the article, The British Homes Awards challenged architects to design a house ...",
+                    "options": [
+                        "for disabled people",
+                        "for ageing inhabitants",
+                        "that could adapt to all ages",
+                        "for young families with children"
+                    ],
+                    "correctAnswer": "that could adapt to all ages"
+                },
+                {
+                    "text": "According to the article, in the winning property, bedrooms are downstairs to ...",
+                    "options": [
+                        "benefit from the view",
+                        "have easier access to the house",
+                        "have more privacy in the living room",
+                        "keep the same pleasant atmosphere the whole day"
+                    ],
+                    "correctAnswer": "keep the same pleasant atmosphere the whole day"
+                },
+                {
+                    "text": "According to the article, the parking spaces in this house design are ...",
+                    "options": [
+                        "on the first floor",
+                        "on the ground floor",
+                        "in a separate building",
+                        "in the street"
+                    ],
+                    "correctAnswer": "on the ground floor"
+                },
+                {
+                    "text": "According to the article, in the SunnySideUp house the ground floor ...",
+                    "options": [
+                        "can be rented",
+                        "can be sold separately",
+                        "is only used to store cars",
+                        "has a room for grandparents"
+                    ],
+                    "correctAnswer": "can be rented"
+                },
+                {
+                    "text": "We learn from the article that ...",
+                    "options": [
+                        "children can play safely outside the house",
+                        "the houses overlook a street crammed with cars",
+                        "the back garden is the main talking point for the inhabitants"
+                    ],
+                    "correctAnswer": "children can play safely outside the house"
+                },
+                {
+                    "text": "According to the article, the house has been designed ...",
+                    "options": [
+                        "to be rented",
+                        "to be shared if necessary",
+                        "for families with a small income"
+                    ],
+                    "correctAnswer": "to be shared if necessary"
+                },
+                {
+                    "text": "According to the article, the SunnySideUp development ...",
+                    "options": [
+                        "is being built",
+                        "will never be built",
+                        "will hopefully be built",
+                        "has been recently built"
+                    ],
+                    "correctAnswer": "will hopefully be built"
+                },
+                {
+                    "text": "According to the article, the SunnySideUp house design prioritizes ...",
+                    "options": [
+                        "luxury furnishings",
+                        "flexibility for different residents",
+                        "minimalist architecture"
+                    ],
+                    "correctAnswer": "flexibility for different residents"
+                },
+                {
+                    "text": "According to the article, the SunnySideUp house includes features to ...",
+                    "options": [
+                        "maximize energy efficiency",
+                        "support large family gatherings",
+                        "ensure complete privacy from neighbors"
+                    ],
+                    "correctAnswer": "maximize energy efficiency"
+                },
+                {
+                    "text": "According to the article, the design of the SunnySideUp house allows for ...",
+                    "options": [
+                        "easy expansion of living spaces",
+                        "exclusive use by single families",
+                        "permanent separation of floors"
+                    ],
+                    "correctAnswer": "easy expansion of living spaces"
+                }
+            ]
+        },
+        {
+            "passage": "Anyone who loves sports will agree that cheating is bad. For example, it was simply wrong for Spain to enter people who were not actually disabled into the 2000 Sydney Paralympics basketball team. But sometimes, it is hard to draw a line between what is cheating and what is not. Many sports encourage players to be 'sporting', that is, to play honestly and accept when they lose. However, in sports, the prizes for winning are great, so it is natural for people to use different ways to win a game. Sometimes players cheat or bend the rules to get an advantage in a game.\n\nGamesmanship is when you try to win a game by bending the rules or using dubious tactics. For example, when British Team cyclist Philip Hindes had a bad start in a team race in the 2012 Olympics, he didn't want to let his team down, and since he knew that if a rider fell early, the race would be restarted, he crashed his bike on purpose. Britain went on to win gold.\n\nOther examples of gamesmanship are when players fake injuries or waste time. This might give them a chance for a short rest, or it could annoy their opponent and affect their concentration. For example, at the 2016 Rio Olympics, badminton player Carolina Marins screamed and shouted every time her opponent made a mistake. This affected her opponent's feelings, and people thought she behaved rudely. However, she won the gold medal without breaking any rules.\n\nWhen there is a grey area, it is the referee or umpire's job to decide whether cheating is taking place. However, players can take advantage of this situation because referees aren't perfect and can't see everything. For example, in cricket, if the ball hits a batter's legs, he is out, and most batters know when they are out, so they should leave the field immediately. However, few cricketers are sporting. They wait until the umpire tells them to go because they want to stay in the game, and the umpire might not see what happened. This isn't considered cheating.\n\nHowever, there's no denying that Diego Maradona cheated in the 1986 World Cup quarter-finals between England and Argentina. In that particular match, Maradona infamously scored a goal using his hand. The referee, who missed the incident, awarded the goal, and unsurprisingly, Maradona didn't question the decision. But the game of football, however, isn't always so forgiving of those who bend the rules, as Brazilian player Rivaldo knows. In the 2002 World Cup, he faked an injury during a match. Unlike Maradona, Rivaldo wasn't so lucky; he was caught out and was later fined, proving that the outcomes of such actions are not always in the player's favour.\n\nSometimes, players might even try to lose on purpose. At the 2012 London Olympics, four women's badminton doubles teams from China, Indonesia and South Korea purposely played badly. They all wanted to lose because it would lead to an easier place in the tournament. Although none of the players broke any badminton rules, they were all disqualified for their poor sportsmanship.\n\nWhere there are games, people will always try different ways to win. But is bending the rules the same as cheating? Or does it just make the game more interesting because sports competitions are not only about physical skills but also about clever strategies?",
+            "questions": [
+                {
+                    "text": "According to the passage, the 2000 Sydney Paralympics basketball team...",
+                    "options": [
+                        "won the gold medal despite cheating.",
+                        "were in a grey area.",
+                        "were rightly accused of cheating.",
+                        "were accused of cheating when they did not."
+                    ],
+                    "correctAnswer": "were rightly accused of cheating."
+                },
+                {
+                    "text": "British Team cyclist Philip Hindes...",
+                    "options": [
+                        "lost a medal because he cheated.",
+                        "used gamesmanship to win a medal.",
+                        "won a medal despite cheating.",
+                        "lost a medal because of gamesmanship."
+                    ],
+                    "correctAnswer": "used gamesmanship to win a medal."
+                },
+                {
+                    "text": "Badminton player Carolina Marins...",
+                    "options": [
+                        "used gamesmanship to win a game.",
+                        "used gamesmanship, but lost a game.",
+                        "cheated and won a game.",
+                        "did not cheat, but was disqualified."
+                    ],
+                    "correctAnswer": "used gamesmanship to win a game."
+                },
+                {
+                    "text": "Cricketers who leave the field when they feel the ball touch their legs...",
+                    "options": [
+                        "are breaking the rules.",
+                        "are rare.",
+                        "are using gamesmanship.",
+                        "are following the rules."
+                    ],
+                    "correctAnswer": "are rare."
+                },
+                {
+                    "text": "Diego Maradona is mentioned because he...",
+                    "options": [
+                        "took advantage of a referee's mistake.",
+                        "challenged a referee's decision.",
+                        "persuaded a referee to make a decision.",
+                        "was punished for his gamesmanship."
+                    ],
+                    "correctAnswer": "took advantage of a referee's mistake."
+                },
+                {
+                    "text": "Rivaldo...",
+                    "options": [
+                        "didn't realise he was breaking a rule.",
+                        "exaggerated an injury.",
+                        "was punished for bending the rules.",
+                        "was accused of cheating when he did not."
+                    ],
+                    "correctAnswer": "was punished for bending the rules."
+                },
+                {
+                    "text": "The four badminton teams were disqualified...",
+                    "options": [
+                        "despite not cheating.",
+                        "because they cheated.",
+                        "because they were sporting.",
+                        "after winning their games."
+                    ],
+                    "correctAnswer": "despite not cheating."
+                },
+                {
+                    "text": "According to the passage, gamesmanship involves...",
+                    "options": [
+                        "breaking the rules openly.",
+                        "using tactics that bend the rules.",
+                        "always being punished by referees."
+                    ],
+                    "correctAnswer": "using tactics that bend the rules."
+                },
+                {
+                    "text": "According to the passage, referees and umpires...",
+                    "options": [
+                        "always detect cheating in sports.",
+                        "can miss incidents due to human error.",
+                        "are not involved in grey area decisions."
+                    ],
+                    "correctAnswer": "can miss incidents due to human error."
+                },
+                {
+                    "text": "According to the passage, players might try to lose on purpose to...",
+                    "options": [
+                        "avoid strong opponents in future matches.",
+                        "gain more practice time.",
+                        "protest against unfair rules."
+                    ],
+                    "correctAnswer": "avoid strong opponents in future matches."
+                }
+            ]
+        },
+        {
+            "passage": "If you love chocolate, maybe you have eaten a bar of Cadbury's Bournville chocolate. But Bournville isn't just the name of an English chocolate bar. It's the name of a village which was built especially for workers at the Cadbury's chocolate factory.\n\nGeorge and Richard Cadbury took over the cocoa and chocolate business from their father in 1861. A few years later, they decided to move the factory out of the centre of Birmingham, a city in the middle of England, to a new location where they could expand. They chose an area close to the railways and canals so that they could receive milk deliveries easily and send the finished products to stores across the country.\n\nHere, the air was much cleaner than in the city centre, and the Cadbury brothers thought it would be a much healthier place for their employees to work. They named the site Bournville after a local river called 'The Bourn'. 'Ville', the French word for town, was used because at the time, people thought French chocolate was the highest quality. The new factory opened in 1879. Close to it, they built a village where the factory workers could live. By 1900, there were 313 houses on the site, and many more were built later.\n\nThe Cadbury family were religious and believed that it was right to help other people. They thought their workers deserved to live and work in good conditions. In the factory, workers were given a fair wage, a pension and access to medical treatment. The village was also designed to provide the best possible conditions for workers too. The houses, although traditional in style, had modern interiors, indoor bathrooms and large gardens. The village provided everything that workers needed including a shop, a school and a community centre where evening classes were held to train young members of the workforce.\n\nSince the Cadbury family believed that their workers and their families should be fit and healthy, they added a park with hockey and football pitches, a running track, bowling green, fishing lake, and an outdoor swimming pool. A large clubhouse was built in the park so that players could change their clothes and relax after a game. Dances and dinners were also held here for the factory workers, who were never charged to use any of the sports facilities. However, because the Cadbury's believed that alcohol was bad for health and society, no pubs were ever built in Bourneville!\n\nThe Cadbury brothers were among the first business owners to ensure that their workers had good standards of living. Soon, other British factory owners were copying their ideas by providing homes and communities for their workers designed with convenience and health in mind. Today, over 25,000 people live in Bournville village. There are several facilities there to help people with special needs, such as care homes for the elderly, a hostel for people with learning difficulties and affordable homes for first-time homeowners and single people. Over a hundred years since the first house in Bournville Village was built, the aims of its founders are still carried out.",
+            "questions": [
+                {
+                    "text": "Bournville is ... (Choose TWO correct answers)",
+                    "options": [
+                        "a village",
+                        "a river",
+                        "the founder of a chocolate factory",
+                        "a chocolate bar",
+                        "a chocolate factory"
+                    ],
+                    "correctAnswer": [
+                        "a village",
+                        "a chocolate bar"
+                    ]
+                },
+                {
+                    "text": "The new site for the chocolate factory was chosen because ... (Choose TWO correct answers)",
+                    "options": [
+                        "it was close to farms which provided milk.",
+                        "it had clean, countryside air.",
+                        "a lot of people lived nearby.",
+                        "it was in the centre of the city.",
+                        "it was close to several transportation routes."
+                    ],
+                    "correctAnswer": [
+                        "it had clean, countryside air.",
+                        "it was close to several transportation routes."
+                    ]
+                },
+                {
+                    "text": "Bournville takes its name from ... (Choose TWO correct answers)",
+                    "options": [
+                        "a local river.",
+                        "a local town.",
+                        "a French word.",
+                        "a kind of French chocolate.",
+                        "a French town."
+                    ],
+                    "correctAnswer": [
+                        "a local river.",
+                        "a French word."
+                    ]
+                },
+                {
+                    "text": "The original houses in Bournville were ... (Choose TWO correct answers)",
+                    "options": [
+                        "traditional in appearance.",
+                        "large.",
+                        "free for workers.",
+                        "near to the chocolate factory.",
+                        "built by the factory workers."
+                    ],
+                    "correctAnswer": [
+                        "traditional in appearance.",
+                        "near to the chocolate factory."
+                    ]
+                },
+                {
+                    "text": "Workers at the Cadbury received ... (Choose TWO correct answers)",
+                    "options": [
+                        "free health care.",
+                        "free access to sports facilities.",
+                        "pensions.",
+                        "free food and drink.",
+                        "dancing lessons."
+                    ],
+                    "correctAnswer": [
+                        "free access to sports facilities.",
+                        "pensions."
+                    ]
+                },
+                {
+                    "text": "The extract shows that the Cadbury family were ... (Choose TWO correct answers)",
+                    "options": [
+                        "careful.",
+                        "mean.",
+                        "kind.",
+                        "original.",
+                        "sporty."
+                    ],
+                    "correctAnswer": [
+                        "kind.",
+                        "original."
+                    ]
+                },
+                {
+                    "text": "Who can live in special homes for many people in Bournville now? (Choose TWO correct answers)",
+                    "options": [
+                        "chocolate factory workers.",
+                        "old people.",
+                        "first-time buyers.",
+                        "single people.",
+                        "people with learning problems."
+                    ],
+                    "correctAnswer": [
+                        "old people.",
+                        "people with learning problems."
+                    ]
+                },
+                {
+                    "text": "The village of Bournville included ... (Choose TWO correct answers)",
+                    "options": [
+                        "a pub for workers.",
+                        "a community centre for evening classes.",
+                        "a school for workers’ children.",
+                        "a hospital for medical treatment.",
+                        "a cinema for entertainment."
+                    ],
+                    "correctAnswer": [
+                        "a community centre for evening classes.",
+                        "a school for workers’ children."
+                    ]
+                },
+                {
+                    "text": "The Cadbury brothers’ initiatives influenced ... (Choose TWO correct answers)",
+                    "options": [
+                        "other factory owners to improve worker conditions.",
+                        "the development of French chocolate brands.",
+                        "the creation of similar worker villages elsewhere.",
+                        "the prohibition of alcohol nationwide.",
+                        "the expansion of Birmingham’s city centre."
+                    ],
+                    "correctAnswer": [
+                        "other factory owners to improve worker conditions.",
+                        "the creation of similar worker villages elsewhere."
+                    ]
+                },
+                {
+                    "text": "The sports facilities in Bournville included ... (Choose TWO correct answers)",
+                    "options": [
+                        "an indoor swimming pool.",
+                        "a fishing lake.",
+                        "a golf course.",
+                        "a running track.",
+                        "a tennis court."
+                    ],
+                    "correctAnswer": [
+                        "a fishing lake.",
+                        "a running track."
+                    ]
+                }
+            ]
+        },
+        {
+            "passage": "When you are looking for rental accommodation in a shared house, you have to think not only about the location and your budget, but also about who you are sharing with, as your housemates can make the difference between a successful or an unhappy house-share.\n\nSpeedFlatmating is a perfect way to find the ideal house or flatmate. SpeedFlatmating events, which are organised by the website speedflatmating.co.uk, are mainly held in London. However, some events are held in other British towns and cities. They typically take place in a bar or pub. At these events, people looking for accommodation can meet people with available rooms, or other people on the lookout for accommodation who they can rent a place with.\n\nOn arrival at a SpeedFlatmating event, guests are given a sticker to wear. White stickers indicate that you have an available room. Pink stickers are for people who are looking for a room. On white stickers, people write their name, the rental cost of the room and its nearest tube station. On pink stickers, people write their name, their budget and the area where they want to live.\n\nThe website organises about 17 events per month in London. Their larger events cover the whole of central London and are geared towards people who are flexible about where they want to live. They also run local events for people who already know where they want to live.\n\nUsers enjoy SpeedFlatmating for various reasons. Firstly, it cuts out the long, boring process of advertising and showing people around a flat. Also, potential flatmates can get to meet each other in a relaxed, social setting and find out whether they would be a good match for a flatshare or not. As well as meeting potential flatmates, many people say they enjoy the friendly atmosphere and make new friends at the events.\n\nA huge number of people have benefitted from SpeedFlatmating. Paul from London says, 'I had been having problems finding a place to live in London because I'm in my forties. Most people sharing accommodation in London are in their twenties and thirties, and I didn't really fit in. I went to a SpeedFlatmating event and met three other people in the same situation as me, so we decided to get together and rent a place. Within a week, we had found a place within our budget.'\n\nMelissa says, 'I was just starting to think about moving out of my parents' home, and SpeedFlatmating seemed like a good way to find out more. I was quite nervous about attending the event on my own, but when I got there, I realised that everyone else was nervous too, and so I was able to relax, enjoy myself and meet people. I met a landlord there who was looking for tenants, and I arranged to have a look round his house. I'm moving in next week! It was as simple as that!'",
+            "questions": [
+                {
+                    "text": "All SpeedFlatmating events take place in London.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "correctAnswer": "False"
+                },
+                {
+                    "text": "Everyone at a SpeedFlatmating event is looking for accommodation.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "correctAnswer": "False"
+                },
+                {
+                    "text": "Everyone at a SpeedFlatmating event wears a sticker with their name on it.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "correctAnswer": "True"
+                },
+                {
+                    "text": "People who want to find accommodation wear a pink sticker.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "correctAnswer": "True"
+                },
+                {
+                    "text": "The website organises about 17 events which cover the whole of central London per month.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "correctAnswer": "False"
+                },
+                {
+                    "text": "The atmosphere at a SpeedFlatmating event is relaxed and friendly.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "correctAnswer": "True"
+                },
+                {
+                    "text": "Paul was older than most people looking for accommodation in London.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "correctAnswer": "True"
+                },
+                {
+                    "text": "Paul met someone with a room available at a SpeedFlatmating event.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "correctAnswer": "False"
+                },
+                {
+                    "text": "Melissa went to a SpeedFlatmating event with her parents.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "correctAnswer": "False"
+                },
+                {
+                    "text": "Melissa met someone with a room available at a SpeedFlatmating event.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "correctAnswer": "True"
+                }
+            ]
+        }
+    ]
+}

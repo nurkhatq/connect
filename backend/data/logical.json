@@ -1,0 +1,242 @@
+[
+  {
+    "question": "Find the next number in the series: 2, 6, 12, 20, ?",
+    "options": ["24", "28", "30", "32"],
+    "answer": "30",
+    "explanation": "The pattern is: +4, +6, +8, +10. So, 20 + 10 = 30."
+  },
+  {
+    "question": "If A is the brother of B, and B is the sister of C, then what is A to C?",
+    "options": ["Brother", "Sister", "Uncle", "Cannot be determined"],
+    "answer": "Cannot be determined",
+    "explanation": "We do not know the gender of C, so A could be either brother or sister to C."
+  },
+  {
+    "question": "Which of the following is the odd one out?",
+    "options": ["Square", "Circle", "Triangle", "Rectangle"],
+    "answer": "Circle",
+    "explanation": "All others have straight edges and vertices; the circle does not."
+  },
+  {
+    "question": "If RED is coded as 1854, how is GREEN coded?",
+    "options": ["7185514", "7185541", "7185145", "7185415"],
+    "answer": "7185415",
+    "explanation": "Assign numbers to letters: R=18, E=5, D=4 → RED = 1854. Similarly, G=7, R=18, E=5, E=5, N=14 → GREEN = 7185415."
+  },
+  {
+    "question": "If the day after tomorrow is Sunday, what day was it yesterday?",
+    "options": ["Wednesday", "Thursday", "Friday", "Saturday"],
+    "answer": "Friday",
+    "explanation": "If day after tomorrow is Sunday, then today is Friday, and yesterday was Thursday."
+  },
+    {
+    "question": "What comes next in the series: 5, 10, 20, 40, ?",
+    "options": ["60", "70", "80", "90"],
+    "answer": "80",
+    "explanation": "Each number is multiplied by 2: 5×2=10, 10×2=20, etc."
+  },
+  {
+    "question": "If ALL DOGS ARE ANIMALS and SOME ANIMALS ARE CATS, which conclusion is correct?",
+    "options": ["All dogs are cats", "Some dogs are cats", "Some animals are not cats", "None of the above"],
+    "answer": "None of the above",
+    "explanation": "We cannot conclude anything about dogs and cats directly from the statements."
+  },
+  {
+    "question": "Which number does not belong: 3, 5, 7, 11, 14, 17?",
+    "options": ["3", "5", "14", "17"],
+    "answer": "14",
+    "explanation": "All are prime numbers except 14."
+  },
+  {
+    "question": "John is older than Peter. Peter is older than Sam. Who is the youngest?",
+    "options": ["John", "Peter", "Sam", "Cannot be determined"],
+    "answer": "Sam",
+    "explanation": "Sam is younger than both John and Peter."
+  },
+  {
+    "question": "Choose the odd one out: Pen, Pencil, Eraser, Sharpener, Book",
+    "options": ["Pen", "Eraser", "Book", "Sharpener"],
+    "answer": "Book",
+    "explanation": "All others are writing tools; book is not."
+  },
+  {
+    "question": "If 1=5, 2=25, 3=325, 4=4325, then 5=?",
+    "options": ["54325", "5", "None of the above", "Cannot be determined"],
+    "answer": "54325",
+    "explanation": "Each number n is followed by the result of the previous pattern. 5 = 5 + 4 + 3 + 2 + 1."
+  },
+  {
+    "question": "Which of the following is the mirror image of the word ‘FISH’?",
+    "options": ["HSIF", "ƧIHϽ", "HISF", "None"],
+    "answer": "ƧIHϽ",
+    "explanation": "Each character is mirrored."
+  },
+  {
+    "question": "If TWO is written as 839, and ONE is written as 594, what is TEN?",
+    "options": ["894", "893", "859", "None of the above"],
+    "answer": "894",
+    "explanation": "T=8, W=3, O=9 → TWO=839; similarly T=8, E=4, N=9 → TEN=894."
+  },
+  {
+    "question": "If 8 + 3 = 24, 7 + 2 = 18, what is 6 + 5?",
+    "options": ["30", "55", "66", "33"],
+    "answer": "66",
+    "explanation": "(a + b) × 2 = result → (6+5)=11×6=66."
+  },
+  {
+    "question": "Which number is missing: 1, 4, 9, 16, ?, 36",
+    "options": ["20", "25", "30", "28"],
+    "answer": "25",
+    "explanation": "Sequence of squares: 1², 2², 3²..."
+  },
+  {
+    "question": "A clock shows 3:15. What is the angle between the hour and minute hands?",
+    "options": ["7.5°", "0°", "45°", "30°"],
+    "answer": "7.5°",
+    "explanation": "Hour hand moves 0.5° per minute → 3:15 = 97.5° vs 90° → difference = 7.5°."
+  },
+  {
+    "question": "If the code for CAT is 3120, what is the code for ACT?",
+    "options": ["3210", "3012", "3120", "None of the above"],
+    "answer": "3012",
+    "explanation": "Assign numbers by position in alphabet and rearrange accordingly."
+  },
+  {
+    "question": "A girl has as many brothers as sisters, but her brother has half as many brothers as sisters. How many siblings are there?",
+    "options": ["2 boys, 3 girls", "3 boys, 4 girls", "4 boys, 3 girls", "3 boys, 3 girls"],
+    "answer": "3 boys, 4 girls",
+    "explanation": "The girl has 3 sisters and 3 brothers. The boy has 3 sisters and 2 brothers."
+  },
+  {
+    "question": "Which shape is different: Cube, Sphere, Cylinder, Square?",
+    "options": ["Cube", "Sphere", "Cylinder", "Square"],
+    "answer": "Square",
+    "explanation": "Others are 3D shapes; square is 2D."
+  },
+  {
+    "question": "What is the missing number in the series: 7, 14, 28, 56, ?",
+    "options": ["70", "84", "100", "112"],
+    "answer": "112",
+    "explanation": "Each number is doubled: 7×2=14, 14×2=28..."
+  },
+   {
+    "question": "Find the missing number: 3, 6, 11, 18, 27, ?",
+    "options": ["36", "38", "35", "37"],
+    "answer": "38",
+    "explanation": "Pattern: +3, +5, +7, +9, +11 → next is 27+11=38."
+  },
+  {
+    "question": "Which one is different: Apple, Banana, Carrot, Mango?",
+    "options": ["Apple", "Banana", "Carrot", "Mango"],
+    "answer": "Carrot",
+    "explanation": "Carrot is a vegetable; others are fruits."
+  },
+  {
+    "question": "If 9 + 3 = 36 and 8 + 4 = 48, what is 7 + 5?",
+    "options": ["60", "70", "72", "56"],
+    "answer": "72",
+    "explanation": "Pattern: (a + b) × b → (7+5)×6 = 12×6 = 72."
+  },
+  {
+    "question": "Choose the odd one out: Eagle, Parrot, Bat, Sparrow",
+    "options": ["Eagle", "Parrot", "Bat", "Sparrow"],
+    "answer": "Bat",
+    "explanation": "Bat is a mammal; others are birds."
+  },
+  {
+    "question": "If John is taller than Mike, and Mike is taller than Sara, who is the shortest?",
+    "options": ["John", "Mike", "Sara", "Cannot be determined"],
+    "answer": "Sara",
+    "explanation": "Sara is shorter than Mike, who is shorter than John."
+  },
+  {
+    "question": "What is the missing letter: A, D, G, J, ?",
+    "options": ["K", "L", "M", "M"],
+    "answer": "M",
+    "explanation": "Pattern increases by 3 letters: A(1), D(4), G(7), J(10), M(13)."
+  },
+  {
+    "question": "Which number is the odd one out: 16, 36, 49, 64, 81",
+    "options": ["36", "49", "64", "81"],
+    "answer": "49",
+    "explanation": "All are square of even numbers except 49 (7²)."
+  },
+  {
+    "question": "If in a code, STAR = 5632 and MOON = 7811, then what is STORM?",
+    "options": ["56327", "56378", "56371", "None"],
+    "answer": "56378",
+    "explanation": "Use mapping: S=5, T=6, O=3, R=2, M=7."
+  },
+  {
+    "question": "If 2 pencils cost 8 cents, how much do 5 pencils cost?",
+    "options": ["20", "22", "18", "None"],
+    "answer": "20",
+    "explanation": "1 pencil = 4 cents → 5×4=20 cents."
+  },
+  {
+    "question": "Which number completes the pattern: 121, 144, 169, ?",
+    "options": ["182", "196", "200", "210"],
+    "answer": "196",
+    "explanation": "These are squares: 11², 12², 13², 14² = 196."
+  },
+  {
+    "question": "Which is the odd one out: Hammer, Screwdriver, Wrench, Spade?",
+    "options": ["Hammer", "Screwdriver", "Wrench", "Spade"],
+    "answer": "Spade",
+    "explanation": "Spade is used in gardening; others are tools for fixing."
+  },
+  {
+    "question": "If 4 = 24, 5 = 60, 6 = 120, what is 7?",
+    "options": ["140", "180", "210", "None"],
+    "answer": "210",
+    "explanation": "n × (n – 1) × 1 = factorial pattern: 4×3=12×2=24; 7×6×5=210."
+  },
+  {
+    "question": "Which number is missing: 2, 3, 5, 9, 17, ?",
+    "options": ["33", "31", "35", "29"],
+    "answer": "33",
+    "explanation": "Pattern: each number = previous ×2 –1."
+  },
+  {
+    "question": "If the day after tomorrow is Friday, what was the day before yesterday?",
+    "options": ["Sunday", "Monday", "Tuesday", "Wednesday"],
+    "answer": "Sunday",
+    "explanation": "If day after tomorrow is Friday, today is Wednesday, so day before yesterday is Sunday."
+  },
+  {
+    "question": "Choose the odd one out: Eye, Ear, Nose, Hand",
+    "options": ["Eye", "Ear", "Nose", "Hand"],
+    "answer": "Hand",
+    "explanation": "Hand is not a sensory organ; others are."
+  },
+  {
+    "question": "If FLOWER is written as EKNVDQ, how is GARDEN written?",
+    "options": ["FZQCDM", "FZQBEM", "FZQCBM", "None"],
+    "answer": "FZQCBM",
+    "explanation": "Each letter is replaced with its previous in alphabet: F→E, L→K, etc."
+  },
+  {
+    "question": "Which number comes next: 100, 96, 89, 79, ?",
+    "options": ["66", "67", "68", "69"],
+    "answer": "66",
+    "explanation": "Pattern: -4, -7, -10, -13 → next is -17 → 79–13=66."
+  },
+  {
+    "question": "If COW = 15, DOG = 19, what is CAT?",
+    "options": ["18", "21", "24", "None"],
+    "answer": "24",
+    "explanation": "C(3)+A(1)+T(20) = 24."
+  },
+  {
+    "question": "Which shape is the odd one out: Pentagon, Hexagon, Octagon, Triangle?",
+    "options": ["Pentagon", "Hexagon", "Octagon", "Triangle"],
+    "answer": "Triangle",
+    "explanation": "All others have more than 3 sides."
+  },
+  {
+    "question": "If each vowel is replaced with the next vowel and each consonant with the next consonant, what is the code for DOG?",
+    "options": ["FQI", "EPH", "FPI", "None"],
+    "answer": "FQI",
+    "explanation": "D→F, O→Q, G→I."
+  }
+]

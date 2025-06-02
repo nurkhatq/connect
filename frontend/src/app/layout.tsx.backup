@@ -1,0 +1,40 @@
+import './globals.css';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import Providers from './providers';
+import Script from 'next/script';
+
+const inter = Inter({ subsets: ['latin'] });
+
+export const metadata: Metadata = {
+  title: 'AITU Excellence Test',
+  description: 'Astana IT University admission testing platform',
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no',
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body className={inter.className}>
+        {/* Используем Next.js Script компонент для лучшего контроля загрузки */}
+        <Script
+          src="https://telegram.org/js/telegram-web-app.js"
+          strategy="beforeInteractive"
+          onLoad={() => {
+            console.log('✅ Telegram WebApp SDK loaded');
+            // Уведомляем приложение о загрузке
+            window.dispatchEvent(new Event('telegram-web-app-loaded'));
+          }}
+          onError={() => {
+            console.error('❌ Failed to load Telegram WebApp SDK');
+          }}
+        />
+        <Providers>{children}</Providers>
+      </body>
+    </html>
+  );
+}
