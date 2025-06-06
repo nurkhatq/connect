@@ -29,6 +29,8 @@ from api_endpoints.docs import router as docs_router
 from api_endpoints.chat import router as chat_router
 from api_endpoints.generate import router as generate_router
 
+from typing import Optional
+
 # Глобальные менеджеры
 teacher_vectorstore_manager: Optional[VectorstoreManager] = None
 student_vectorstore_manager: Optional[VectorstoreManager] = None
