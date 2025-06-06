@@ -40,6 +40,12 @@ services:
     networks:
       - aitu-network
     restart: unless-stopped
+    healthcheck:  # ДОБАВЬТЕ ЭТО
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
   telegram-bot:
     build: ./backend
     container_name: aitu_telegram_bot_prod
