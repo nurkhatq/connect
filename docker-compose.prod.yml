@@ -41,9 +41,27 @@ services:
       - aitu-network
     restart: unless-stopped
   telegram-bot:
-      build: ./backend
-      container_name: aitu_telegram_bot_prod
-      command: python bot/main.py
+    build: ./backend
+    container_name: aitu_telegram_bot_prod
+    command: python bot/main.py
+    environment:
+      - DATABASE_URL=${DATABASE_URL}
+      - REDIS_URL=${REDIS_URL}
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - TELEGRAM_BOT_USERNAME=${TELEGRAM_BOT_USERNAME}
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY}
+      - ENVIRONMENT=${ENVIRONMENT}
+      - DOMAIN=${DOMAIN}
+    depends_on:
+      backend:
+        condition: service_healthy
+      chat-service:  # Добавьте эту зависимость
+        condition: service_started
+    volumes:
+      - ./backend:/app
+    networks:
+      - aitu-network
+    restart: unless-stopped
   # === НОВЫЙ СЕРВИС! ===
   chat-service:
     build: ./chat-service
