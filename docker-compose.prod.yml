@@ -41,7 +41,7 @@ services:
       - aitu-network
     restart: unless-stopped
 
-  # === НОВЫЙ СЕРВИС ===
+  # === НОВЫЙ СЕРВИС! ===
   chat-service:
     build: ./chat-service
     container_name: aitu_chat_service
