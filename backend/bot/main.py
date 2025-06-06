@@ -3,7 +3,7 @@ import logging
 import httpx
 import sys
 import os
-from typing import Optional
+from typing import Optional, Union
 from datetime import datetime
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -15,7 +15,7 @@ from models.test import TestResult
 from sqlalchemy import select, func, desc
 
 # Telegram imports
-from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, WebAppInfo
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, WebAppInfo, CallbackQuery
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes, CallbackQueryHandler
 from telegram.constants import ParseMode
 
@@ -165,9 +165,17 @@ AITU Excellence Test - это вступительный тест для пос�
                 reply_markup=reply_markup
             )
     
-    async def status_command(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+    async def status_command(self, update: Union[Update, CallbackQuery], context: ContextTypes.DEFAULT_TYPE):
         """Показать статус пользователя"""
-        user_id = update.effective_user.id
+        # Правильно получаем user_id в зависимости от типа update
+        if hasattr(update, 'effective_user'):
+            # Это обычный Update (от команды)
+            user_id = update.effective_user.id
+            message = update.message
+        else:
+            # Это CallbackQuery (от кнопки)
+            user_id = update.from_user.id
+            message = update.message
         
         try:
             async with SessionLocal() as db:
@@ -178,7 +186,7 @@ AITU Excellence Test - это вступительный тест для пос�
                 user = result.scalar_one_or_none()
                 
                 if not user:
-                    await update.message.reply_text(
+                    await message.reply_text(
                         "❌ Сначала нужно зарегистрироваться!\n"
                         "Открой приложение через кнопку в /start"
                     )
@@ -229,7 +237,7 @@ AITU Excellence Test - это вступительный тест для пос�
                     )
                 ]]
                 
-                await update.message.reply_text(
+                await message.reply_text(
                     status_text,
                     parse_mode=ParseMode.MARKDOWN,
                     reply_markup=InlineKeyboardMarkup(keyboard)
@@ -237,7 +245,7 @@ AITU Excellence Test - это вступительный тест для пос�
                 
         except Exception as e:
             logger.error(f"Error in status_command: {e}")
-            await update.message.reply_text("❌ Произошла ошибка при получении статуса")
+            await message.reply_text("❌ Произошла ошибка при получении статуса")
     
     async def results_command(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         """Показать результаты тестов"""
@@ -502,7 +510,7 @@ AITU Excellence Test - это вступительный тест для пос�
 
 *AI Помощник:*
 /chat - Включить режим диалога
-/ask `вопрос` - Быстрый вопрос
+/ask [вопрос] - Быстрый вопрос
 /stop - Выйти из режима чата
 
 *Поступление:*
@@ -570,7 +578,7 @@ AITU Excellence Test - это вступительный тест для пос�
         
         elif query.data == "menu_status":
             await query.edit_message_text("Загрузка статистики...")
-            # Нужно создать новое сообщение для status_command
+            # Передаем сам query вместо update
             await self.status_command(query, context)
         
         elif query.data == "menu_application":
