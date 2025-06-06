@@ -175,13 +175,14 @@ class VectorstoreManager:
         loop = asyncio.get_event_loop()
         
         try:
-            # Загружаем в thread pool
+            # Загружаем в thread pool - исправленная версия
             self.vectorstore = await loop.run_in_executor(
                 None,
-                FAISS.load_local,
-                str(self.index_folder),
-                self.embeddings,
-                allow_dangerous_deserialization=True
+                lambda: FAISS.load_local(
+                    str(self.index_folder),
+                    self.embeddings,
+                    allow_dangerous_deserialization=True
+                )
             )
             logger.info(f"Index loaded from {self.index_folder}")
         except Exception as e:

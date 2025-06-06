@@ -40,7 +40,10 @@ services:
     networks:
       - aitu-network
     restart: unless-stopped
-
+  telegram-bot:
+      build: ./backend
+      container_name: aitu_telegram_bot_prod
+      command: python bot/main.py
   # === НОВЫЙ СЕРВИС! ===
   chat-service:
     build: ./chat-service
