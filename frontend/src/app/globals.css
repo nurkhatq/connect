@@ -290,3 +290,264 @@ textarea:focus-visible {
     padding-bottom: max(0px, env(safe-area-inset-bottom));
   }
 }
+
+/* Добавьте эти стили в конец файла globals.css */
+
+/* Telegram темная тема */
+[data-theme="dark"] {
+  --tg-theme-bg-color: #212d3b;
+  --tg-theme-text-color: #ffffff;
+  --tg-theme-hint-color: #708499;
+  --tg-theme-link-color: #6ab7ff;
+  --tg-theme-button-color: #5288c1;
+  --tg-theme-button-text-color: #ffffff;
+  --tg-theme-secondary-bg-color: #131415;
+  --background: 212 35% 15%;
+  --foreground: 210 40% 98%;
+  --border: 217 32% 17%;
+  --input: 217 32% 17%;
+  --ring: 212 27% 84%;
+}
+
+/* Применение темной темы */
+[data-theme="dark"] body {
+  background-color: var(--tg-theme-bg-color) !important;
+  color: var(--tg-theme-text-color) !important;
+}
+
+[data-theme="dark"] .bg-white {
+  background-color: var(--tg-theme-secondary-bg-color, #1c1c1e) !important;
+  color: var(--tg-theme-text-color) !important;
+}
+
+[data-theme="dark"] .bg-gray-50 {
+  background-color: var(--tg-theme-bg-color) !important;
+}
+
+[data-theme="dark"] .bg-gray-100 {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+[data-theme="dark"] .text-gray-800 {
+  color: var(--tg-theme-text-color) !important;
+}
+
+[data-theme="dark"] .text-gray-600 {
+  color: var(--tg-theme-hint-color) !important;
+}
+
+[data-theme="dark"] .text-gray-500 {
+  color: var(--tg-theme-hint-color) !important;
+}
+
+[data-theme="dark"] .border-gray-200 {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+[data-theme="dark"] .border-gray-100 {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Карточки в темной теме */
+[data-theme="dark"] .shadow-sm {
+  box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.1) !important;
+}
+
+[data-theme="dark"] .shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(255, 255, 255, 0.1), 0 4px 6px -2px rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Кнопки в темной теме */
+[data-theme="dark"] .bg-blue-500 {
+  background-color: var(--tg-theme-button-color) !important;
+}
+
+[data-theme="dark"] .text-blue-600 {
+  color: var(--tg-theme-link-color) !important;
+}
+
+/* Навигация в темной теме */
+[data-theme="dark"] .border-t {
+  border-top-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Формы в темной теме */
+[data-theme="dark"] input,
+[data-theme="dark"] select,
+[data-theme="dark"] textarea {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  color: var(--tg-theme-text-color) !important;
+}
+
+[data-theme="dark"] input::placeholder,
+[data-theme="dark"] select::placeholder,
+[data-theme="dark"] textarea::placeholder {
+  color: var(--tg-theme-hint-color) !important;
+}
+
+/* Специфичные цвета для темной темы */
+[data-theme="dark"] .bg-blue-50 {
+  background-color: rgba(84, 136, 193, 0.2) !important;
+}
+
+[data-theme="dark"] .bg-green-50 {
+  background-color: rgba(34, 197, 94, 0.2) !important;
+}
+
+[data-theme="dark"] .bg-yellow-50 {
+  background-color: rgba(251, 191, 36, 0.2) !important;
+}
+
+[data-theme="dark"] .bg-red-50 {
+  background-color: rgba(239, 68, 68, 0.2) !important;
+}
+
+[data-theme="dark"] .bg-purple-50 {
+  background-color: rgba(147, 51, 234, 0.2) !important;
+}
+/* 🔥 ДОБАВИТЬ в frontend/src/app/globals.css в конец файла: */
+
+/* Admin Panel Mobile Adaptations */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Mobile admin layout */
+@media (max-width: 768px) {
+  /* Уменьшаем отступы для мобильных */
+  .admin-mobile-padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Адаптация карточек статистики */
+  .admin-stat-card {
+    padding: 1rem;
+  }
+  
+  .admin-stat-card h3 {
+    font-size: 1.5rem;
+  }
+  
+  /* Адаптация таблиц */
+  .admin-table {
+    font-size: 0.875rem;
+  }
+  
+  .admin-table th,
+  .admin-table td {
+    padding: 0.75rem 0.5rem;
+  }
+  
+  /* Скрытие некоторых колонок на мобильных */
+  .admin-table .desktop-only {
+    display: none;
+  }
+  
+  /* Адаптация форм */
+  .admin-form input,
+  .admin-form select,
+  .admin-form textarea {
+    font-size: 1rem; /* Предотвращает zoom на iOS */
+  }
+  
+  /* Кнопки на всю ширину на мобильных */
+  .admin-mobile-button {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  /* Уменьшение отступов между секциями */
+  .admin-section-gap {
+    gap: 1rem;
+  }
+}
+
+/* Улучшения для touch устройств */
+@media (hover: none) and (pointer: coarse) {
+  /* Увеличиваем размер кнопок для touch */
+  .admin-touch-button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Убираем hover эффекты */
+  .admin-card:hover {
+    transform: none;
+    box-shadow: inherit;
+  }
+}
+
+/* Адаптация модальных окон для мобильных */
+@media (max-width: 640px) {
+  .admin-modal {
+    margin: 1rem;
+    max-height: calc(100vh - 2rem);
+    overflow-y: auto;
+  }
+  
+  .admin-modal-content {
+    padding: 1rem;
+  }
+}
+
+/* Telegram Mini App specific styles */
+.tg-admin-panel {
+  /* Учитываем safe area для устройств с notch */
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+/* Адаптация графиков для мобильных */
+@media (max-width: 768px) {
+  .admin-chart-container {
+    height: 250px !important;
+  }
+  
+  .recharts-wrapper {
+    font-size: 0.75rem;
+  }
+}
+
+/* Стили для горизонтального скролла табов */
+.admin-tabs-mobile {
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.admin-tabs-mobile::-webkit-scrollbar {
+  display: none;
+}
+
+.admin-tab-mobile {
+  flex-shrink: 0;
+  min-width: fit-content;
+}
+
+/* Стили для адаптивной сетки */
+.admin-responsive-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .admin-responsive-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .admin-responsive-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -161,34 +161,78 @@ export default function ApplicationForm({ onSuccess, onCancel }: ApplicationForm
     return Object.keys(newErrors).length === 0;
   };
 
+  // 🔥 ИСПРАВЛЕННЫЙ handleFileUpload
   const handleFileUpload = async (file: File) => {
     if (isUploading) return;
     
+    console.log('📁 Starting file upload:', file.name, file.size, file.type);
+    
     setIsUploading(true);
     try {
+      // Дополнительная валидация на фронтенде
+      const maxSize = 10 * 1024 * 1024; // 10MB
+      if (file.size > maxSize) {
+        throw new Error(`Файл "${file.name}" слишком большой. Максимальный размер: 10MB`);
+      }
+      
+      const allowedExtensions = ['.pdf', '.jpg', '.jpeg', '.png', '.doc', '.docx'];
+      const fileExtension = file.name.toLowerCase().slice(file.name.lastIndexOf('.'));
+      if (!allowedExtensions.includes(fileExtension)) {
+        throw new Error(`Неподдерживаемый тип файла "${fileExtension}". Разрешены: PDF, JPG, PNG, DOC, DOCX`);
+      }
+      
+      console.log('✅ File validation passed, uploading...');
       const response = await api.uploadDocument(file);
+      
+      console.log('✅ Upload successful:', response);
+      
       setUploadedFiles(prev => [...prev, response]);
       setFormData(prev => ({
         ...prev,
         documents: [...prev.documents, response.filename]
       }));
+      
       telegram.hapticFeedback('notification', 'success');
       
       // Clear documents error if exists
       if (errors.documents) {
         setErrors(prev => ({ ...prev, documents: '' }));
       }
-    } catch (error) {
-      console.error('Failed to upload file:', error);
+      
+    } catch (error: any) {
+      console.error('❌ Upload failed:', error);
       telegram.hapticFeedback('notification', 'error');
+      
+      // Показываем конкретную ошибку пользователю
+      setErrors(prev => ({ 
+        ...prev, 
+        documents: error.message || 'Ошибка загрузки файла' 
+      }));
+      
     } finally {
       setIsUploading(false);
     }
   };
 
-  const handleFileSelect = (event: React.ChangeEvent<HTMLInputElement>) => {
+  // 🔥 УЛУЧШЕННЫЙ handleFileSelect с лучшей обработкой множественных файлов
+  const handleFileSelect = async (event: React.ChangeEvent<HTMLInputElement>) => {
     const files = Array.from(event.target.files || []);
-    files.forEach(handleFileUpload);
+    
+    if (files.length === 0) return;
+    
+    console.log(`📁 Selected ${files.length} files for upload`);
+    
+    // Загружаем файлы последовательно для избежания проблем
+    for (const file of files) {
+      try {
+        await handleFileUpload(file);
+        // Небольшая пауза между загрузками
+        await new Promise(resolve => setTimeout(resolve, 500));
+      } catch (error) {
+        console.error(`Failed to upload ${file.name}:`, error);
+        // Продолжаем с остальными файлами
+      }
+    }
     
     // Reset input
     if (fileInputRef.current) {
@@ -219,12 +263,47 @@ export default function ApplicationForm({ onSuccess, onCancel }: ApplicationForm
     telegram.hapticFeedback('impact', 'light');
   };
 
+  // 🔥 ИСПРАВЛЕННЫЙ handleSubmit
   const handleSubmit = async () => {
     if (isSubmitting) return;
+    
+    console.log('📋 Starting application submission...');
+    console.log('Form data:', formData);
     
     setIsSubmitting(true);
     
     try {
+      // Финальная валидация перед отправкой
+      if (!formData.personalData.iin || formData.personalData.iin.length !== 12) {
+        throw new Error('ИИН должен содержать 12 цифр');
+      }
+      
+      if (!formData.personalData.gender) {
+        throw new Error('Выберите пол');
+      }
+      
+      if (!formData.personalData.birthDate) {
+        throw new Error('Выберите дату рождения');
+      }
+      
+      if (!formData.education.degree) {
+        throw new Error('Выберите уровень образования');
+      }
+      
+      if (!formData.education.program) {
+        throw new Error('Выберите программу обучения');
+      }
+      
+      const entScore = parseInt(formData.education.entScore);
+      if (isNaN(entScore) || entScore < 0 || entScore > 140) {
+        throw new Error('Баллы ЕНТ должны быть от 0 до 140');
+      }
+      
+      if (formData.documents.length === 0) {
+        throw new Error('Загрузите хотя бы один документ');
+      }
+      
+      // 🔥 Формируем данные для отправки точно как ожидает бэкенд
       const applicationData = {
         personal_data: {
           iin: formData.personalData.iin,
@@ -234,17 +313,27 @@ export default function ApplicationForm({ onSuccess, onCancel }: ApplicationForm
         education: {
           degree: formData.education.degree,
           program: formData.education.program,
-          ent_score: parseInt(formData.education.entScore)
+          ent_score: entScore // Убеждаемся что это число
         },
         documents: formData.documents
       };
-
-      await api.submitApplication(applicationData);
+      
+      console.log('📤 Sending application data:', applicationData);
+      
+      const response = await api.submitApplication(applicationData);
+      
+      console.log('✅ Application submitted successfully:', response);
+      
       telegram.hapticFeedback('notification', 'success');
       onSuccess();
-    } catch (error) {
-      console.error('Failed to submit application:', error);
+      
+    } catch (error: any) {
+      console.error('❌ Application submission failed:', error);
       telegram.hapticFeedback('notification', 'error');
+      
+      // Показываем конкретную ошибку
+      alert(`Ошибка подачи заявки: ${error.message || 'Неизвестная ошибка'}`);
+      
     } finally {
       setIsSubmitting(false);
     }

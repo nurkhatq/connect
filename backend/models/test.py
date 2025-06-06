@@ -1,6 +1,7 @@
 from sqlalchemy import Column, Integer, String, DateTime, Boolean, Text, JSON, Float
 from sqlalchemy.sql import func
 from database import Base
+from sqlalchemy.ext.mutable import MutableDict
 import uuid
 
 class Test(Base):
@@ -36,7 +37,7 @@ class TestSession(Base):
     user_id = Column(String, nullable=False)
     test_id = Column(String, nullable=False)
     questions = Column(JSON)  # Selected questions for this session
-    answers = Column(JSON, default={})  # User answers
+    answers = Column(MutableDict.as_mutable(JSON), default=lambda: {})  # 🔥 ИСПРАВЛЕНО: MutableDict с default factory
     score = Column(Float, nullable=True)
     total_questions = Column(Integer)
     correct_answers = Column(Integer, default=0)

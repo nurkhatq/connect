@@ -1,6 +1,6 @@
 import asyncio
 import logging
-from config import Settings
+from config import settings  # 🔥 ИСПРАВЛЕНО: settings вместо Settings!
 from database import get_db
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, ContextTypes
@@ -18,7 +18,8 @@ logger = logging.getLogger(__name__)
 
 class AITUBot:
     def __init__(self):
-        self.app = Application.builder().token(Settings.telegram_bot_token).build()
+        logger.info(f"🤖 Initializing AITU Bot with token: {settings.telegram_bot_token[:10]}...")
+        self.app = Application.builder().token(settings.telegram_bot_token).build()
         self.setup_handlers()
     
     def setup_handlers(self):
@@ -28,16 +29,18 @@ class AITUBot:
         self.app.add_handler(CommandHandler("status", self.status_command))
         self.app.add_handler(CommandHandler("results", self.results_command))
         self.app.add_handler(CommandHandler("help", self.help_command))
+        logger.info("✅ Bot handlers registered")
     
     async def start_command(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         """Handle /start command"""
         user = update.effective_user
+        logger.info(f"📱 /start command from user: {user.id}")
         
         # Create inline keyboard with web app button
         keyboard = [
             [InlineKeyboardButton(
                 "🚀 Open AITU Excellence Test",
-                web_app={"url": f"https://{Settings.domain}"}
+                web_app={"url": f"https://{settings.domain}"}
             )]
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -73,7 +76,7 @@ Click the button below to start your journey!
         keyboard = [
             [InlineKeyboardButton(
                 "📝 Take Tests",
-                web_app={"url": f"https://{Settings.domain}/tests"}
+                web_app={"url": f"https://{settings.domain}/tests"}
             )]
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -142,7 +145,7 @@ Earn points based on your performance!
             keyboard = [
                 [InlineKeyboardButton(
                     "📊 View Full Profile",
-                    web_app={"url": f"https://{Settings.domain}/profile"}
+                    web_app={"url": f"https://{settings.domain}/profile"}
                 )]
             ]
             reply_markup = InlineKeyboardMarkup(keyboard)
@@ -159,7 +162,7 @@ Earn points based on your performance!
         keyboard = [
             [InlineKeyboardButton(
                 "📈 View Detailed Results",
-                web_app={"url": f"https://{Settings.domain}/profile"}
+                web_app={"url": f"https://{settings.domain}/profile"}
             )]
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -211,19 +214,30 @@ For technical support, contact @aitu_support
                 text=message,
                 parse_mode=ParseMode.MARKDOWN
             )
+            logger.info(f"✅ Notification sent to user {user_telegram_id}")
         except Exception as e:
-            logger.error(f"Failed to send notification to {user_telegram_id}: {e}")
+            logger.error(f"❌ Failed to send notification to {user_telegram_id}: {e}")
     
     async def run(self):
         """Run the bot"""
-        logger.info("Starting AITU Bot...")
-        await self.app.initialize()
-        await self.app.start()
-        await self.app.updater.start_polling()
+        logger.info("🚀 Starting AITU Bot...")
+        try:
+            await self.app.initialize()
+            await self.app.start()
+            await self.app.updater.start_polling()
+            logger.info("✅ AITU Bot is running!")
+        except Exception as e:
+            logger.error(f"❌ Bot startup failed: {e}")
+            raise
 
 async def main():
-    bot = AITUBot()
-    await bot.run()
+    """Main function to run the bot"""
+    try:
+        bot = AITUBot()
+        await bot.run()
+    except Exception as e:
+        logger.error(f"❌ Critical bot error: {e}")
+        raise
 
 if __name__ == "__main__":
     asyncio.run(main())

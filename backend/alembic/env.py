@@ -4,26 +4,48 @@ from sqlalchemy import pool
 from alembic import context
 import os
 import sys
+from pathlib import Path
 
-# Add the backend directory to the Python path
-sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
+# Add project root to path
+project_root = Path(__file__).parent.parent
+sys.path.insert(0, str(project_root))
 
+# Import your models
 from database import Base
-from models import user, test, application, notification
+from models.user import User
+from models.test import Test, Question, TestSession, TestResult  
+from models.application import Application
+from models.notifications import Notification
 
-# this is the Alembic Config object, which provides
-# access to the values within the .ini file in use.
+# this is the Alembic Config object
 config = context.config
 
-# Interpret the config file for Python logging.
+# Interpret the config file for Python logging
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
-# add your model's MetaData object here
+# Set target metadata
 target_metadata = Base.metadata
 
 def get_url():
-    return os.getenv("DATABASE_URL", "postgresql://aitu_user:aitu_password@localhost/aitu_db")
+    """Get database URL from environment variables"""
+    # 🔥 ИСПРАВЛЕНО: Используем правильные настройки из .env
+    database_url = os.getenv("DATABASE_URL")
+    
+    if database_url:
+        print(f"✅ Using DATABASE_URL from environment")
+        return database_url
+    
+    # 🔥 ИСПРАВЛЕНО: Fallback с правильными настройками для Docker
+    user = os.getenv("POSTGRES_USER", "aitu_user")
+    password = os.getenv("POSTGRES_PASSWORD", "aitu_production_password_2024_secure")
+    host = os.getenv("POSTGRES_HOST", "db")  # Docker container name
+    port = os.getenv("POSTGRES_PORT", "5432")
+    database = os.getenv("POSTGRES_DB", "aitu_db")
+    
+    fallback_url = f"postgresql://{user}:{password}@{host}:{port}/{database}"
+    print(f"⚠️ DATABASE_URL not found, using fallback: postgresql://{user}:***@{host}:{port}/{database}")
+    return fallback_url
 
 def run_migrations_offline() -> None:
     """Run migrations in 'offline' mode."""
@@ -40,18 +62,22 @@ def run_migrations_offline() -> None:
 
 def run_migrations_online() -> None:
     """Run migrations in 'online' mode."""
-    configuration = config.get_section(config.config_ini_section)
-    configuration["sqlalchemy.url"] = get_url()
+    # Get database URL
+    database_url = get_url()
+    
+    # Update config with the correct URL
+    config.set_main_option("sqlalchemy.url", database_url)
     
     connectable = engine_from_config(
-        configuration,
+        config.get_section(config.config_ini_section),
         prefix="sqlalchemy.",
         poolclass=pool.NullPool,
     )
 
     with connectable.connect() as connection:
         context.configure(
-            connection=connection, target_metadata=target_metadata
+            connection=connection, 
+            target_metadata=target_metadata
         )
 
         with context.begin_transaction():

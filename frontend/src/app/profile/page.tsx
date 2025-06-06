@@ -2,9 +2,10 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { BarChart3, Award, Trophy, User, Settings, LogOut } from 'lucide-react';
+import { BarChart3, Award, Trophy, User, Settings } from 'lucide-react';
 import { telegram } from '@/lib/telegram';
 import { api } from '@/lib/api';
+import LogoutButton from '@/components/LogoutButton';
 
 export default function ProfilePage() {
   const [user, setUser] = useState(null);
@@ -40,6 +41,8 @@ export default function ProfilePage() {
         
       } catch (error) {
         console.error('Profile init error:', error);
+        // В случае ошибки перенаправляем на login
+        window.location.href = '/login';
       } finally {
         setIsLoading(false);
       }
@@ -59,14 +62,6 @@ export default function ProfilePage() {
       setLeaderboard(leaderboardData);
     } catch (error) {
       console.error('Failed to load profile data:', error);
-    }
-  };
-
-  const handleLogout = () => {
-    if (confirm('Вы уверены, что хотите выйти?')) {
-      localStorage.clear();
-      telegram.hapticFeedback('notification', 'success');
-      window.location.href = '/login';
     }
   };
 
@@ -259,15 +254,15 @@ export default function ProfilePage() {
       case 'leaderboard':
         return (
           <div className="space-y-4">
-            {leaderboard?.length > 0 ? (
-              leaderboard.slice(0, 10).map((entry: any, index: number) => (
+            {leaderboard?.leaderboard?.length > 0 ? (
+              leaderboard.leaderboard.slice(0, 10).map((entry: any, index: number) => (
                 <motion.div
                   key={entry.user_id}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
                   className={`bg-white rounded-xl p-4 shadow-sm border-l-4 ${
-                    entry.user_id === user?.id ? 'border-blue-500 bg-blue-50' : 'border-gray-200'
+                    entry.is_current_user ? 'border-blue-500 bg-blue-50' : 'border-gray-200'
                   }`}
                 >
                   <div className="flex items-center justify-between">
@@ -278,20 +273,20 @@ export default function ProfilePage() {
                         index === 2 ? 'bg-orange-500 text-white' :
                         'bg-gray-100 text-gray-600'
                       }`}>
-                        #{index + 1}
+                        #{entry.rank}
                       </div>
                       <div>
                         <p className="font-medium text-gray-800">
-                          {entry.user_id === user?.id ? 'Вы' : entry.first_name || 'Пользователь'}
+                          {entry.is_current_user ? 'Вы' : entry.username || 'Пользователь'}
                         </p>
                         <p className="text-sm text-gray-500">
-                          {entry.tests_completed} тестов пройдено
+                          Уровень {entry.level}
                         </p>
                       </div>
                     </div>
                     
                     <div className="text-right">
-                      <p className="text-lg font-bold text-blue-600">{entry.total_points}</p>
+                      <p className="text-lg font-bold text-blue-600">{entry.points}</p>
                       <p className="text-xs text-gray-500">баллов</p>
                     </div>
                   </div>
@@ -342,12 +337,7 @@ export default function ProfilePage() {
               </div>
             </div>
             
-            <button
-              onClick={handleLogout}
-              className="p-2 text-gray-500 hover:text-red-600 transition-colors"
-            >
-              <LogOut className="w-5 h-5" />
-            </button>
+            <LogoutButton />
           </div>
         </div>
       </div>

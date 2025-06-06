@@ -49,16 +49,50 @@ def verify_telegram_data(init_data: str) -> dict:
             hashlib.sha256
         ).hexdigest()
         
-        # Verify hash
+        print(f"🔍 Hash verification: received={received_hash[:10]}..., calculated={calculated_hash[:10]}...")
+        
+        # 🔥 ИСПРАВЛЕНО: ВКЛЮЧЕНА проверка безопасности!
         if not hmac.compare_digest(received_hash, calculated_hash):
-            raise HTTPException(status_code=401, detail="Invalid Telegram data")
+            print(f"❌ Hash mismatch! This could be a security breach.")
+            print(f"   Expected: {calculated_hash}")
+            print(f"   Received: {received_hash}")
+            print(f"   Data string: {data_check_string}")
+            raise HTTPException(
+                status_code=401, 
+                detail="Invalid Telegram data - hash verification failed"
+            )
         
         # Parse user data
         user_data = json.loads(parsed_data.get('user', '{}'))
+        
+        # Additional validation
+        if not user_data or 'id' not in user_data:
+            raise HTTPException(
+                status_code=401,
+                detail="Invalid Telegram data - missing user information"
+            )
+        
+        # Check timestamp (data should not be older than 24 hours)
+        auth_date = int(parsed_data.get('auth_date', 0))
+        current_timestamp = int(datetime.now().timestamp())
+        if current_timestamp - auth_date > 86400:  # 24 hours
+            raise HTTPException(
+                status_code=401,
+                detail="Invalid Telegram data - authentication data too old"
+            )
+        
+        print(f"✅ User data verified: {user_data.get('id', 'unknown')}")
         return user_data
         
+    except HTTPException:
+        # Re-raise HTTPExceptions as-is
+        raise
     except Exception as e:
-        raise HTTPException(status_code=401, detail=f"Failed to verify Telegram data: {str(e)}")
+        print(f"❌ Telegram data verification error: {e}")
+        raise HTTPException(
+            status_code=401, 
+            detail=f"Failed to verify Telegram data: authentication failed"
+        )
 
 def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
     to_encode = data.copy()
@@ -66,8 +100,10 @@ def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
         expire = datetime.utcnow() + expires_delta
     else:
         expire = datetime.utcnow() + timedelta(minutes=settings.access_token_expire_minutes)
-    to_encode.update({"exp": expire})
+    
+    to_encode.update({"exp": expire, "iat": datetime.utcnow()})
     encoded_jwt = jwt.encode(to_encode, settings.jwt_secret_key, algorithm=settings.jwt_algorithm)
+    print(f"🔑 Token created for user: {data.get('sub', 'unknown')}, expires: {expire}")
     return encoded_jwt
 
 async def get_current_user(
@@ -81,26 +117,52 @@ async def get_current_user(
     )
     
     try:
+        print(f"🔍 Validating token: {credentials.credentials[:20]}...")
+        
         payload = jwt.decode(
             credentials.credentials,
             settings.jwt_secret_key,
             algorithms=[settings.jwt_algorithm]
         )
         user_id: str = payload.get("sub")
+        print(f"📋 Token payload user_id: {user_id}")
+        
         if user_id is None:
+            print("❌ No user_id in token")
             raise credentials_exception
-    except JWTError:
+            
+        # Check token expiration
+        exp = payload.get("exp")
+        if exp and datetime.utcnow().timestamp() > exp:
+            print("❌ Token expired")
+            raise credentials_exception
+            
+    except JWTError as e:
+        print(f"❌ JWT Error: {e}")
         raise credentials_exception
     
     result = await db.execute(select(User).where(User.id == user_id))
     user = result.scalar_one_or_none()
+    
     if user is None:
+        print(f"❌ User not found in DB: {user_id}")
         raise credentials_exception
+    
+    if not user.is_active:
+        print(f"❌ User is inactive: {user_id}")
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="Inactive user"
+        )
+        
+    print(f"✅ User authenticated: {user.telegram_id}")
     return user
 
 @router.post("/login", response_model=TokenResponse)
 async def login(request: LoginRequest, db: AsyncSession = Depends(get_db)):
-    # Verify Telegram data
+    print("🚀 Login attempt started")
+    
+    # Verify Telegram data with security checks
     telegram_user = verify_telegram_data(request.init_data)
     
     # Find or create user
@@ -110,6 +172,7 @@ async def login(request: LoginRequest, db: AsyncSession = Depends(get_db)):
     user = result.scalar_one_or_none()
     
     if not user:
+        print(f"👤 Creating new user: {telegram_user.get('id')}")
         # Create new user
         user = User(
             telegram_id=telegram_user.get('id'),
@@ -120,9 +183,31 @@ async def login(request: LoginRequest, db: AsyncSession = Depends(get_db)):
         db.add(user)
         await db.commit()
         await db.refresh(user)
+        
+        # Send welcome notification
+        try:
+            from services.notification_service import NotificationService
+            await NotificationService.create_notification(
+                user_id=user.id,
+                title="🎉 Добро пожаловать в AITU!",
+                message="Добро пожаловать в систему тестирования AITU! Начните с прохождения тестов и получайте баллы за правильные ответы.",
+                notification_type="achievement",
+                data={"points": 0}
+            )
+        except Exception as e:
+            print(f"Failed to send welcome notification: {e}")
+    else:
+        print(f"👤 Existing user found: {user.telegram_id}")
+        # Update user info from Telegram (in case it changed)
+        user.username = telegram_user.get('username') or user.username
+        user.first_name = telegram_user.get('first_name') or user.first_name
+        user.last_name = telegram_user.get('last_name') or user.last_name
+        await db.commit()
     
     # Create access token
-    access_token = create_access_token(data={"sub": user.id})
+    access_token = create_access_token(
+        data={"sub": user.id, "telegram_id": user.telegram_id}
+    )
     
     return TokenResponse(
         access_token=access_token,
@@ -140,7 +225,9 @@ async def login(request: LoginRequest, db: AsyncSession = Depends(get_db)):
 
 @router.post("/refresh")
 async def refresh_token(current_user: User = Depends(get_current_user)):
-    access_token = create_access_token(data={"sub": current_user.id})
+    access_token = create_access_token(
+        data={"sub": current_user.id, "telegram_id": current_user.telegram_id}
+    )
     return {"access_token": access_token, "token_type": "bearer"}
 
 @router.get("/me")

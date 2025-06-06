@@ -107,27 +107,98 @@ def sanitize_filename(filename: str) -> str:
 
 def calculate_level(points: int) -> int:
     """Calculate user level based on points"""
-    # Level progression: 0-999 = Level 1, 1000-2999 = Level 2, etc.
-    if points < 1000:
+    # Progressive level system with increasing requirements
+    if points < 500:
         return 1
-    elif points < 3000:
+    elif points < 1500:
         return 2
-    elif points < 6000:
+    elif points < 3500:
         return 3
-    elif points < 10000:
+    elif points < 6500:
         return 4
-    elif points < 15000:
+    elif points < 10500:
         return 5
-    elif points < 25000:
+    elif points < 16000:
         return 6
-    elif points < 40000:
+    elif points < 23000:
         return 7
-    elif points < 60000:
+    elif points < 32000:
         return 8
-    elif points < 85000:
+    elif points < 43000:
         return 9
-    else:
+    elif points < 56000:
         return 10
+    elif points < 72000:
+        return 11
+    elif points < 90000:
+        return 12
+    else:
+        # For very high scores, calculate dynamically
+        extra_levels = (points - 90000) // 20000
+        return min(13 + extra_levels, 50)  # Cap at level 50
+
+def get_level_info(level: int) -> Dict[str, Any]:
+    """Get level information including required points and rewards"""
+    level_thresholds = [
+        0, 500, 1500, 3500, 6500, 10500, 16000, 23000, 32000, 43000, 56000, 72000, 90000
+    ]
+    
+    if level <= len(level_thresholds):
+        current_threshold = level_thresholds[level - 1] if level > 0 else 0
+        next_threshold = level_thresholds[level] if level < len(level_thresholds) else level_thresholds[-1] + (level - len(level_thresholds) + 1) * 20000
+    else:
+        current_threshold = 90000 + (level - 13) * 20000
+        next_threshold = current_threshold + 20000
+    
+    return {
+        "level": level,
+        "current_threshold": current_threshold,
+        "next_threshold": next_threshold,
+        "points_needed": next_threshold - current_threshold,
+        "title": get_level_title(level),
+        "color": get_level_color(level)
+    }
+
+def get_level_title(level: int) -> str:
+    """Get level title"""
+    titles = {
+        1: "Новичок",
+        2: "Ученик", 
+        3: "Студент",
+        4: "Знаток",
+        5: "Эксперт",
+        6: "Специалист",
+        7: "Профессионал",
+        8: "Мастер",
+        9: "Эксперт высшего класса",
+        10: "Гуру",
+        11: "Легенда",
+        12: "Великий мастер"
+    }
+    
+    if level in titles:
+        return titles[level]
+    elif level <= 20:
+        return f"Элита {level - 12}"
+    else:
+        return f"Трансцендент {level - 20}"
+
+def get_level_color(level: int) -> str:
+    """Get level color for UI"""
+    if level <= 2:
+        return "gray"
+    elif level <= 4:
+        return "green"
+    elif level <= 6:
+        return "blue"
+    elif level <= 8:
+        return "purple"
+    elif level <= 10:
+        return "yellow"
+    elif level <= 12:
+        return "orange"
+    else:
+        return "red"
 
 def format_duration(seconds: int) -> str:
     """Format duration in human readable format"""
@@ -143,42 +214,172 @@ def format_duration(seconds: int) -> str:
             return f"{hours} ч {minutes} мин"
         return f"{hours} ч"
 
+def calculate_test_points(percentage: float, test_difficulty: int = 1, bonus_multiplier: float = 1.0) -> int:
+    """Calculate points earned from test based on performance"""
+    if percentage < 0:
+        return 0
+    
+    # Base points calculation
+    base_points = 50  # Minimum points for attempting
+    
+    # Performance bonus (0-100% gives 0-200 bonus points)
+    performance_bonus = int(percentage * 2)
+    
+    # Difficulty multiplier
+    difficulty_multiplier = 1.0 + (test_difficulty - 1) * 0.2
+    
+    # Calculate total points
+    total_points = int((base_points + performance_bonus) * difficulty_multiplier * bonus_multiplier)
+    
+    return max(total_points, 10)  # Minimum 10 points
+
 def get_achievement_criteria():
-    """Get achievement criteria"""
+    """Get achievement criteria - updated with more achievements"""
     return {
         "first_test": {
             "title": "Первые шаги",
             "description": "Прошли первый тест",
             "icon": "🎯",
-            "points": 50,
-            "criteria": lambda user_stats: user_stats["total_tests"] >= 1
+            "points": 100,
+            "criteria": lambda user_stats: user_stats.get("total_tests", 0) >= 1
         },
         "five_tests": {
             "title": "Активный ученик",
             "description": "Прошли 5 тестов",
             "icon": "📚",
-            "points": 100,
-            "criteria": lambda user_stats: user_stats["total_tests"] >= 5
+            "points": 200,
+            "criteria": lambda user_stats: user_stats.get("total_tests", 0) >= 5
+        },
+        "ten_tests": {
+            "title": "Серьезный студент", 
+            "description": "Прошли 10 тестов",
+            "icon": "🎓",
+            "points": 300,
+            "criteria": lambda user_stats: user_stats.get("total_tests", 0) >= 10
         },
         "perfect_score": {
             "title": "Отличник",
             "description": "Получили 100% в тесте",
             "icon": "⭐",
-            "points": 200,
-            "criteria": lambda user_stats: user_stats["best_score"] >= 100
+            "points": 500,
+            "criteria": lambda user_stats: user_stats.get("best_score", 0) >= 100
         },
         "high_average": {
             "title": "Знаток",
             "description": "Средний балл выше 85%",
             "icon": "🧠",
-            "points": 150,
-            "criteria": lambda user_stats: user_stats["average_score"] >= 85
+            "points": 300,
+            "criteria": lambda user_stats: user_stats.get("average_score", 0) >= 85
         },
         "level_5": {
             "title": "Эксперт",
             "description": "Достигли 5 уровня",
             "icon": "🏆",
-            "points": 300,
-            "criteria": lambda user_stats: user_stats["level"] >= 5
+            "points": 400,
+            "criteria": lambda user_stats: user_stats.get("level", 1) >= 5
+        },
+        "level_10": {
+            "title": "Мастер",
+            "description": "Достигли 10 уровня", 
+            "icon": "👑",
+            "points": 800,
+            "criteria": lambda user_stats: user_stats.get("level", 1) >= 10
+        },
+        "speed_demon": {
+            "title": "Скоростной демон",
+            "description": "Прошли тест менее чем за 10 минут с результатом 80%+",
+            "icon": "⚡",
+            "points": 250,
+            "criteria": lambda user_stats: user_stats.get("fastest_good_test", float('inf')) < 600  # 10 minutes
+        },
+        "persistent": {
+            "title": "Настойчивый",
+            "description": "Прошли один тест 5 раз",
+            "icon": "💪",
+            "points": 150,
+            "criteria": lambda user_stats: user_stats.get("max_test_attempts", 0) >= 5
+        },
+        "perfectionist": {
+            "title": "Перфекционист",
+            "description": "Получили 100% в 3 разных тестах",
+            "icon": "💎",
+            "points": 600,
+            "criteria": lambda user_stats: user_stats.get("perfect_tests_count", 0) >= 3
+        }
+    }
+
+def validate_email(email: str) -> bool:
+    """Validate email format"""
+    email_pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+    return bool(re.match(email_pattern, email))
+
+def validate_phone(phone: str) -> bool:
+    """Validate phone number (Kazakhstan format)"""
+    # Remove all non-digits
+    digits_only = re.sub(r'\D', '', phone)
+    
+    # Check for valid Kazakhstan phone patterns
+    if len(digits_only) == 11 and digits_only.startswith('7'):
+        return True
+    elif len(digits_only) == 10 and digits_only.startswith('7'):
+        return True
+    elif len(digits_only) == 10 and not digits_only.startswith('7'):
+        return True
+    
+    return False
+
+def normalize_phone(phone: str) -> str:
+    """Normalize phone number to standard format"""
+    digits_only = re.sub(r'\D', '', phone)
+    
+    if len(digits_only) == 11 and digits_only.startswith('7'):
+        return f"+{digits_only}"
+    elif len(digits_only) == 10:
+        return f"+7{digits_only}"
+    
+    return phone  # Return original if can't normalize
+
+def get_test_category_info():
+    """Get information about test categories"""
+    return {
+        "ict": {
+            "name": "ICT",
+            "full_name": "Information and Communication Technology",
+            "description": "Тест на знание информационных технологий",
+            "icon": "💻",
+            "color": "blue",
+            "difficulty": 3
+        },
+        "logical": {
+            "name": "Logical",
+            "full_name": "Logical Reasoning",
+            "description": "Тест на логическое мышление",
+            "icon": "🧠",
+            "color": "purple",
+            "difficulty": 4
+        },
+        "reading": {
+            "name": "Reading",
+            "full_name": "Reading Comprehension", 
+            "description": "Тест на понимание прочитанного",
+            "icon": "📖",
+            "color": "green",
+            "difficulty": 2
+        },
+        "useofenglish": {
+            "name": "Use of English",
+            "full_name": "English Language Usage",
+            "description": "Практическое использование английского языка",
+            "icon": "🇬🇧",
+            "color": "red",
+            "difficulty": 3
+        },
+        "grammar": {
+            "name": "Grammar",
+            "full_name": "English Grammar",
+            "description": "Тест на знание английской грамматики",
+            "icon": "📝",
+            "color": "orange",
+            "difficulty": 2
         }
     }

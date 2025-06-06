@@ -1,0 +1,103 @@
+services:
+  frontend:
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile
+      target: runner
+    container_name: aitu_frontend_temp
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_API_URL=http://connect-aitu.me/api
+      - NEXT_PUBLIC_TELEGRAM_BOT_USERNAME=${TELEGRAM_BOT_USERNAME}
+    depends_on:
+      - backend
+    networks:
+      - aitu-network
+    restart: unless-stopped
+
+  backend:
+    build: ./backend
+    container_name: aitu_backend_temp
+    environment:
+      - DATABASE_URL=${DATABASE_URL}
+      - REDIS_URL=redis://:${REDIS_PASSWORD}@redis:6379
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY}
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - TELEGRAM_BOT_USERNAME=${TELEGRAM_BOT_USERNAME}
+      - APP_NAME=${APP_NAME}
+      - DEBUG=${DEBUG}
+      - ENVIRONMENT=${ENVIRONMENT}
+      - DOMAIN=${DOMAIN}
+      - UPLOAD_DIR=${UPLOAD_DIR}
+      - MAX_FILE_SIZE=${MAX_FILE_SIZE}
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./backend/uploads:/app/uploads
+    networks:
+      - aitu-network
+    restart: unless-stopped
+
+  db:
+    image: postgres:15-alpine
+    container_name: aitu_postgres_temp
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - aitu-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: aitu_redis_temp
+    command: redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}
+    environment:
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
+    volumes:
+      - redis_data:/data
+    networks:
+      - aitu-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "--no-auth-warning", "-a", "${REDIS_PASSWORD}", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  nginx:
+    image: nginx:alpine
+    container_name: aitu_nginx_temp
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.temp.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/logs:/var/log/nginx
+      - ./certbot/www:/var/www/certbot:rw  # ВАЖНО: rw права
+    depends_on:
+      - frontend
+      - backend
+    networks:
+      - aitu-network
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
+
+networks:
+  aitu-network:
+    driver: bridge

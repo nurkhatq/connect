@@ -16,3 +16,4 @@ httpx==0.25.2
 aiofiles==23.2.1
 Pillow==10.1.0
 psycopg2-binary==2.9.9
+psutil==5.9.6

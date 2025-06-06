@@ -101,10 +101,31 @@ class TestService:
             await db.commit()
             break
 
+    # В backend/services/test_service.py, замените метод calculate_score:
+
     async def calculate_score(self, session: TestSession, db: AsyncSession) -> Dict[str, Any]:
         """Calculate test score"""
+        print(f"🧮 TestService.calculate_score started")
+        
         questions = json.loads(session.questions)
         answers = session.answers or {}
+        
+        print(f"📝 Total questions in test: {len(questions)}")
+        print(f"💬 Answers received from user: {len(answers)}")
+        print(f"📋 Question IDs in test: {[q['id'] for q in questions]}")
+        print(f"🔑 Answer keys submitted: {list(answers.keys())}")
+        
+        # Check which questions are missing answers
+        missing_questions = []
+        answered_questions = []
+        for q in questions:
+            if q['id'] in answers:
+                answered_questions.append(q['id'])
+            else:
+                missing_questions.append(q['id'])
+        
+        print(f"✅ Questions WITH answers: {answered_questions}")
+        print(f"❌ Questions WITHOUT answers: {missing_questions}")
         
         correct_count = 0
         total_questions = len(questions)
@@ -113,29 +134,59 @@ class TestService:
             question_id = question_data["id"]
             user_answer = answers.get(question_id)
             
+            print(f"\n🔍 Checking question {question_id[:8]}...")
+            print(f"👤 User answer: '{user_answer}'")
+            
             if user_answer:
                 # Get correct answer from database
                 result = await db.execute(select(Question).where(Question.id == question_id))
                 question = result.scalar_one_or_none()
                 
-                if question and user_answer.strip().lower() == question.correct_answer.strip().lower():
-                    correct_count += 1
+                if question:
+                    correct_answer = question.correct_answer
+                    print(f"✅ Correct answer: '{correct_answer}'")
+                    
+                    # Compare answers (case insensitive)
+                    user_clean = user_answer.strip().lower()
+                    correct_clean = correct_answer.strip().lower()
+                    
+                    if user_clean == correct_clean:
+                        correct_count += 1
+                        print(f"🎯 CORRECT! Running total: {correct_count}")
+                    else:
+                        print(f"❌ WRONG. User: '{user_clean}' vs Correct: '{correct_clean}'")
+                else:
+                    print(f"❌ Question not found in database!")
+            else:
+                print(f"⭕ No answer provided")
         
         percentage = (correct_count / total_questions) * 100 if total_questions > 0 else 0
+        print(f"\n📊 FINAL CALCULATION:")
+        print(f"   Correct answers: {correct_count}")
+        print(f"   Total questions: {total_questions}")
+        print(f"   Percentage: {percentage:.1f}%")
         
         # Get test to check passing score
         result = await db.execute(select(Test).where(Test.id == session.test_id))
         test = result.scalar_one_or_none()
         passing_score = test.passing_score if test else 70
+        print(f"   Passing score required: {passing_score}%")
         
         passed = percentage >= passing_score
+        print(f"   Test passed: {passed}")
         
         # Calculate points earned
-        base_points = 50
-        bonus_points = int(percentage * 4.5)  # Up to 450 bonus points for 100%
-        points_earned = base_points + bonus_points if passed else 0
+        if passed:
+            base_points = 50
+            bonus_points = int(percentage * 4.5)  # Up to 450 bonus points for 100%
+            points_earned = base_points + bonus_points
+        else:
+            # Give some points even for failed attempts based on percentage
+            points_earned = max(0, int(percentage * 0.5))
         
-        return {
+        print(f"   Points earned: {points_earned}")
+        
+        result_data = {
             "score": correct_count,
             "total": total_questions,
             "correct": correct_count,
@@ -143,6 +194,11 @@ class TestService:
             "passed": passed,
             "points_earned": points_earned
         }
+        
+        print(f"🎯 TestService returning: {result_data}")
+        return result_data
+
+
 
     async def get_leaderboard(self, db: AsyncSession, limit: int = 100) -> List[Dict]:
         """Get user leaderboard"""

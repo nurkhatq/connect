@@ -27,6 +27,7 @@ export default function TestModule({ testId, onComplete, onExit }: TestModulePro
   const [timeLeft, setTimeLeft] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [lastSavedAnswers, setLastSavedAnswers] = useState<Record<string, string>>({});
   
   const autoSaveRef = useRef<NodeJS.Timeout>();
   const timerRef = useRef<NodeJS.Timeout>();
@@ -46,19 +47,61 @@ export default function TestModule({ testId, onComplete, onExit }: TestModulePro
     }
   }, [testId]);
 
+  // 🔥 ИСПРАВЛЕНО: Сохраняем ответы ПОСЛЕДОВАТЕЛЬНО (не параллельно)
   const saveProgress = useCallback(async () => {
-    if (!session || !questions[currentQuestionIndex]) return;
+    if (!session || Object.keys(answers).length === 0) return;
     
-    const currentQuestion = questions[currentQuestionIndex];
-    const currentAnswer = answers[currentQuestion.id];
-    if (currentAnswer) {
-      try {
-        await api.submitAnswer(session.session_id, currentQuestion.id, currentAnswer);
-      } catch (error) {
-        console.error('Failed to save answer:', error);
+    // Находим ответы, которые еще не сохранены
+    const unsavedAnswers: Record<string, string> = {};
+    for (const [questionId, answer] of Object.entries(answers)) {
+      if (lastSavedAnswers[questionId] !== answer) {
+        unsavedAnswers[questionId] = answer;
       }
     }
-  }, [session, questions, currentQuestionIndex, answers]);
+    
+    // Сохраняем только новые/измененные ответы
+    if (Object.keys(unsavedAnswers).length > 0) {
+      console.log(`💾 Saving ${Object.keys(unsavedAnswers).length} new/changed answers:`, Object.keys(unsavedAnswers));
+      
+      try {
+        // 🔥 ИСПРАВЛЕНО: Сохраняем ПОСЛЕДОВАТЕЛЬНО для избежания race conditions
+        for (const [questionId, answer] of Object.entries(unsavedAnswers)) {
+          await api.submitAnswer(session.session_id, questionId, answer);
+          // Небольшая пауза между запросами
+          await new Promise(resolve => setTimeout(resolve, 50));
+        }
+        
+        // Обновляем список сохраненных ответов
+        setLastSavedAnswers(prev => ({ ...prev, ...unsavedAnswers }));
+        console.log(`✅ Successfully saved ${Object.keys(unsavedAnswers).length} answers`);
+        
+      } catch (error) {
+        console.error('Failed to save answers:', error);
+      }
+    }
+  }, [session, answers, lastSavedAnswers]);
+
+  // 🔥 НОВАЯ ФУНКЦИЯ: Сохранить все ответы перед завершением
+  const saveAllAnswers = useCallback(async () => {
+    if (!session || Object.keys(answers).length === 0) return;
+    
+    console.log(`🔄 Saving ALL ${Object.keys(answers).length} answers before test completion...`);
+    
+    try {
+      // 🔥 ИСПРАВЛЕНО: Сохраняем ПОСЛЕДОВАТЕЛЬНО для надежности
+      for (const [questionId, answer] of Object.entries(answers)) {
+        await api.submitAnswer(session.session_id, questionId, answer);
+        // Пауза между запросами для избежания гонки
+        await new Promise(resolve => setTimeout(resolve, 100));
+      }
+      
+      console.log(`✅ All ${Object.keys(answers).length} answers saved successfully`);
+      
+    } catch (error) {
+      console.error('❌ Failed to save all answers:', error);
+      throw error; // Прерываем завершение теста если не смогли сохранить
+    }
+  }, [session, answers]);
 
   const handleSubmitTest = useCallback(async () => {
     if (isSubmitting) return;
@@ -67,8 +110,8 @@ export default function TestModule({ testId, onComplete, onExit }: TestModulePro
     telegram.hapticFeedback('impact', 'medium');
 
     try {
-      // Save current answer if exists
-      await saveProgress();
+      // 🔥 ИСПРАВЛЕНО: Сохраняем ВСЕ ответы перед завершением
+      await saveAllAnswers();
       
       // Complete test
       const results = await api.completeTest(session.session_id);
@@ -79,7 +122,7 @@ export default function TestModule({ testId, onComplete, onExit }: TestModulePro
       telegram.hapticFeedback('notification', 'error');
       setIsSubmitting(false);
     }
-  }, [isSubmitting, saveProgress, session, onComplete]);
+  }, [isSubmitting, saveAllAnswers, session, onComplete]);
 
   useEffect(() => {
     startTest();
@@ -125,6 +168,21 @@ export default function TestModule({ testId, onComplete, onExit }: TestModulePro
     }));
     
     telegram.hapticFeedback('selection');
+    
+    // 🔥 ДОБАВЛЕНО: Немедленно сохраняем ответ
+    if (session) {
+      api.submitAnswer(session.session_id, currentQuestion.id, answer)
+        .then(() => {
+          setLastSavedAnswers(prev => ({ 
+            ...prev, 
+            [currentQuestion.id]: answer 
+          }));
+          console.log(`✅ Answer saved immediately: ${currentQuestion.id}`);
+        })
+        .catch((error) => {
+          console.error('Failed to save answer immediately:', error);
+        });
+    }
   };
 
   const handleNextQuestion = () => {
@@ -305,6 +363,15 @@ export default function TestModule({ testId, onComplete, onExit }: TestModulePro
               animate={{ width: `${getProgressPercentage()}%` }}
               className="bg-blue-500 rounded-full h-2"
             />
+          </div>
+          
+          {/* 🔥 ДОБАВЛЕНО: Показываем статус сохранения */}
+          <div className="mt-2 text-xs text-gray-500">
+            {Object.keys(answers).length > 0 && (
+              <span>
+                Сохранено: {Object.keys(lastSavedAnswers).length} / {Object.keys(answers).length} ответов
+              </span>
+            )}
           </div>
         </div>
       </div>
