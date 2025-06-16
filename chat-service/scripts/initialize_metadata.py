@@ -48,9 +48,20 @@ async def main():
     data_folder = "/app/data_stud"
     
     student_files = [
-        "AITU_Excellence_Test.docx",
-        # Добавьте другие файлы если есть
-    ]
+    "AITU_Excellence_Test.docx",
+    "Big Data Analysis.docx",
+    "Media Technologies.docx",
+    "Smart Technologies.docx",
+    "Software engineering.docx",
+    "MKC.docx",
+    "Образовательная программа Big Data in Healthcare.docx",
+    "Образовательная программа Computer Science.docx",
+    "Образовательная программа Cybersecurity.docx",
+    "Образовательная программа Electrical Engineering.docx",
+    "Образовательная программа IOT.docx",
+    "Образовательная программа IT Managament.docx",
+]
+
     
     await initialize_metadata_for_files(student_files, data_folder, rebuild_index=True)
     logger.info("Student metadata initialization complete.")
