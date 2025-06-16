@@ -57,6 +57,24 @@ def get_student_prompt_template():
         "Контекст (context):\n{context}\n\n"
         "Вопрос пользователя: {question}\n\n"
         "Ответ:"
+        
+        "Про аббревиатуры и сокращения ОП (образовательная программа) то есть мэйджеров:\n"
+        "1. IT (CS также) - Computer Science- на русском ит, айти\n"
+        "2. BDA - Big Data Analytics - бда\n"
+        "3. SE - Software Engineering - се, софтеры, софтверы, софтвер инжиниринг\n"
+        "4. AI - Artificial Intelligence\n"
+        "5. DS - Data Science - дс, дейта сайенс\n"
+        "6. ITM - Information Technology Management - итм\n"
+        "7. IS - Information Systems\n"
+        "8. CS - Cyber Security - кибербез, кибербезопасность, кс\n"
+        "9. ITE - Information Technology Enterpreneurship - ите\n"
+        "10. DJ - Digital Journalism - диджей, дж\n"
+        "11.MT - Media Technologies- мт, медиа\n"
+        "12.ST - Smart Technologies - ст\n"
+        "13.IOT - Internet of Things - иот\n"
+        "14.EE- Electrical Engineering - ее\n"
+        "15.BDH -Big Data in Healthcare - бдх\n"
+        "16.MCS - Mathematical and Computitional Sciences - мкс\n"
     )
 
 def get_teacher_flowchart_prompt():
